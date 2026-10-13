@@ -1,0 +1,43 @@
+{
+  "name": "Ruby",
+  "extensions": ["rb", "rake", "gemspec"],
+  "indent": 2,
+  "operators": ["=", "==", "!=", "<=", ">=", "<=>", "===", "=~", "!~",
+                "&&", "||", "**", "..", "...", "<<", ">>", "->",
+                "+=", "-=", "*=", "/=", "||=", "&&=",
+                "+", "-", "*", "/", "%", "<", ">", "!", "?", ":", "&", "|", "^", "~"],
+  "punctuation": "()[]{};,.@$",
+  "brackets": [["{", "}"], ["(", ")"], ["[", "]"]],
+  "lineComment": "#",
+  "blockComment": [],
+  "quotes": ["\"", "'"],
+  "blockQuotes": [],
+  "rules": [
+    { "kind": "comment", "type": "line",  "start": "#" },
+    { "kind": "string",  "type": "quote", "quotes": ["\"", "'"] },
+    { "kind": "number",  "regex": "\\b\\d+(\\.\\d+)?\\b" },
+    { "kind": "keyword", "words": [
+      "alias","and","begin","break","case","class","def","defined","do",
+      "else","elsif","end","ensure","false","for","if","in","module","next",
+      "nil","not","or","redo","rescue","retry","return","self","super","then",
+      "true","undef","unless","until","when","while","yield","require",
+      "require_relative","attr_accessor","attr_reader","attr_writer",
+      "include","extend","prepend","private","protected","public"
+    ]},
+    { "kind": "type", "words": [
+      "Integer","Float","String","Symbol","Array","Hash","Range","Proc",
+      "Lambda","Object","Class","Module","NilClass","TrueClass","FalseClass",
+      "Enumerable","Comparable"
+    ]},
+    { "kind": "library", "words": [
+      "puts","print","p","gets","loop","each","map","select","reject",
+      "reduce","inject","times","upto","downto","new","freeze","dup","clone"
+    ]}
+  ],
+  "completions": [
+    { "label": "def", "insert": "def \n  \nend", "detail": "method" },
+    { "label": "class", "insert": "class \n  \nend", "detail": "class" },
+    { "label": "if", "insert": "if \n  \nend", "detail": "if" },
+    { "label": "puts", "insert": "puts ", "detail": "puts" }
+  ]
+}

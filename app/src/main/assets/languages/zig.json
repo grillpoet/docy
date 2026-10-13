@@ -1,0 +1,569 @@
+{
+  "name": "Zig",
+  "extensions": [
+    "zig"
+  ],
+  "indent": 4,
+  "operators": [
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "<<",
+    ">>",
+    "<<=",
+    ">>=",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "&=",
+    "|=",
+    "^=",
+    "++",
+    "**",
+    "->",
+    "=>",
+    "..",
+    ".*",
+    ".?",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "?",
+    ":",
+    "&",
+    "|",
+    "^",
+    "~",
+    "="
+  ],
+  "punctuation": "()[]{};,.@#",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "//",
+  "blockComment": [],
+  "quotes": [
+    "\""
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\""
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "const",
+        "var",
+        "fn",
+        "pub",
+        "return",
+        "if",
+        "else",
+        "while",
+        "for",
+        "switch",
+        "break",
+        "continue",
+        "defer",
+        "errdefer",
+        "try",
+        "catch",
+        "comptime",
+        "inline",
+        "export",
+        "extern",
+        "packed",
+        "align",
+        "asm",
+        "test",
+        "suspend",
+        "resume",
+        "await",
+        "async",
+        "noinline",
+        "threadlocal",
+        "usingnamespace",
+        "union",
+        "enum",
+        "struct",
+        "error",
+        "opaque",
+        "orelse",
+        "and",
+        "or",
+        "unreachable",
+        "undefined",
+        "null",
+        "true",
+        "false"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "i8",
+        "i16",
+        "i32",
+        "i64",
+        "i128",
+        "u8",
+        "u16",
+        "u32",
+        "u64",
+        "u128",
+        "usize",
+        "isize",
+        "f16",
+        "f32",
+        "f64",
+        "f128",
+        "bool",
+        "void",
+        "noreturn",
+        "type",
+        "anyerror",
+        "anytype",
+        "anyopaque",
+        "comptime_int",
+        "comptime_float"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "std",
+        "debug",
+        "print",
+        "expect",
+        "assert",
+        "panic",
+        "unreachable"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "const std",
+      "insert": "const std = @import(\"std\");",
+      "detail": "import std"
+    },
+    {
+      "label": "pub fn main",
+      "insert": "pub fn main() !void {\n    \n}",
+      "detail": "main"
+    },
+    {
+      "label": "std.debug.print",
+      "insert": "std.debug.print(\"{}\\n\", .{});",
+      "detail": "print"
+    },
+    {
+      "label": "try",
+      "insert": "try ",
+      "detail": "try"
+    },
+    {
+      "label": "const",
+      "insert": "const",
+      "detail": "keyword"
+    },
+    {
+      "label": "var",
+      "insert": "var",
+      "detail": "keyword"
+    },
+    {
+      "label": "fn",
+      "insert": "fn",
+      "detail": "keyword"
+    },
+    {
+      "label": "pub",
+      "insert": "pub",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "if",
+      "insert": "if",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "for",
+      "insert": "for",
+      "detail": "keyword"
+    },
+    {
+      "label": "switch",
+      "insert": "switch",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "defer",
+      "insert": "defer",
+      "detail": "keyword"
+    },
+    {
+      "label": "errdefer",
+      "insert": "errdefer",
+      "detail": "keyword"
+    },
+    {
+      "label": "catch",
+      "insert": "catch",
+      "detail": "keyword"
+    },
+    {
+      "label": "comptime",
+      "insert": "comptime",
+      "detail": "keyword"
+    },
+    {
+      "label": "inline",
+      "insert": "inline",
+      "detail": "keyword"
+    },
+    {
+      "label": "export",
+      "insert": "export",
+      "detail": "keyword"
+    },
+    {
+      "label": "extern",
+      "insert": "extern",
+      "detail": "keyword"
+    },
+    {
+      "label": "packed",
+      "insert": "packed",
+      "detail": "keyword"
+    },
+    {
+      "label": "align",
+      "insert": "align",
+      "detail": "keyword"
+    },
+    {
+      "label": "asm",
+      "insert": "asm",
+      "detail": "keyword"
+    },
+    {
+      "label": "test",
+      "insert": "test",
+      "detail": "keyword"
+    },
+    {
+      "label": "suspend",
+      "insert": "suspend",
+      "detail": "keyword"
+    },
+    {
+      "label": "resume",
+      "insert": "resume",
+      "detail": "keyword"
+    },
+    {
+      "label": "await",
+      "insert": "await",
+      "detail": "keyword"
+    },
+    {
+      "label": "async",
+      "insert": "async",
+      "detail": "keyword"
+    },
+    {
+      "label": "noinline",
+      "insert": "noinline",
+      "detail": "keyword"
+    },
+    {
+      "label": "threadlocal",
+      "insert": "threadlocal",
+      "detail": "keyword"
+    },
+    {
+      "label": "usingnamespace",
+      "insert": "usingnamespace",
+      "detail": "keyword"
+    },
+    {
+      "label": "union",
+      "insert": "union",
+      "detail": "keyword"
+    },
+    {
+      "label": "enum",
+      "insert": "enum",
+      "detail": "keyword"
+    },
+    {
+      "label": "struct",
+      "insert": "struct",
+      "detail": "keyword"
+    },
+    {
+      "label": "error",
+      "insert": "error",
+      "detail": "keyword"
+    },
+    {
+      "label": "opaque",
+      "insert": "opaque",
+      "detail": "keyword"
+    },
+    {
+      "label": "orelse",
+      "insert": "orelse",
+      "detail": "keyword"
+    },
+    {
+      "label": "and",
+      "insert": "and",
+      "detail": "keyword"
+    },
+    {
+      "label": "or",
+      "insert": "or",
+      "detail": "keyword"
+    },
+    {
+      "label": "unreachable",
+      "insert": "unreachable",
+      "detail": "keyword"
+    },
+    {
+      "label": "undefined",
+      "insert": "undefined",
+      "detail": "keyword"
+    },
+    {
+      "label": "null",
+      "insert": "null",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "i8",
+      "insert": "i8",
+      "detail": "type"
+    },
+    {
+      "label": "i16",
+      "insert": "i16",
+      "detail": "type"
+    },
+    {
+      "label": "i32",
+      "insert": "i32",
+      "detail": "type"
+    },
+    {
+      "label": "i64",
+      "insert": "i64",
+      "detail": "type"
+    },
+    {
+      "label": "i128",
+      "insert": "i128",
+      "detail": "type"
+    },
+    {
+      "label": "u8",
+      "insert": "u8",
+      "detail": "type"
+    },
+    {
+      "label": "u16",
+      "insert": "u16",
+      "detail": "type"
+    },
+    {
+      "label": "u32",
+      "insert": "u32",
+      "detail": "type"
+    },
+    {
+      "label": "u64",
+      "insert": "u64",
+      "detail": "type"
+    },
+    {
+      "label": "u128",
+      "insert": "u128",
+      "detail": "type"
+    },
+    {
+      "label": "usize",
+      "insert": "usize",
+      "detail": "type"
+    },
+    {
+      "label": "isize",
+      "insert": "isize",
+      "detail": "type"
+    },
+    {
+      "label": "f16",
+      "insert": "f16",
+      "detail": "type"
+    },
+    {
+      "label": "f32",
+      "insert": "f32",
+      "detail": "type"
+    },
+    {
+      "label": "f64",
+      "insert": "f64",
+      "detail": "type"
+    },
+    {
+      "label": "f128",
+      "insert": "f128",
+      "detail": "type"
+    },
+    {
+      "label": "bool",
+      "insert": "bool",
+      "detail": "type"
+    },
+    {
+      "label": "void",
+      "insert": "void",
+      "detail": "type"
+    },
+    {
+      "label": "noreturn",
+      "insert": "noreturn",
+      "detail": "type"
+    },
+    {
+      "label": "type",
+      "insert": "type",
+      "detail": "type"
+    },
+    {
+      "label": "anyerror",
+      "insert": "anyerror",
+      "detail": "type"
+    },
+    {
+      "label": "anytype",
+      "insert": "anytype",
+      "detail": "type"
+    },
+    {
+      "label": "anyopaque",
+      "insert": "anyopaque",
+      "detail": "type"
+    },
+    {
+      "label": "comptime_int",
+      "insert": "comptime_int",
+      "detail": "type"
+    },
+    {
+      "label": "comptime_float",
+      "insert": "comptime_float",
+      "detail": "type"
+    },
+    {
+      "label": "std",
+      "insert": "std",
+      "detail": "builtin"
+    },
+    {
+      "label": "debug",
+      "insert": "debug",
+      "detail": "builtin"
+    },
+    {
+      "label": "print",
+      "insert": "print",
+      "detail": "builtin"
+    },
+    {
+      "label": "expect",
+      "insert": "expect",
+      "detail": "builtin"
+    },
+    {
+      "label": "assert",
+      "insert": "assert",
+      "detail": "builtin"
+    },
+    {
+      "label": "panic",
+      "insert": "panic",
+      "detail": "builtin"
+    }
+  ]
+}

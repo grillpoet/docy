@@ -1,0 +1,827 @@
+{
+  "name": "Python",
+  "extensions": [
+    "py"
+  ],
+  "indent": 4,
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "#"
+    },
+    {
+      "kind": "string",
+      "type": "block",
+      "start": "\"\"\"",
+      "end": "\"\"\""
+    },
+    {
+      "kind": "string",
+      "type": "block",
+      "start": "'''",
+      "end": "'''"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\"",
+        "'"
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "False",
+        "None",
+        "True",
+        "and",
+        "as",
+        "assert",
+        "async",
+        "await",
+        "break",
+        "class",
+        "continue",
+        "def",
+        "del",
+        "elif",
+        "else",
+        "except",
+        "finally",
+        "for",
+        "from",
+        "global",
+        "if",
+        "import",
+        "in",
+        "is",
+        "lambda",
+        "nonlocal",
+        "not",
+        "or",
+        "pass",
+        "raise",
+        "return",
+        "try",
+        "while",
+        "with",
+        "yield",
+        "match",
+        "case",
+        "type"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "int",
+        "float",
+        "complex",
+        "bool",
+        "str",
+        "bytes",
+        "bytearray",
+        "list",
+        "tuple",
+        "range",
+        "dict",
+        "set",
+        "frozenset",
+        "type",
+        "object",
+        "super",
+        "property",
+        "staticmethod",
+        "classmethod",
+        "Exception",
+        "BaseException",
+        "ValueError",
+        "TypeError",
+        "KeyError",
+        "IndexError",
+        "AttributeError",
+        "RuntimeError",
+        "StopIteration",
+        "FileNotFoundError",
+        "IOError",
+        "OSError"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "abs",
+        "aiter",
+        "all",
+        "anext",
+        "any",
+        "ascii",
+        "bin",
+        "bool",
+        "breakpoint",
+        "bytearray",
+        "bytes",
+        "callable",
+        "chr",
+        "classmethod",
+        "compile",
+        "complex",
+        "delattr",
+        "dict",
+        "dir",
+        "divmod",
+        "enumerate",
+        "eval",
+        "exec",
+        "filter",
+        "float",
+        "format",
+        "frozenset",
+        "getattr",
+        "globals",
+        "hasattr",
+        "hash",
+        "help",
+        "hex",
+        "id",
+        "input",
+        "int",
+        "isinstance",
+        "issubclass",
+        "iter",
+        "len",
+        "list",
+        "locals",
+        "map",
+        "max",
+        "memoryview",
+        "min",
+        "next",
+        "object",
+        "oct",
+        "open",
+        "ord",
+        "pow",
+        "print",
+        "property",
+        "range",
+        "repr",
+        "reversed",
+        "round",
+        "set",
+        "setattr",
+        "slice",
+        "sorted",
+        "staticmethod",
+        "str",
+        "sum",
+        "super",
+        "tuple",
+        "type",
+        "vars",
+        "zip",
+        "__import__",
+        "self",
+        "cls",
+        "None",
+        "True",
+        "False",
+        "Ellipsis",
+        "NotImplemented"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "def",
+      "insert": "def ():\n    ",
+      "detail": "function"
+    },
+    {
+      "label": "class",
+      "insert": "class :\n    def __init__(self):\n        ",
+      "detail": "class"
+    },
+    {
+      "label": "if",
+      "insert": "if :\n    ",
+      "detail": "if"
+    },
+    {
+      "label": "for",
+      "insert": "for item in collection:\n    ",
+      "detail": "for loop"
+    },
+    {
+      "label": "while",
+      "insert": "while condition:\n    ",
+      "detail": "while loop"
+    },
+    {
+      "label": "try",
+      "insert": "try:\n    \nexcept Exception as e:\n    print(e)",
+      "detail": "try-except"
+    },
+    {
+      "label": "with",
+      "insert": "with open('') as f:\n    ",
+      "detail": "with"
+    },
+    {
+      "label": "main",
+      "insert": "if __name__ == \"__main__\":\n    ",
+      "detail": "main guard"
+    },
+    {
+      "label": "False",
+      "insert": "False",
+      "detail": "keyword"
+    },
+    {
+      "label": "None",
+      "insert": "None",
+      "detail": "keyword"
+    },
+    {
+      "label": "True",
+      "insert": "True",
+      "detail": "keyword"
+    },
+    {
+      "label": "and",
+      "insert": "and",
+      "detail": "keyword"
+    },
+    {
+      "label": "as",
+      "insert": "as",
+      "detail": "keyword"
+    },
+    {
+      "label": "assert",
+      "insert": "assert",
+      "detail": "keyword"
+    },
+    {
+      "label": "async",
+      "insert": "async",
+      "detail": "keyword"
+    },
+    {
+      "label": "await",
+      "insert": "await",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "del",
+      "insert": "del",
+      "detail": "keyword"
+    },
+    {
+      "label": "elif",
+      "insert": "elif",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "except",
+      "insert": "except",
+      "detail": "keyword"
+    },
+    {
+      "label": "finally",
+      "insert": "finally",
+      "detail": "keyword"
+    },
+    {
+      "label": "from",
+      "insert": "from",
+      "detail": "keyword"
+    },
+    {
+      "label": "global",
+      "insert": "global",
+      "detail": "keyword"
+    },
+    {
+      "label": "import",
+      "insert": "import",
+      "detail": "keyword"
+    },
+    {
+      "label": "in",
+      "insert": "in",
+      "detail": "keyword"
+    },
+    {
+      "label": "is",
+      "insert": "is",
+      "detail": "keyword"
+    },
+    {
+      "label": "lambda",
+      "insert": "lambda",
+      "detail": "keyword"
+    },
+    {
+      "label": "nonlocal",
+      "insert": "nonlocal",
+      "detail": "keyword"
+    },
+    {
+      "label": "not",
+      "insert": "not",
+      "detail": "keyword"
+    },
+    {
+      "label": "or",
+      "insert": "or",
+      "detail": "keyword"
+    },
+    {
+      "label": "pass",
+      "insert": "pass",
+      "detail": "keyword"
+    },
+    {
+      "label": "raise",
+      "insert": "raise",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "yield",
+      "insert": "yield",
+      "detail": "keyword"
+    },
+    {
+      "label": "match",
+      "insert": "match",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "type",
+      "insert": "type",
+      "detail": "keyword"
+    },
+    {
+      "label": "int",
+      "insert": "int",
+      "detail": "type"
+    },
+    {
+      "label": "float",
+      "insert": "float",
+      "detail": "type"
+    },
+    {
+      "label": "complex",
+      "insert": "complex",
+      "detail": "type"
+    },
+    {
+      "label": "bool",
+      "insert": "bool",
+      "detail": "type"
+    },
+    {
+      "label": "str",
+      "insert": "str",
+      "detail": "type"
+    },
+    {
+      "label": "bytes",
+      "insert": "bytes",
+      "detail": "type"
+    },
+    {
+      "label": "bytearray",
+      "insert": "bytearray",
+      "detail": "type"
+    },
+    {
+      "label": "list",
+      "insert": "list",
+      "detail": "type"
+    },
+    {
+      "label": "tuple",
+      "insert": "tuple",
+      "detail": "type"
+    },
+    {
+      "label": "range",
+      "insert": "range",
+      "detail": "type"
+    },
+    {
+      "label": "dict",
+      "insert": "dict",
+      "detail": "type"
+    },
+    {
+      "label": "set",
+      "insert": "set",
+      "detail": "type"
+    },
+    {
+      "label": "frozenset",
+      "insert": "frozenset",
+      "detail": "type"
+    },
+    {
+      "label": "object",
+      "insert": "object",
+      "detail": "type"
+    },
+    {
+      "label": "super",
+      "insert": "super",
+      "detail": "type"
+    },
+    {
+      "label": "property",
+      "insert": "property",
+      "detail": "type"
+    },
+    {
+      "label": "staticmethod",
+      "insert": "staticmethod",
+      "detail": "type"
+    },
+    {
+      "label": "classmethod",
+      "insert": "classmethod",
+      "detail": "type"
+    },
+    {
+      "label": "Exception",
+      "insert": "Exception",
+      "detail": "type"
+    },
+    {
+      "label": "BaseException",
+      "insert": "BaseException",
+      "detail": "type"
+    },
+    {
+      "label": "ValueError",
+      "insert": "ValueError",
+      "detail": "type"
+    },
+    {
+      "label": "TypeError",
+      "insert": "TypeError",
+      "detail": "type"
+    },
+    {
+      "label": "KeyError",
+      "insert": "KeyError",
+      "detail": "type"
+    },
+    {
+      "label": "IndexError",
+      "insert": "IndexError",
+      "detail": "type"
+    },
+    {
+      "label": "AttributeError",
+      "insert": "AttributeError",
+      "detail": "type"
+    },
+    {
+      "label": "RuntimeError",
+      "insert": "RuntimeError",
+      "detail": "type"
+    },
+    {
+      "label": "StopIteration",
+      "insert": "StopIteration",
+      "detail": "type"
+    },
+    {
+      "label": "FileNotFoundError",
+      "insert": "FileNotFoundError",
+      "detail": "type"
+    },
+    {
+      "label": "IOError",
+      "insert": "IOError",
+      "detail": "type"
+    },
+    {
+      "label": "OSError",
+      "insert": "OSError",
+      "detail": "type"
+    },
+    {
+      "label": "abs",
+      "insert": "abs",
+      "detail": "builtin"
+    },
+    {
+      "label": "aiter",
+      "insert": "aiter",
+      "detail": "builtin"
+    },
+    {
+      "label": "all",
+      "insert": "all",
+      "detail": "builtin"
+    },
+    {
+      "label": "anext",
+      "insert": "anext",
+      "detail": "builtin"
+    },
+    {
+      "label": "any",
+      "insert": "any",
+      "detail": "builtin"
+    },
+    {
+      "label": "ascii",
+      "insert": "ascii",
+      "detail": "builtin"
+    },
+    {
+      "label": "bin",
+      "insert": "bin",
+      "detail": "builtin"
+    },
+    {
+      "label": "breakpoint",
+      "insert": "breakpoint",
+      "detail": "builtin"
+    },
+    {
+      "label": "callable",
+      "insert": "callable",
+      "detail": "builtin"
+    },
+    {
+      "label": "chr",
+      "insert": "chr",
+      "detail": "builtin"
+    },
+    {
+      "label": "compile",
+      "insert": "compile",
+      "detail": "builtin"
+    },
+    {
+      "label": "delattr",
+      "insert": "delattr",
+      "detail": "builtin"
+    },
+    {
+      "label": "dir",
+      "insert": "dir",
+      "detail": "builtin"
+    },
+    {
+      "label": "divmod",
+      "insert": "divmod",
+      "detail": "builtin"
+    },
+    {
+      "label": "enumerate",
+      "insert": "enumerate",
+      "detail": "builtin"
+    },
+    {
+      "label": "eval",
+      "insert": "eval",
+      "detail": "builtin"
+    },
+    {
+      "label": "exec",
+      "insert": "exec",
+      "detail": "builtin"
+    },
+    {
+      "label": "filter",
+      "insert": "filter",
+      "detail": "builtin"
+    },
+    {
+      "label": "format",
+      "insert": "format",
+      "detail": "builtin"
+    },
+    {
+      "label": "getattr",
+      "insert": "getattr",
+      "detail": "builtin"
+    },
+    {
+      "label": "globals",
+      "insert": "globals",
+      "detail": "builtin"
+    },
+    {
+      "label": "hasattr",
+      "insert": "hasattr",
+      "detail": "builtin"
+    },
+    {
+      "label": "hash",
+      "insert": "hash",
+      "detail": "builtin"
+    },
+    {
+      "label": "help",
+      "insert": "help",
+      "detail": "builtin"
+    },
+    {
+      "label": "hex",
+      "insert": "hex",
+      "detail": "builtin"
+    },
+    {
+      "label": "id",
+      "insert": "id",
+      "detail": "builtin"
+    },
+    {
+      "label": "input",
+      "insert": "input",
+      "detail": "builtin"
+    },
+    {
+      "label": "isinstance",
+      "insert": "isinstance",
+      "detail": "builtin"
+    },
+    {
+      "label": "issubclass",
+      "insert": "issubclass",
+      "detail": "builtin"
+    },
+    {
+      "label": "iter",
+      "insert": "iter",
+      "detail": "builtin"
+    },
+    {
+      "label": "len",
+      "insert": "len",
+      "detail": "builtin"
+    },
+    {
+      "label": "locals",
+      "insert": "locals",
+      "detail": "builtin"
+    },
+    {
+      "label": "map",
+      "insert": "map",
+      "detail": "builtin"
+    },
+    {
+      "label": "max",
+      "insert": "max",
+      "detail": "builtin"
+    },
+    {
+      "label": "memoryview",
+      "insert": "memoryview",
+      "detail": "builtin"
+    },
+    {
+      "label": "min",
+      "insert": "min",
+      "detail": "builtin"
+    },
+    {
+      "label": "next",
+      "insert": "next",
+      "detail": "builtin"
+    },
+    {
+      "label": "oct",
+      "insert": "oct",
+      "detail": "builtin"
+    },
+    {
+      "label": "open",
+      "insert": "open",
+      "detail": "builtin"
+    },
+    {
+      "label": "ord",
+      "insert": "ord",
+      "detail": "builtin"
+    },
+    {
+      "label": "pow",
+      "insert": "pow",
+      "detail": "builtin"
+    },
+    {
+      "label": "print",
+      "insert": "print",
+      "detail": "builtin"
+    },
+    {
+      "label": "repr",
+      "insert": "repr",
+      "detail": "builtin"
+    },
+    {
+      "label": "reversed",
+      "insert": "reversed",
+      "detail": "builtin"
+    },
+    {
+      "label": "round",
+      "insert": "round",
+      "detail": "builtin"
+    },
+    {
+      "label": "setattr",
+      "insert": "setattr",
+      "detail": "builtin"
+    },
+    {
+      "label": "slice",
+      "insert": "slice",
+      "detail": "builtin"
+    },
+    {
+      "label": "sorted",
+      "insert": "sorted",
+      "detail": "builtin"
+    },
+    {
+      "label": "sum",
+      "insert": "sum",
+      "detail": "builtin"
+    },
+    {
+      "label": "vars",
+      "insert": "vars",
+      "detail": "builtin"
+    },
+    {
+      "label": "zip",
+      "insert": "zip",
+      "detail": "builtin"
+    },
+    {
+      "label": "__import__",
+      "insert": "__import__",
+      "detail": "builtin"
+    },
+    {
+      "label": "self",
+      "insert": "self",
+      "detail": "builtin"
+    },
+    {
+      "label": "cls",
+      "insert": "cls",
+      "detail": "builtin"
+    },
+    {
+      "label": "Ellipsis",
+      "insert": "Ellipsis",
+      "detail": "builtin"
+    },
+    {
+      "label": "NotImplemented",
+      "insert": "NotImplemented",
+      "detail": "builtin"
+    }
+  ]
+}

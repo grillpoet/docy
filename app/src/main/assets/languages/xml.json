@@ -1,0 +1,129 @@
+{
+  "name": "XML",
+  "extensions": [
+    "xml",
+    "html",
+    "xhtml",
+    "svg"
+  ],
+  "indent": 2,
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "<!--",
+      "end": "-->"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\"",
+        "'"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "html",
+        "head",
+        "body",
+        "div",
+        "span",
+        "p",
+        "a",
+        "img",
+        "script",
+        "style",
+        "meta",
+        "link",
+        "title",
+        "xml",
+        "tag",
+        "attribute"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "html",
+      "insert": "html",
+      "detail": "type"
+    },
+    {
+      "label": "head",
+      "insert": "head",
+      "detail": "type"
+    },
+    {
+      "label": "body",
+      "insert": "body",
+      "detail": "type"
+    },
+    {
+      "label": "div",
+      "insert": "div",
+      "detail": "type"
+    },
+    {
+      "label": "span",
+      "insert": "span",
+      "detail": "type"
+    },
+    {
+      "label": "p",
+      "insert": "p",
+      "detail": "type"
+    },
+    {
+      "label": "a",
+      "insert": "a",
+      "detail": "type"
+    },
+    {
+      "label": "img",
+      "insert": "img",
+      "detail": "type"
+    },
+    {
+      "label": "script",
+      "insert": "script",
+      "detail": "type"
+    },
+    {
+      "label": "style",
+      "insert": "style",
+      "detail": "type"
+    },
+    {
+      "label": "meta",
+      "insert": "meta",
+      "detail": "type"
+    },
+    {
+      "label": "link",
+      "insert": "link",
+      "detail": "type"
+    },
+    {
+      "label": "title",
+      "insert": "title",
+      "detail": "type"
+    },
+    {
+      "label": "xml",
+      "insert": "xml",
+      "detail": "type"
+    },
+    {
+      "label": "tag",
+      "insert": "tag",
+      "detail": "type"
+    },
+    {
+      "label": "attribute",
+      "insert": "attribute",
+      "detail": "type"
+    }
+  ]
+}

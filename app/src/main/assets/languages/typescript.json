@@ -1,0 +1,801 @@
+{
+  "name": "TypeScript",
+  "extensions": [
+    "ts",
+    "tsx",
+    "mts",
+    "cts"
+  ],
+  "indent": 2,
+  "operators": [
+    "===",
+    "!==",
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "??",
+    "?.",
+    "=>",
+    "++",
+    "--",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "<<=",
+    ">>=",
+    "<<",
+    ">>",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "?",
+    ":",
+    "&",
+    "|",
+    "^",
+    "~",
+    "="
+  ],
+  "punctuation": "()[]{};,.@#",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "//",
+  "blockComment": [
+    "/*",
+    "*/"
+  ],
+  "quotes": [
+    "\"",
+    "'",
+    "`"
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "string",
+      "type": "block",
+      "start": "`",
+      "end": "`"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\"",
+        "'"
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "abstract",
+        "any",
+        "as",
+        "asserts",
+        "async",
+        "await",
+        "bigint",
+        "boolean",
+        "break",
+        "case",
+        "catch",
+        "class",
+        "const",
+        "constructor",
+        "continue",
+        "debugger",
+        "declare",
+        "default",
+        "delete",
+        "do",
+        "else",
+        "enum",
+        "export",
+        "extends",
+        "false",
+        "finally",
+        "for",
+        "from",
+        "function",
+        "get",
+        "if",
+        "implements",
+        "import",
+        "in",
+        "infer",
+        "instanceof",
+        "interface",
+        "is",
+        "keyof",
+        "let",
+        "module",
+        "namespace",
+        "never",
+        "new",
+        "null",
+        "number",
+        "object",
+        "of",
+        "override",
+        "package",
+        "private",
+        "protected",
+        "public",
+        "readonly",
+        "require",
+        "return",
+        "satisfies",
+        "set",
+        "static",
+        "string",
+        "super",
+        "switch",
+        "symbol",
+        "this",
+        "throw",
+        "true",
+        "try",
+        "type",
+        "typeof",
+        "undefined",
+        "unique",
+        "unknown",
+        "var",
+        "void",
+        "while",
+        "with",
+        "yield"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "Array",
+        "Boolean",
+        "Date",
+        "Error",
+        "Map",
+        "Number",
+        "Object",
+        "Promise",
+        "RegExp",
+        "Set",
+        "String",
+        "Symbol",
+        "WeakMap",
+        "WeakSet",
+        "Record",
+        "Partial",
+        "Required",
+        "Readonly",
+        "Pick",
+        "Omit",
+        "Exclude",
+        "Extract",
+        "NonNullable",
+        "Parameters",
+        "ReturnType",
+        "Awaited",
+        "InstanceType",
+        "ThisType",
+        "Uppercase",
+        "Lowercase",
+        "Capitalize",
+        "Uncapitalize"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "console.log",
+        "console.error",
+        "console.warn",
+        "document.getElementById",
+        "document.querySelector",
+        "window.alert",
+        "window.fetch",
+        "JSON.parse",
+        "JSON.stringify",
+        "Object.keys",
+        "Object.values",
+        "Object.entries",
+        "Array.isArray",
+        "Promise.all",
+        "Promise.resolve",
+        "Promise.reject",
+        "localStorage.getItem",
+        "localStorage.setItem",
+        "process.env"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "interface",
+      "insert": "interface  {\n  \n}",
+      "detail": "interface"
+    },
+    {
+      "label": "type",
+      "insert": "type  = ",
+      "detail": "type alias"
+    },
+    {
+      "label": "function",
+      "insert": "function (): void {\n  \n}",
+      "detail": "function"
+    },
+    {
+      "label": "const",
+      "insert": "const : = ",
+      "detail": "const"
+    },
+    {
+      "label": "enum",
+      "insert": "enum  {\n  ,\n}",
+      "detail": "enum"
+    },
+    {
+      "label": "class",
+      "insert": "class  {\n  constructor() {\n    \n  }\n}",
+      "detail": "class"
+    },
+    {
+      "label": "async function",
+      "insert": "async function (): Promise<void> {\n  \n}",
+      "detail": "async function"
+    },
+    {
+      "label": "abstract",
+      "insert": "abstract",
+      "detail": "keyword"
+    },
+    {
+      "label": "any",
+      "insert": "any",
+      "detail": "keyword"
+    },
+    {
+      "label": "as",
+      "insert": "as",
+      "detail": "keyword"
+    },
+    {
+      "label": "asserts",
+      "insert": "asserts",
+      "detail": "keyword"
+    },
+    {
+      "label": "async",
+      "insert": "async",
+      "detail": "keyword"
+    },
+    {
+      "label": "await",
+      "insert": "await",
+      "detail": "keyword"
+    },
+    {
+      "label": "bigint",
+      "insert": "bigint",
+      "detail": "keyword"
+    },
+    {
+      "label": "boolean",
+      "insert": "boolean",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "catch",
+      "insert": "catch",
+      "detail": "keyword"
+    },
+    {
+      "label": "constructor",
+      "insert": "constructor",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "debugger",
+      "insert": "debugger",
+      "detail": "keyword"
+    },
+    {
+      "label": "declare",
+      "insert": "declare",
+      "detail": "keyword"
+    },
+    {
+      "label": "default",
+      "insert": "default",
+      "detail": "keyword"
+    },
+    {
+      "label": "delete",
+      "insert": "delete",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "export",
+      "insert": "export",
+      "detail": "keyword"
+    },
+    {
+      "label": "extends",
+      "insert": "extends",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "finally",
+      "insert": "finally",
+      "detail": "keyword"
+    },
+    {
+      "label": "for",
+      "insert": "for",
+      "detail": "keyword"
+    },
+    {
+      "label": "from",
+      "insert": "from",
+      "detail": "keyword"
+    },
+    {
+      "label": "get",
+      "insert": "get",
+      "detail": "keyword"
+    },
+    {
+      "label": "if",
+      "insert": "if",
+      "detail": "keyword"
+    },
+    {
+      "label": "implements",
+      "insert": "implements",
+      "detail": "keyword"
+    },
+    {
+      "label": "import",
+      "insert": "import",
+      "detail": "keyword"
+    },
+    {
+      "label": "in",
+      "insert": "in",
+      "detail": "keyword"
+    },
+    {
+      "label": "infer",
+      "insert": "infer",
+      "detail": "keyword"
+    },
+    {
+      "label": "instanceof",
+      "insert": "instanceof",
+      "detail": "keyword"
+    },
+    {
+      "label": "is",
+      "insert": "is",
+      "detail": "keyword"
+    },
+    {
+      "label": "keyof",
+      "insert": "keyof",
+      "detail": "keyword"
+    },
+    {
+      "label": "let",
+      "insert": "let",
+      "detail": "keyword"
+    },
+    {
+      "label": "module",
+      "insert": "module",
+      "detail": "keyword"
+    },
+    {
+      "label": "namespace",
+      "insert": "namespace",
+      "detail": "keyword"
+    },
+    {
+      "label": "never",
+      "insert": "never",
+      "detail": "keyword"
+    },
+    {
+      "label": "new",
+      "insert": "new",
+      "detail": "keyword"
+    },
+    {
+      "label": "null",
+      "insert": "null",
+      "detail": "keyword"
+    },
+    {
+      "label": "number",
+      "insert": "number",
+      "detail": "keyword"
+    },
+    {
+      "label": "object",
+      "insert": "object",
+      "detail": "keyword"
+    },
+    {
+      "label": "of",
+      "insert": "of",
+      "detail": "keyword"
+    },
+    {
+      "label": "override",
+      "insert": "override",
+      "detail": "keyword"
+    },
+    {
+      "label": "package",
+      "insert": "package",
+      "detail": "keyword"
+    },
+    {
+      "label": "private",
+      "insert": "private",
+      "detail": "keyword"
+    },
+    {
+      "label": "protected",
+      "insert": "protected",
+      "detail": "keyword"
+    },
+    {
+      "label": "public",
+      "insert": "public",
+      "detail": "keyword"
+    },
+    {
+      "label": "readonly",
+      "insert": "readonly",
+      "detail": "keyword"
+    },
+    {
+      "label": "require",
+      "insert": "require",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "satisfies",
+      "insert": "satisfies",
+      "detail": "keyword"
+    },
+    {
+      "label": "set",
+      "insert": "set",
+      "detail": "keyword"
+    },
+    {
+      "label": "static",
+      "insert": "static",
+      "detail": "keyword"
+    },
+    {
+      "label": "string",
+      "insert": "string",
+      "detail": "keyword"
+    },
+    {
+      "label": "super",
+      "insert": "super",
+      "detail": "keyword"
+    },
+    {
+      "label": "switch",
+      "insert": "switch",
+      "detail": "keyword"
+    },
+    {
+      "label": "symbol",
+      "insert": "symbol",
+      "detail": "keyword"
+    },
+    {
+      "label": "this",
+      "insert": "this",
+      "detail": "keyword"
+    },
+    {
+      "label": "throw",
+      "insert": "throw",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "try",
+      "insert": "try",
+      "detail": "keyword"
+    },
+    {
+      "label": "typeof",
+      "insert": "typeof",
+      "detail": "keyword"
+    },
+    {
+      "label": "undefined",
+      "insert": "undefined",
+      "detail": "keyword"
+    },
+    {
+      "label": "unique",
+      "insert": "unique",
+      "detail": "keyword"
+    },
+    {
+      "label": "unknown",
+      "insert": "unknown",
+      "detail": "keyword"
+    },
+    {
+      "label": "var",
+      "insert": "var",
+      "detail": "keyword"
+    },
+    {
+      "label": "void",
+      "insert": "void",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "with",
+      "insert": "with",
+      "detail": "keyword"
+    },
+    {
+      "label": "yield",
+      "insert": "yield",
+      "detail": "keyword"
+    },
+    {
+      "label": "Array",
+      "insert": "Array",
+      "detail": "type"
+    },
+    {
+      "label": "Boolean",
+      "insert": "Boolean",
+      "detail": "type"
+    },
+    {
+      "label": "Date",
+      "insert": "Date",
+      "detail": "type"
+    },
+    {
+      "label": "Error",
+      "insert": "Error",
+      "detail": "type"
+    },
+    {
+      "label": "Map",
+      "insert": "Map",
+      "detail": "type"
+    },
+    {
+      "label": "Number",
+      "insert": "Number",
+      "detail": "type"
+    },
+    {
+      "label": "Object",
+      "insert": "Object",
+      "detail": "type"
+    },
+    {
+      "label": "Promise",
+      "insert": "Promise",
+      "detail": "type"
+    },
+    {
+      "label": "RegExp",
+      "insert": "RegExp",
+      "detail": "type"
+    },
+    {
+      "label": "Set",
+      "insert": "Set",
+      "detail": "type"
+    },
+    {
+      "label": "String",
+      "insert": "String",
+      "detail": "type"
+    },
+    {
+      "label": "Symbol",
+      "insert": "Symbol",
+      "detail": "type"
+    },
+    {
+      "label": "WeakMap",
+      "insert": "WeakMap",
+      "detail": "type"
+    },
+    {
+      "label": "WeakSet",
+      "insert": "WeakSet",
+      "detail": "type"
+    },
+    {
+      "label": "Record",
+      "insert": "Record",
+      "detail": "type"
+    },
+    {
+      "label": "Partial",
+      "insert": "Partial",
+      "detail": "type"
+    },
+    {
+      "label": "Required",
+      "insert": "Required",
+      "detail": "type"
+    },
+    {
+      "label": "Readonly",
+      "insert": "Readonly",
+      "detail": "type"
+    },
+    {
+      "label": "Pick",
+      "insert": "Pick",
+      "detail": "type"
+    },
+    {
+      "label": "Omit",
+      "insert": "Omit",
+      "detail": "type"
+    },
+    {
+      "label": "Exclude",
+      "insert": "Exclude",
+      "detail": "type"
+    },
+    {
+      "label": "Extract",
+      "insert": "Extract",
+      "detail": "type"
+    },
+    {
+      "label": "NonNullable",
+      "insert": "NonNullable",
+      "detail": "type"
+    },
+    {
+      "label": "Parameters",
+      "insert": "Parameters",
+      "detail": "type"
+    },
+    {
+      "label": "ReturnType",
+      "insert": "ReturnType",
+      "detail": "type"
+    },
+    {
+      "label": "Awaited",
+      "insert": "Awaited",
+      "detail": "type"
+    },
+    {
+      "label": "InstanceType",
+      "insert": "InstanceType",
+      "detail": "type"
+    },
+    {
+      "label": "ThisType",
+      "insert": "ThisType",
+      "detail": "type"
+    },
+    {
+      "label": "Uppercase",
+      "insert": "Uppercase",
+      "detail": "type"
+    },
+    {
+      "label": "Lowercase",
+      "insert": "Lowercase",
+      "detail": "type"
+    },
+    {
+      "label": "Capitalize",
+      "insert": "Capitalize",
+      "detail": "type"
+    },
+    {
+      "label": "Uncapitalize",
+      "insert": "Uncapitalize",
+      "detail": "type"
+    }
+  ]
+}

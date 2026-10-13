@@ -1,0 +1,598 @@
+{
+  "name": "Go",
+  "extensions": [
+    "go"
+  ],
+  "indent": 4,
+  "operators": [
+    "=",
+    ":=",
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "<-",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "&=",
+    "|=",
+    "^=",
+    "<<=",
+    ">>=",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "&",
+    "|",
+    "^",
+    "<<"
+  ],
+  "punctuation": "()[]{};,.@",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "//",
+  "blockComment": [
+    "/*",
+    "*/"
+  ],
+  "quotes": [
+    "\"",
+    "`"
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\"",
+        "`"
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "break",
+        "case",
+        "chan",
+        "const",
+        "continue",
+        "default",
+        "defer",
+        "else",
+        "fallthrough",
+        "for",
+        "func",
+        "go",
+        "goto",
+        "if",
+        "import",
+        "interface",
+        "map",
+        "package",
+        "range",
+        "return",
+        "select",
+        "struct",
+        "switch",
+        "type",
+        "var",
+        "true",
+        "false",
+        "nil",
+        "iota"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "bool",
+        "byte",
+        "complex64",
+        "complex128",
+        "error",
+        "float32",
+        "float64",
+        "int",
+        "int8",
+        "int16",
+        "int32",
+        "int64",
+        "rune",
+        "string",
+        "uint",
+        "uint8",
+        "uint16",
+        "uint32",
+        "uint64",
+        "uintptr",
+        "any",
+        "sync.Mutex",
+        "sync.RWMutex",
+        "sync.WaitGroup",
+        "sync.Once",
+        "context.Context",
+        "time.Time",
+        "time.Duration",
+        "bytes.Buffer",
+        "strings.Builder",
+        "bufio.Scanner",
+        "bufio.Reader",
+        "bufio.Writer",
+        "io.Reader",
+        "io.Writer",
+        "http.Client",
+        "http.Request",
+        "http.Response",
+        "json.Decoder",
+        "json.Encoder",
+        "os.File",
+        "filepath.WalkFunc"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "fmt.Println",
+        "fmt.Printf",
+        "fmt.Sprintf",
+        "fmt.Errorf",
+        "fmt.Sprint",
+        "fmt.Sprintln",
+        "fmt.Fprintf",
+        "fmt.Scan",
+        "fmt.Scanf",
+        "make",
+        "new",
+        "len",
+        "cap",
+        "append",
+        "copy",
+        "delete",
+        "panic",
+        "recover",
+        "close",
+        "println",
+        "print",
+        "complex",
+        "real",
+        "imag",
+        "os.Exit",
+        "os.Args",
+        "os.Getenv",
+        "os.Setenv",
+        "os.Open",
+        "os.Create",
+        "os.ReadFile",
+        "os.WriteFile",
+        "os.Mkdir",
+        "os.MkdirAll",
+        "os.Remove",
+        "os.RemoveAll",
+        "os.Stat",
+        "os.Rename",
+        "os.Chdir",
+        "os.Getwd",
+        "log.Println",
+        "log.Printf",
+        "log.Fatal",
+        "log.Fatalf",
+        "log.New",
+        "strings.Split",
+        "strings.Join",
+        "strings.TrimSpace",
+        "strings.Trim",
+        "strings.HasPrefix",
+        "strings.HasSuffix",
+        "strings.Contains",
+        "strings.Replace",
+        "strings.ToLower",
+        "strings.ToUpper",
+        "strings.Fields",
+        "strings.Repeat",
+        "strconv.Itoa",
+        "strconv.Atoi",
+        "strconv.FormatInt",
+        "strconv.ParseInt",
+        "time.Now",
+        "time.Sleep",
+        "time.Since",
+        "time.Parse",
+        "time.Duration",
+        "json.Marshal",
+        "json.Unmarshal",
+        "json.NewDecoder",
+        "json.NewEncoder"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "func main",
+      "insert": "func main() {\n    \n}",
+      "detail": "main"
+    },
+    {
+      "label": "fmt.Println",
+      "insert": "fmt.Println()",
+      "detail": "Println"
+    },
+    {
+      "label": "if err != nil",
+      "insert": "if err != nil {\n    return err\n}",
+      "detail": "err check"
+    },
+    {
+      "label": "for",
+      "insert": "for i := 0; i < n; i++ {\n    \n}",
+      "detail": "for loop"
+    },
+    {
+      "label": "for-range",
+      "insert": "for i, v := range items {\n    \n}",
+      "detail": "for-range"
+    },
+    {
+      "label": "struct",
+      "insert": "type  struct {\n    \n}",
+      "detail": "struct"
+    },
+    {
+      "label": "goroutine",
+      "insert": "go func() {\n    \n}()",
+      "detail": "goroutine"
+    },
+    {
+      "label": "select",
+      "insert": "select {\ncase <-ch:\n    \n}",
+      "detail": "select"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "chan",
+      "insert": "chan",
+      "detail": "keyword"
+    },
+    {
+      "label": "const",
+      "insert": "const",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "default",
+      "insert": "default",
+      "detail": "keyword"
+    },
+    {
+      "label": "defer",
+      "insert": "defer",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "fallthrough",
+      "insert": "fallthrough",
+      "detail": "keyword"
+    },
+    {
+      "label": "func",
+      "insert": "func",
+      "detail": "keyword"
+    },
+    {
+      "label": "go",
+      "insert": "go",
+      "detail": "keyword"
+    },
+    {
+      "label": "goto",
+      "insert": "goto",
+      "detail": "keyword"
+    },
+    {
+      "label": "if",
+      "insert": "if",
+      "detail": "keyword"
+    },
+    {
+      "label": "import",
+      "insert": "import",
+      "detail": "keyword"
+    },
+    {
+      "label": "interface",
+      "insert": "interface",
+      "detail": "keyword"
+    },
+    {
+      "label": "map",
+      "insert": "map",
+      "detail": "keyword"
+    },
+    {
+      "label": "package",
+      "insert": "package",
+      "detail": "keyword"
+    },
+    {
+      "label": "range",
+      "insert": "range",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "switch",
+      "insert": "switch",
+      "detail": "keyword"
+    },
+    {
+      "label": "type",
+      "insert": "type",
+      "detail": "keyword"
+    },
+    {
+      "label": "var",
+      "insert": "var",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "nil",
+      "insert": "nil",
+      "detail": "keyword"
+    },
+    {
+      "label": "iota",
+      "insert": "iota",
+      "detail": "keyword"
+    },
+    {
+      "label": "bool",
+      "insert": "bool",
+      "detail": "type"
+    },
+    {
+      "label": "byte",
+      "insert": "byte",
+      "detail": "type"
+    },
+    {
+      "label": "complex64",
+      "insert": "complex64",
+      "detail": "type"
+    },
+    {
+      "label": "complex128",
+      "insert": "complex128",
+      "detail": "type"
+    },
+    {
+      "label": "error",
+      "insert": "error",
+      "detail": "type"
+    },
+    {
+      "label": "float32",
+      "insert": "float32",
+      "detail": "type"
+    },
+    {
+      "label": "float64",
+      "insert": "float64",
+      "detail": "type"
+    },
+    {
+      "label": "int",
+      "insert": "int",
+      "detail": "type"
+    },
+    {
+      "label": "int8",
+      "insert": "int8",
+      "detail": "type"
+    },
+    {
+      "label": "int16",
+      "insert": "int16",
+      "detail": "type"
+    },
+    {
+      "label": "int32",
+      "insert": "int32",
+      "detail": "type"
+    },
+    {
+      "label": "int64",
+      "insert": "int64",
+      "detail": "type"
+    },
+    {
+      "label": "rune",
+      "insert": "rune",
+      "detail": "type"
+    },
+    {
+      "label": "string",
+      "insert": "string",
+      "detail": "type"
+    },
+    {
+      "label": "uint",
+      "insert": "uint",
+      "detail": "type"
+    },
+    {
+      "label": "uint8",
+      "insert": "uint8",
+      "detail": "type"
+    },
+    {
+      "label": "uint16",
+      "insert": "uint16",
+      "detail": "type"
+    },
+    {
+      "label": "uint32",
+      "insert": "uint32",
+      "detail": "type"
+    },
+    {
+      "label": "uint64",
+      "insert": "uint64",
+      "detail": "type"
+    },
+    {
+      "label": "uintptr",
+      "insert": "uintptr",
+      "detail": "type"
+    },
+    {
+      "label": "any",
+      "insert": "any",
+      "detail": "type"
+    },
+    {
+      "label": "make",
+      "insert": "make",
+      "detail": "builtin"
+    },
+    {
+      "label": "new",
+      "insert": "new",
+      "detail": "builtin"
+    },
+    {
+      "label": "len",
+      "insert": "len",
+      "detail": "builtin"
+    },
+    {
+      "label": "cap",
+      "insert": "cap",
+      "detail": "builtin"
+    },
+    {
+      "label": "append",
+      "insert": "append",
+      "detail": "builtin"
+    },
+    {
+      "label": "copy",
+      "insert": "copy",
+      "detail": "builtin"
+    },
+    {
+      "label": "delete",
+      "insert": "delete",
+      "detail": "builtin"
+    },
+    {
+      "label": "panic",
+      "insert": "panic",
+      "detail": "builtin"
+    },
+    {
+      "label": "recover",
+      "insert": "recover",
+      "detail": "builtin"
+    },
+    {
+      "label": "close",
+      "insert": "close",
+      "detail": "builtin"
+    },
+    {
+      "label": "println",
+      "insert": "println",
+      "detail": "builtin"
+    },
+    {
+      "label": "print",
+      "insert": "print",
+      "detail": "builtin"
+    },
+    {
+      "label": "complex",
+      "insert": "complex",
+      "detail": "builtin"
+    },
+    {
+      "label": "real",
+      "insert": "real",
+      "detail": "builtin"
+    },
+    {
+      "label": "imag",
+      "insert": "imag",
+      "detail": "builtin"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "YAML",
+  "extensions": ["yaml", "yml"],
+  "indent": 2,
+  "rules": [
+    { "kind": "comment", "type": "line", "start": "#" },
+    { "kind": "string",  "type": "quote", "quotes": ["\"", "'"] },
+    { "kind": "number",  "regex": "\\b\\d+(\\.\\d+)?\\b" },
+    { "kind": "keyword", "words": ["true","false","null","yes","no","on","off"] }
+  ],
+  "completions": []
+}

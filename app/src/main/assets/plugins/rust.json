@@ -1,0 +1,41 @@
+{
+  "name": "Rust",
+  "extensions": ["rs"],
+  "indent": 4,
+  "operators": ["=", "==", "!=", "<=", ">=", "&&", "||", "->", "=>", "::",
+                "+=", "-=", "*=", "/=", "%=", "<<", ">>", "&=", "|=", "^=",
+                "+", "-", "*", "/", "%", "<", ">", "!", "?", "&", "|", "^"],
+  "punctuation": "()[]{};,.@#",
+  "brackets": [["{", "}"], ["(", ")"], ["[", "]"]],
+  "lineComment": "//",
+  "blockComment": ["/*", "*/"],
+  "quotes": ["\""],
+  "blockQuotes": [],
+  "rules": [
+    { "kind": "comment", "type": "block", "start": "/*", "end": "*/" },
+    { "kind": "comment", "type": "line",  "start": "//" },
+    { "kind": "string",  "type": "quote", "quotes": ["\""] },
+    { "kind": "number",  "regex": "\\b\\d+(\\.\\d+)?([iu](8|16|32|64|128|size)|f(32|64))?\\b" },
+    { "kind": "keyword", "words": [
+      "as","async","await","break","const","continue","crate","dyn","else",
+      "enum","extern","false","fn","for","if","impl","in","let","loop",
+      "match","mod","move","mut","pub","ref","return","self","Self","static",
+      "struct","super","trait","true","type","unsafe","use","where","while"
+    ]},
+    { "kind": "type", "words": [
+      "i8","i16","i32","i64","i128","isize","u8","u16","u32","u64","u128",
+      "usize","f32","f64","bool","char","str","String","Vec","Option","Result",
+      "Box","Rc","Arc","HashMap","HashSet","BTreeMap","BTreeSet","RefCell",
+      "Cell","Cow"
+    ]},
+    { "kind": "library", "words": [
+      "println","print","eprintln","eprint","format","vec","panic","assert",
+      "assert_eq","assert_ne","debug_assert","todo","unimplemented","unreachable"
+    ]}
+  ],
+  "completions": [
+    { "label": "fn main", "insert": "fn main() {\n    \n}", "detail": "main" },
+    { "label": "println!", "insert": "println!(\"{}\", );", "detail": "println" },
+    { "label": "match", "insert": "match x {\n    _ => ,\n}", "detail": "match" }
+  ]
+}

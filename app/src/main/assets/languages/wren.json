@@ -1,0 +1,358 @@
+{
+  "name": "Wren",
+  "extensions": [
+    "wren"
+  ],
+  "indent": 2,
+  "operators": [
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "..",
+    "...",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "?",
+    ":",
+    "="
+  ],
+  "punctuation": "()[]{};,.@",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "//",
+  "blockComment": [
+    "/*",
+    "*/"
+  ],
+  "quotes": [
+    "\""
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\""
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "break",
+        "class",
+        "construct",
+        "continue",
+        "else",
+        "false",
+        "for",
+        "foreign",
+        "if",
+        "import",
+        "in",
+        "is",
+        "null",
+        "return",
+        "static",
+        "super",
+        "this",
+        "true",
+        "var",
+        "while",
+        "as",
+        "abstract",
+        "final",
+        "get",
+        "set",
+        "new"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "Bool",
+        "Class",
+        "Fiber",
+        "Fn",
+        "List",
+        "Map",
+        "Null",
+        "Num",
+        "Object",
+        "Range",
+        "Sequence",
+        "String",
+        "System"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "System",
+        "Fiber",
+        "write",
+        "print",
+        "clock",
+        "gc"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "class",
+      "insert": "class  {\n  construct new() {\n    \n  }\n}",
+      "detail": "class"
+    },
+    {
+      "label": "var",
+      "insert": "var  = ",
+      "detail": "var"
+    },
+    {
+      "label": "System.print",
+      "insert": "System.print()",
+      "detail": "print"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "construct",
+      "insert": "construct",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "for",
+      "insert": "for",
+      "detail": "keyword"
+    },
+    {
+      "label": "foreign",
+      "insert": "foreign",
+      "detail": "keyword"
+    },
+    {
+      "label": "if",
+      "insert": "if",
+      "detail": "keyword"
+    },
+    {
+      "label": "import",
+      "insert": "import",
+      "detail": "keyword"
+    },
+    {
+      "label": "in",
+      "insert": "in",
+      "detail": "keyword"
+    },
+    {
+      "label": "is",
+      "insert": "is",
+      "detail": "keyword"
+    },
+    {
+      "label": "null",
+      "insert": "null",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "static",
+      "insert": "static",
+      "detail": "keyword"
+    },
+    {
+      "label": "super",
+      "insert": "super",
+      "detail": "keyword"
+    },
+    {
+      "label": "this",
+      "insert": "this",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "as",
+      "insert": "as",
+      "detail": "keyword"
+    },
+    {
+      "label": "abstract",
+      "insert": "abstract",
+      "detail": "keyword"
+    },
+    {
+      "label": "final",
+      "insert": "final",
+      "detail": "keyword"
+    },
+    {
+      "label": "get",
+      "insert": "get",
+      "detail": "keyword"
+    },
+    {
+      "label": "set",
+      "insert": "set",
+      "detail": "keyword"
+    },
+    {
+      "label": "new",
+      "insert": "new",
+      "detail": "keyword"
+    },
+    {
+      "label": "Bool",
+      "insert": "Bool",
+      "detail": "type"
+    },
+    {
+      "label": "Class",
+      "insert": "Class",
+      "detail": "type"
+    },
+    {
+      "label": "Fiber",
+      "insert": "Fiber",
+      "detail": "type"
+    },
+    {
+      "label": "Fn",
+      "insert": "Fn",
+      "detail": "type"
+    },
+    {
+      "label": "List",
+      "insert": "List",
+      "detail": "type"
+    },
+    {
+      "label": "Map",
+      "insert": "Map",
+      "detail": "type"
+    },
+    {
+      "label": "Null",
+      "insert": "Null",
+      "detail": "type"
+    },
+    {
+      "label": "Num",
+      "insert": "Num",
+      "detail": "type"
+    },
+    {
+      "label": "Object",
+      "insert": "Object",
+      "detail": "type"
+    },
+    {
+      "label": "Range",
+      "insert": "Range",
+      "detail": "type"
+    },
+    {
+      "label": "Sequence",
+      "insert": "Sequence",
+      "detail": "type"
+    },
+    {
+      "label": "String",
+      "insert": "String",
+      "detail": "type"
+    },
+    {
+      "label": "System",
+      "insert": "System",
+      "detail": "type"
+    },
+    {
+      "label": "write",
+      "insert": "write",
+      "detail": "builtin"
+    },
+    {
+      "label": "print",
+      "insert": "print",
+      "detail": "builtin"
+    },
+    {
+      "label": "clock",
+      "insert": "clock",
+      "detail": "builtin"
+    },
+    {
+      "label": "gc",
+      "insert": "gc",
+      "detail": "builtin"
+    }
+  ]
+}

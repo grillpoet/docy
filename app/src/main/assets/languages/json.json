@@ -1,0 +1,64 @@
+{
+  "name": "JSON",
+  "extensions": [
+    "json"
+  ],
+  "indent": 2,
+  "linter": "json",
+  "operators": [],
+  "punctuation": ":,",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": null,
+  "blockComment": [],
+  "quotes": [
+    "\""
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\""
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "-?\\b\\d+(\\.\\d+)?([eE][+-]?\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "true",
+        "false",
+        "null"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "null",
+      "insert": "null",
+      "detail": "keyword"
+    }
+  ]
+}

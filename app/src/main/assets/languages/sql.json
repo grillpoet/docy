@@ -1,0 +1,928 @@
+{
+  "name": "SQL",
+  "extensions": [
+    "sql"
+  ],
+  "indent": 2,
+  "operators": [
+    "=",
+    "<>",
+    "!=",
+    "<=",
+    ">=",
+    "<",
+    ">",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "||"
+  ],
+  "punctuation": "()[],.;",
+  "brackets": [
+    [
+      "(",
+      ")"
+    ]
+  ],
+  "lineComment": "--",
+  "blockComment": [
+    "/*",
+    "*/"
+  ],
+  "quotes": [
+    "'",
+    "\"",
+    "`"
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "--"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "'",
+        "\"",
+        "`"
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "SELECT",
+        "FROM",
+        "WHERE",
+        "INSERT",
+        "INTO",
+        "VALUES",
+        "UPDATE",
+        "SET",
+        "DELETE",
+        "CREATE",
+        "ALTER",
+        "DROP",
+        "TABLE",
+        "INDEX",
+        "VIEW",
+        "DATABASE",
+        "SCHEMA",
+        "JOIN",
+        "INNER",
+        "LEFT",
+        "RIGHT",
+        "FULL",
+        "OUTER",
+        "ON",
+        "USING",
+        "CROSS",
+        "GROUP",
+        "BY",
+        "ORDER",
+        "HAVING",
+        "LIMIT",
+        "OFFSET",
+        "UNION",
+        "ALL",
+        "DISTINCT",
+        "AS",
+        "AND",
+        "OR",
+        "NOT",
+        "IN",
+        "EXISTS",
+        "BETWEEN",
+        "LIKE",
+        "IS",
+        "NULL",
+        "PRIMARY",
+        "FOREIGN",
+        "KEY",
+        "REFERENCES",
+        "UNIQUE",
+        "DEFAULT",
+        "CHECK",
+        "CASCADE",
+        "RESTRICT",
+        "CONSTRAINT",
+        "CASE",
+        "WHEN",
+        "THEN",
+        "ELSE",
+        "END",
+        "BEGIN",
+        "COMMIT",
+        "ROLLBACK",
+        "TRANSACTION",
+        "GRANT",
+        "REVOKE",
+        "select",
+        "from",
+        "where",
+        "insert",
+        "into",
+        "values",
+        "update",
+        "set",
+        "delete",
+        "create",
+        "alter",
+        "drop",
+        "table",
+        "index",
+        "view",
+        "join",
+        "group",
+        "by",
+        "order"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "INT",
+        "INTEGER",
+        "BIGINT",
+        "SMALLINT",
+        "TINYINT",
+        "DECIMAL",
+        "NUMERIC",
+        "FLOAT",
+        "REAL",
+        "DOUBLE",
+        "CHAR",
+        "VARCHAR",
+        "TEXT",
+        "BLOB",
+        "DATE",
+        "TIME",
+        "DATETIME",
+        "TIMESTAMP",
+        "BOOLEAN",
+        "SERIAL",
+        "UUID",
+        "JSON",
+        "JSONB"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "COUNT",
+        "SUM",
+        "AVG",
+        "MIN",
+        "MAX",
+        "COALESCE",
+        "NULLIF",
+        "CAST",
+        "CONVERT",
+        "CONCAT",
+        "SUBSTRING",
+        "TRIM",
+        "UPPER",
+        "LOWER",
+        "LENGTH",
+        "ROUND",
+        "ABS",
+        "NOW",
+        "CURRENT_DATE",
+        "CURRENT_TIMESTAMP",
+        "EXTRACT",
+        "DATE_TRUNC",
+        "GROUP_CONCAT",
+        "STRING_AGG",
+        "ARRAY_AGG",
+        "ROW_NUMBER",
+        "RANK",
+        "DENSE_RANK",
+        "LEAD",
+        "LAG",
+        "FIRST_VALUE",
+        "LAST_VALUE"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "SELECT",
+      "insert": "SELECT * FROM  WHERE ;",
+      "detail": "select"
+    },
+    {
+      "label": "INSERT",
+      "insert": "INSERT INTO  (col) VALUES (val);",
+      "detail": "insert"
+    },
+    {
+      "label": "UPDATE",
+      "insert": "UPDATE  SET col = val WHERE ;",
+      "detail": "update"
+    },
+    {
+      "label": "DELETE",
+      "insert": "DELETE FROM  WHERE ;",
+      "detail": "delete"
+    },
+    {
+      "label": "CREATE TABLE",
+      "insert": "CREATE TABLE  (\n  id INT PRIMARY KEY,\n  \n);",
+      "detail": "create table"
+    },
+    {
+      "label": "JOIN",
+      "insert": "JOIN  ON .id = .id",
+      "detail": "join"
+    },
+    {
+      "label": "FROM",
+      "insert": "FROM",
+      "detail": "keyword"
+    },
+    {
+      "label": "WHERE",
+      "insert": "WHERE",
+      "detail": "keyword"
+    },
+    {
+      "label": "INTO",
+      "insert": "INTO",
+      "detail": "keyword"
+    },
+    {
+      "label": "VALUES",
+      "insert": "VALUES",
+      "detail": "keyword"
+    },
+    {
+      "label": "SET",
+      "insert": "SET",
+      "detail": "keyword"
+    },
+    {
+      "label": "CREATE",
+      "insert": "CREATE",
+      "detail": "keyword"
+    },
+    {
+      "label": "ALTER",
+      "insert": "ALTER",
+      "detail": "keyword"
+    },
+    {
+      "label": "DROP",
+      "insert": "DROP",
+      "detail": "keyword"
+    },
+    {
+      "label": "TABLE",
+      "insert": "TABLE",
+      "detail": "keyword"
+    },
+    {
+      "label": "INDEX",
+      "insert": "INDEX",
+      "detail": "keyword"
+    },
+    {
+      "label": "VIEW",
+      "insert": "VIEW",
+      "detail": "keyword"
+    },
+    {
+      "label": "DATABASE",
+      "insert": "DATABASE",
+      "detail": "keyword"
+    },
+    {
+      "label": "SCHEMA",
+      "insert": "SCHEMA",
+      "detail": "keyword"
+    },
+    {
+      "label": "INNER",
+      "insert": "INNER",
+      "detail": "keyword"
+    },
+    {
+      "label": "LEFT",
+      "insert": "LEFT",
+      "detail": "keyword"
+    },
+    {
+      "label": "RIGHT",
+      "insert": "RIGHT",
+      "detail": "keyword"
+    },
+    {
+      "label": "FULL",
+      "insert": "FULL",
+      "detail": "keyword"
+    },
+    {
+      "label": "OUTER",
+      "insert": "OUTER",
+      "detail": "keyword"
+    },
+    {
+      "label": "ON",
+      "insert": "ON",
+      "detail": "keyword"
+    },
+    {
+      "label": "USING",
+      "insert": "USING",
+      "detail": "keyword"
+    },
+    {
+      "label": "CROSS",
+      "insert": "CROSS",
+      "detail": "keyword"
+    },
+    {
+      "label": "GROUP",
+      "insert": "GROUP",
+      "detail": "keyword"
+    },
+    {
+      "label": "BY",
+      "insert": "BY",
+      "detail": "keyword"
+    },
+    {
+      "label": "ORDER",
+      "insert": "ORDER",
+      "detail": "keyword"
+    },
+    {
+      "label": "HAVING",
+      "insert": "HAVING",
+      "detail": "keyword"
+    },
+    {
+      "label": "LIMIT",
+      "insert": "LIMIT",
+      "detail": "keyword"
+    },
+    {
+      "label": "OFFSET",
+      "insert": "OFFSET",
+      "detail": "keyword"
+    },
+    {
+      "label": "UNION",
+      "insert": "UNION",
+      "detail": "keyword"
+    },
+    {
+      "label": "ALL",
+      "insert": "ALL",
+      "detail": "keyword"
+    },
+    {
+      "label": "DISTINCT",
+      "insert": "DISTINCT",
+      "detail": "keyword"
+    },
+    {
+      "label": "AS",
+      "insert": "AS",
+      "detail": "keyword"
+    },
+    {
+      "label": "AND",
+      "insert": "AND",
+      "detail": "keyword"
+    },
+    {
+      "label": "OR",
+      "insert": "OR",
+      "detail": "keyword"
+    },
+    {
+      "label": "NOT",
+      "insert": "NOT",
+      "detail": "keyword"
+    },
+    {
+      "label": "IN",
+      "insert": "IN",
+      "detail": "keyword"
+    },
+    {
+      "label": "EXISTS",
+      "insert": "EXISTS",
+      "detail": "keyword"
+    },
+    {
+      "label": "BETWEEN",
+      "insert": "BETWEEN",
+      "detail": "keyword"
+    },
+    {
+      "label": "LIKE",
+      "insert": "LIKE",
+      "detail": "keyword"
+    },
+    {
+      "label": "IS",
+      "insert": "IS",
+      "detail": "keyword"
+    },
+    {
+      "label": "NULL",
+      "insert": "NULL",
+      "detail": "keyword"
+    },
+    {
+      "label": "PRIMARY",
+      "insert": "PRIMARY",
+      "detail": "keyword"
+    },
+    {
+      "label": "FOREIGN",
+      "insert": "FOREIGN",
+      "detail": "keyword"
+    },
+    {
+      "label": "KEY",
+      "insert": "KEY",
+      "detail": "keyword"
+    },
+    {
+      "label": "REFERENCES",
+      "insert": "REFERENCES",
+      "detail": "keyword"
+    },
+    {
+      "label": "UNIQUE",
+      "insert": "UNIQUE",
+      "detail": "keyword"
+    },
+    {
+      "label": "DEFAULT",
+      "insert": "DEFAULT",
+      "detail": "keyword"
+    },
+    {
+      "label": "CHECK",
+      "insert": "CHECK",
+      "detail": "keyword"
+    },
+    {
+      "label": "CASCADE",
+      "insert": "CASCADE",
+      "detail": "keyword"
+    },
+    {
+      "label": "RESTRICT",
+      "insert": "RESTRICT",
+      "detail": "keyword"
+    },
+    {
+      "label": "CONSTRAINT",
+      "insert": "CONSTRAINT",
+      "detail": "keyword"
+    },
+    {
+      "label": "CASE",
+      "insert": "CASE",
+      "detail": "keyword"
+    },
+    {
+      "label": "WHEN",
+      "insert": "WHEN",
+      "detail": "keyword"
+    },
+    {
+      "label": "THEN",
+      "insert": "THEN",
+      "detail": "keyword"
+    },
+    {
+      "label": "ELSE",
+      "insert": "ELSE",
+      "detail": "keyword"
+    },
+    {
+      "label": "END",
+      "insert": "END",
+      "detail": "keyword"
+    },
+    {
+      "label": "BEGIN",
+      "insert": "BEGIN",
+      "detail": "keyword"
+    },
+    {
+      "label": "COMMIT",
+      "insert": "COMMIT",
+      "detail": "keyword"
+    },
+    {
+      "label": "ROLLBACK",
+      "insert": "ROLLBACK",
+      "detail": "keyword"
+    },
+    {
+      "label": "TRANSACTION",
+      "insert": "TRANSACTION",
+      "detail": "keyword"
+    },
+    {
+      "label": "GRANT",
+      "insert": "GRANT",
+      "detail": "keyword"
+    },
+    {
+      "label": "REVOKE",
+      "insert": "REVOKE",
+      "detail": "keyword"
+    },
+    {
+      "label": "select",
+      "insert": "select",
+      "detail": "keyword"
+    },
+    {
+      "label": "from",
+      "insert": "from",
+      "detail": "keyword"
+    },
+    {
+      "label": "where",
+      "insert": "where",
+      "detail": "keyword"
+    },
+    {
+      "label": "insert",
+      "insert": "insert",
+      "detail": "keyword"
+    },
+    {
+      "label": "into",
+      "insert": "into",
+      "detail": "keyword"
+    },
+    {
+      "label": "values",
+      "insert": "values",
+      "detail": "keyword"
+    },
+    {
+      "label": "update",
+      "insert": "update",
+      "detail": "keyword"
+    },
+    {
+      "label": "set",
+      "insert": "set",
+      "detail": "keyword"
+    },
+    {
+      "label": "delete",
+      "insert": "delete",
+      "detail": "keyword"
+    },
+    {
+      "label": "create",
+      "insert": "create",
+      "detail": "keyword"
+    },
+    {
+      "label": "alter",
+      "insert": "alter",
+      "detail": "keyword"
+    },
+    {
+      "label": "drop",
+      "insert": "drop",
+      "detail": "keyword"
+    },
+    {
+      "label": "table",
+      "insert": "table",
+      "detail": "keyword"
+    },
+    {
+      "label": "index",
+      "insert": "index",
+      "detail": "keyword"
+    },
+    {
+      "label": "view",
+      "insert": "view",
+      "detail": "keyword"
+    },
+    {
+      "label": "join",
+      "insert": "join",
+      "detail": "keyword"
+    },
+    {
+      "label": "group",
+      "insert": "group",
+      "detail": "keyword"
+    },
+    {
+      "label": "by",
+      "insert": "by",
+      "detail": "keyword"
+    },
+    {
+      "label": "order",
+      "insert": "order",
+      "detail": "keyword"
+    },
+    {
+      "label": "INT",
+      "insert": "INT",
+      "detail": "type"
+    },
+    {
+      "label": "INTEGER",
+      "insert": "INTEGER",
+      "detail": "type"
+    },
+    {
+      "label": "BIGINT",
+      "insert": "BIGINT",
+      "detail": "type"
+    },
+    {
+      "label": "SMALLINT",
+      "insert": "SMALLINT",
+      "detail": "type"
+    },
+    {
+      "label": "TINYINT",
+      "insert": "TINYINT",
+      "detail": "type"
+    },
+    {
+      "label": "DECIMAL",
+      "insert": "DECIMAL",
+      "detail": "type"
+    },
+    {
+      "label": "NUMERIC",
+      "insert": "NUMERIC",
+      "detail": "type"
+    },
+    {
+      "label": "FLOAT",
+      "insert": "FLOAT",
+      "detail": "type"
+    },
+    {
+      "label": "REAL",
+      "insert": "REAL",
+      "detail": "type"
+    },
+    {
+      "label": "DOUBLE",
+      "insert": "DOUBLE",
+      "detail": "type"
+    },
+    {
+      "label": "CHAR",
+      "insert": "CHAR",
+      "detail": "type"
+    },
+    {
+      "label": "VARCHAR",
+      "insert": "VARCHAR",
+      "detail": "type"
+    },
+    {
+      "label": "TEXT",
+      "insert": "TEXT",
+      "detail": "type"
+    },
+    {
+      "label": "BLOB",
+      "insert": "BLOB",
+      "detail": "type"
+    },
+    {
+      "label": "DATE",
+      "insert": "DATE",
+      "detail": "type"
+    },
+    {
+      "label": "TIME",
+      "insert": "TIME",
+      "detail": "type"
+    },
+    {
+      "label": "DATETIME",
+      "insert": "DATETIME",
+      "detail": "type"
+    },
+    {
+      "label": "TIMESTAMP",
+      "insert": "TIMESTAMP",
+      "detail": "type"
+    },
+    {
+      "label": "BOOLEAN",
+      "insert": "BOOLEAN",
+      "detail": "type"
+    },
+    {
+      "label": "SERIAL",
+      "insert": "SERIAL",
+      "detail": "type"
+    },
+    {
+      "label": "UUID",
+      "insert": "UUID",
+      "detail": "type"
+    },
+    {
+      "label": "JSON",
+      "insert": "JSON",
+      "detail": "type"
+    },
+    {
+      "label": "JSONB",
+      "insert": "JSONB",
+      "detail": "type"
+    },
+    {
+      "label": "COUNT",
+      "insert": "COUNT",
+      "detail": "builtin"
+    },
+    {
+      "label": "SUM",
+      "insert": "SUM",
+      "detail": "builtin"
+    },
+    {
+      "label": "AVG",
+      "insert": "AVG",
+      "detail": "builtin"
+    },
+    {
+      "label": "MIN",
+      "insert": "MIN",
+      "detail": "builtin"
+    },
+    {
+      "label": "MAX",
+      "insert": "MAX",
+      "detail": "builtin"
+    },
+    {
+      "label": "COALESCE",
+      "insert": "COALESCE",
+      "detail": "builtin"
+    },
+    {
+      "label": "NULLIF",
+      "insert": "NULLIF",
+      "detail": "builtin"
+    },
+    {
+      "label": "CAST",
+      "insert": "CAST",
+      "detail": "builtin"
+    },
+    {
+      "label": "CONVERT",
+      "insert": "CONVERT",
+      "detail": "builtin"
+    },
+    {
+      "label": "CONCAT",
+      "insert": "CONCAT",
+      "detail": "builtin"
+    },
+    {
+      "label": "SUBSTRING",
+      "insert": "SUBSTRING",
+      "detail": "builtin"
+    },
+    {
+      "label": "TRIM",
+      "insert": "TRIM",
+      "detail": "builtin"
+    },
+    {
+      "label": "UPPER",
+      "insert": "UPPER",
+      "detail": "builtin"
+    },
+    {
+      "label": "LOWER",
+      "insert": "LOWER",
+      "detail": "builtin"
+    },
+    {
+      "label": "LENGTH",
+      "insert": "LENGTH",
+      "detail": "builtin"
+    },
+    {
+      "label": "ROUND",
+      "insert": "ROUND",
+      "detail": "builtin"
+    },
+    {
+      "label": "ABS",
+      "insert": "ABS",
+      "detail": "builtin"
+    },
+    {
+      "label": "NOW",
+      "insert": "NOW",
+      "detail": "builtin"
+    },
+    {
+      "label": "CURRENT_DATE",
+      "insert": "CURRENT_DATE",
+      "detail": "builtin"
+    },
+    {
+      "label": "CURRENT_TIMESTAMP",
+      "insert": "CURRENT_TIMESTAMP",
+      "detail": "builtin"
+    },
+    {
+      "label": "EXTRACT",
+      "insert": "EXTRACT",
+      "detail": "builtin"
+    },
+    {
+      "label": "DATE_TRUNC",
+      "insert": "DATE_TRUNC",
+      "detail": "builtin"
+    },
+    {
+      "label": "GROUP_CONCAT",
+      "insert": "GROUP_CONCAT",
+      "detail": "builtin"
+    },
+    {
+      "label": "STRING_AGG",
+      "insert": "STRING_AGG",
+      "detail": "builtin"
+    },
+    {
+      "label": "ARRAY_AGG",
+      "insert": "ARRAY_AGG",
+      "detail": "builtin"
+    },
+    {
+      "label": "ROW_NUMBER",
+      "insert": "ROW_NUMBER",
+      "detail": "builtin"
+    },
+    {
+      "label": "RANK",
+      "insert": "RANK",
+      "detail": "builtin"
+    },
+    {
+      "label": "DENSE_RANK",
+      "insert": "DENSE_RANK",
+      "detail": "builtin"
+    },
+    {
+      "label": "LEAD",
+      "insert": "LEAD",
+      "detail": "builtin"
+    },
+    {
+      "label": "LAG",
+      "insert": "LAG",
+      "detail": "builtin"
+    },
+    {
+      "label": "FIRST_VALUE",
+      "insert": "FIRST_VALUE",
+      "detail": "builtin"
+    },
+    {
+      "label": "LAST_VALUE",
+      "insert": "LAST_VALUE",
+      "detail": "builtin"
+    }
+  ]
+}

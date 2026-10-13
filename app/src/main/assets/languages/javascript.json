@@ -1,0 +1,700 @@
+{
+  "name": "JavaScript",
+  "extensions": [
+    "js",
+    "mjs",
+    "cjs",
+    "jsx"
+  ],
+  "indent": 2,
+  "operators": [
+    "===",
+    "!==",
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "??",
+    "?.",
+    "=>",
+    "++",
+    "--",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "<<=",
+    ">>=",
+    "<<",
+    ">>",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "?",
+    ":",
+    "&",
+    "|",
+    "^",
+    "~",
+    "="
+  ],
+  "punctuation": "()[]{};,.@#",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "//",
+  "blockComment": [
+    "/*",
+    "*/"
+  ],
+  "quotes": [
+    "\"",
+    "'",
+    "`"
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "string",
+      "type": "block",
+      "start": "`",
+      "end": "`"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\"",
+        "'"
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "break",
+        "case",
+        "catch",
+        "class",
+        "const",
+        "continue",
+        "debugger",
+        "default",
+        "delete",
+        "do",
+        "else",
+        "export",
+        "extends",
+        "finally",
+        "for",
+        "function",
+        "if",
+        "import",
+        "in",
+        "instanceof",
+        "let",
+        "new",
+        "of",
+        "return",
+        "static",
+        "super",
+        "switch",
+        "this",
+        "throw",
+        "try",
+        "typeof",
+        "var",
+        "void",
+        "while",
+        "with",
+        "yield",
+        "async",
+        "await",
+        "true",
+        "false",
+        "null",
+        "undefined",
+        "NaN",
+        "Infinity",
+        "globalThis"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "Array",
+        "ArrayBuffer",
+        "BigInt",
+        "Boolean",
+        "DataView",
+        "Date",
+        "Error",
+        "EvalError",
+        "Float32Array",
+        "Float64Array",
+        "Function",
+        "Int8Array",
+        "Int16Array",
+        "Int32Array",
+        "JSON",
+        "Map",
+        "Math",
+        "Number",
+        "Object",
+        "Promise",
+        "Proxy",
+        "RangeError",
+        "ReferenceError",
+        "RegExp",
+        "Set",
+        "String",
+        "Symbol",
+        "SyntaxError",
+        "TypeError",
+        "URIError",
+        "Uint8Array",
+        "Uint16Array",
+        "Uint32Array",
+        "WeakMap",
+        "WeakSet",
+        "Intl",
+        "Reflect"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "console.log",
+        "console.error",
+        "console.warn",
+        "console.info",
+        "console.debug",
+        "document.getElementById",
+        "document.querySelector",
+        "document.querySelectorAll",
+        "document.createElement",
+        "document.write",
+        "window.alert",
+        "window.confirm",
+        "window.prompt",
+        "window.setTimeout",
+        "window.setInterval",
+        "window.clearTimeout",
+        "window.clearInterval",
+        "window.fetch",
+        "JSON.parse",
+        "JSON.stringify",
+        "Object.keys",
+        "Object.values",
+        "Object.entries",
+        "Object.assign",
+        "Array.isArray",
+        "Array.from",
+        "Array.of",
+        "parseInt",
+        "parseFloat",
+        "isNaN",
+        "isFinite",
+        "encodeURIComponent",
+        "decodeURIComponent",
+        "localStorage.getItem",
+        "localStorage.setItem",
+        "sessionStorage.getItem",
+        "sessionStorage.setItem",
+        "Math.abs",
+        "Math.max",
+        "Math.min",
+        "Math.random",
+        "Math.floor",
+        "Math.ceil",
+        "Math.round",
+        "Math.PI"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "function",
+      "insert": "function () {\n  \n}",
+      "detail": "function"
+    },
+    {
+      "label": "const",
+      "insert": "const  = ",
+      "detail": "constant"
+    },
+    {
+      "label": "let",
+      "insert": "let  = ",
+      "detail": "let"
+    },
+    {
+      "label": "arrow",
+      "insert": "() => {\n  \n}",
+      "detail": "arrow function"
+    },
+    {
+      "label": "if",
+      "insert": "if () {\n  \n}",
+      "detail": "if"
+    },
+    {
+      "label": "for",
+      "insert": "for (let i = 0; i < n; i++) {\n  \n}",
+      "detail": "for loop"
+    },
+    {
+      "label": "for-of",
+      "insert": "for (const item of collection) {\n  \n}",
+      "detail": "for-of"
+    },
+    {
+      "label": "try",
+      "insert": "try {\n  \n} catch (e) {\n  console.error(e);\n}",
+      "detail": "try-catch"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "catch",
+      "insert": "catch",
+      "detail": "keyword"
+    },
+    {
+      "label": "class",
+      "insert": "class",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "debugger",
+      "insert": "debugger",
+      "detail": "keyword"
+    },
+    {
+      "label": "default",
+      "insert": "default",
+      "detail": "keyword"
+    },
+    {
+      "label": "delete",
+      "insert": "delete",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "export",
+      "insert": "export",
+      "detail": "keyword"
+    },
+    {
+      "label": "extends",
+      "insert": "extends",
+      "detail": "keyword"
+    },
+    {
+      "label": "finally",
+      "insert": "finally",
+      "detail": "keyword"
+    },
+    {
+      "label": "import",
+      "insert": "import",
+      "detail": "keyword"
+    },
+    {
+      "label": "in",
+      "insert": "in",
+      "detail": "keyword"
+    },
+    {
+      "label": "instanceof",
+      "insert": "instanceof",
+      "detail": "keyword"
+    },
+    {
+      "label": "new",
+      "insert": "new",
+      "detail": "keyword"
+    },
+    {
+      "label": "of",
+      "insert": "of",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "static",
+      "insert": "static",
+      "detail": "keyword"
+    },
+    {
+      "label": "super",
+      "insert": "super",
+      "detail": "keyword"
+    },
+    {
+      "label": "switch",
+      "insert": "switch",
+      "detail": "keyword"
+    },
+    {
+      "label": "this",
+      "insert": "this",
+      "detail": "keyword"
+    },
+    {
+      "label": "throw",
+      "insert": "throw",
+      "detail": "keyword"
+    },
+    {
+      "label": "typeof",
+      "insert": "typeof",
+      "detail": "keyword"
+    },
+    {
+      "label": "var",
+      "insert": "var",
+      "detail": "keyword"
+    },
+    {
+      "label": "void",
+      "insert": "void",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "with",
+      "insert": "with",
+      "detail": "keyword"
+    },
+    {
+      "label": "yield",
+      "insert": "yield",
+      "detail": "keyword"
+    },
+    {
+      "label": "async",
+      "insert": "async",
+      "detail": "keyword"
+    },
+    {
+      "label": "await",
+      "insert": "await",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "null",
+      "insert": "null",
+      "detail": "keyword"
+    },
+    {
+      "label": "undefined",
+      "insert": "undefined",
+      "detail": "keyword"
+    },
+    {
+      "label": "NaN",
+      "insert": "NaN",
+      "detail": "keyword"
+    },
+    {
+      "label": "Infinity",
+      "insert": "Infinity",
+      "detail": "keyword"
+    },
+    {
+      "label": "globalThis",
+      "insert": "globalThis",
+      "detail": "keyword"
+    },
+    {
+      "label": "Array",
+      "insert": "Array",
+      "detail": "type"
+    },
+    {
+      "label": "ArrayBuffer",
+      "insert": "ArrayBuffer",
+      "detail": "type"
+    },
+    {
+      "label": "BigInt",
+      "insert": "BigInt",
+      "detail": "type"
+    },
+    {
+      "label": "Boolean",
+      "insert": "Boolean",
+      "detail": "type"
+    },
+    {
+      "label": "DataView",
+      "insert": "DataView",
+      "detail": "type"
+    },
+    {
+      "label": "Date",
+      "insert": "Date",
+      "detail": "type"
+    },
+    {
+      "label": "Error",
+      "insert": "Error",
+      "detail": "type"
+    },
+    {
+      "label": "EvalError",
+      "insert": "EvalError",
+      "detail": "type"
+    },
+    {
+      "label": "Float32Array",
+      "insert": "Float32Array",
+      "detail": "type"
+    },
+    {
+      "label": "Float64Array",
+      "insert": "Float64Array",
+      "detail": "type"
+    },
+    {
+      "label": "Function",
+      "insert": "Function",
+      "detail": "type"
+    },
+    {
+      "label": "Int8Array",
+      "insert": "Int8Array",
+      "detail": "type"
+    },
+    {
+      "label": "Int16Array",
+      "insert": "Int16Array",
+      "detail": "type"
+    },
+    {
+      "label": "Int32Array",
+      "insert": "Int32Array",
+      "detail": "type"
+    },
+    {
+      "label": "JSON",
+      "insert": "JSON",
+      "detail": "type"
+    },
+    {
+      "label": "Map",
+      "insert": "Map",
+      "detail": "type"
+    },
+    {
+      "label": "Math",
+      "insert": "Math",
+      "detail": "type"
+    },
+    {
+      "label": "Number",
+      "insert": "Number",
+      "detail": "type"
+    },
+    {
+      "label": "Object",
+      "insert": "Object",
+      "detail": "type"
+    },
+    {
+      "label": "Promise",
+      "insert": "Promise",
+      "detail": "type"
+    },
+    {
+      "label": "Proxy",
+      "insert": "Proxy",
+      "detail": "type"
+    },
+    {
+      "label": "RangeError",
+      "insert": "RangeError",
+      "detail": "type"
+    },
+    {
+      "label": "ReferenceError",
+      "insert": "ReferenceError",
+      "detail": "type"
+    },
+    {
+      "label": "RegExp",
+      "insert": "RegExp",
+      "detail": "type"
+    },
+    {
+      "label": "Set",
+      "insert": "Set",
+      "detail": "type"
+    },
+    {
+      "label": "String",
+      "insert": "String",
+      "detail": "type"
+    },
+    {
+      "label": "Symbol",
+      "insert": "Symbol",
+      "detail": "type"
+    },
+    {
+      "label": "SyntaxError",
+      "insert": "SyntaxError",
+      "detail": "type"
+    },
+    {
+      "label": "TypeError",
+      "insert": "TypeError",
+      "detail": "type"
+    },
+    {
+      "label": "URIError",
+      "insert": "URIError",
+      "detail": "type"
+    },
+    {
+      "label": "Uint8Array",
+      "insert": "Uint8Array",
+      "detail": "type"
+    },
+    {
+      "label": "Uint16Array",
+      "insert": "Uint16Array",
+      "detail": "type"
+    },
+    {
+      "label": "Uint32Array",
+      "insert": "Uint32Array",
+      "detail": "type"
+    },
+    {
+      "label": "WeakMap",
+      "insert": "WeakMap",
+      "detail": "type"
+    },
+    {
+      "label": "WeakSet",
+      "insert": "WeakSet",
+      "detail": "type"
+    },
+    {
+      "label": "Intl",
+      "insert": "Intl",
+      "detail": "type"
+    },
+    {
+      "label": "Reflect",
+      "insert": "Reflect",
+      "detail": "type"
+    },
+    {
+      "label": "parseInt",
+      "insert": "parseInt",
+      "detail": "builtin"
+    },
+    {
+      "label": "parseFloat",
+      "insert": "parseFloat",
+      "detail": "builtin"
+    },
+    {
+      "label": "isNaN",
+      "insert": "isNaN",
+      "detail": "builtin"
+    },
+    {
+      "label": "isFinite",
+      "insert": "isFinite",
+      "detail": "builtin"
+    },
+    {
+      "label": "encodeURIComponent",
+      "insert": "encodeURIComponent",
+      "detail": "builtin"
+    },
+    {
+      "label": "decodeURIComponent",
+      "insert": "decodeURIComponent",
+      "detail": "builtin"
+    }
+  ]
+}

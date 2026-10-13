@@ -1,0 +1,31 @@
+{
+  "name": "Kotlin",
+  "extensions": ["kt", "kts"],
+  "indent": 4,
+  "rules": [
+    { "kind": "comment", "type": "block", "start": "/*", "end": "*/" },
+    { "kind": "comment", "type": "line",  "start": "//" },
+    { "kind": "string",  "type": "quote", "quotes": ["\""] },
+    { "kind": "number",  "regex": "\\b\\d+(\\.\\d+)?[fFlLdD]?\\b" },
+    { "kind": "keyword", "words": [
+      "abstract","actual","annotation","as","break","by","catch","class",
+      "companion","const","constructor","continue","crossinline","data",
+      "do","else","enum","expect","external","final","finally","for","fun",
+      "get","if","import","in","infix","init","inline","inner","interface",
+      "internal","is","lateinit","noinline","object","open","operator","out",
+      "override","package","private","protected","public","reified","return",
+      "sealed","set","super","suspend","tailrec","this","throw","try","typealias",
+      "val","var","vararg","when","where","while","true","false","null"
+    ]},
+    { "kind": "type", "words": [
+      "Int","Long","Short","Byte","Float","Double","Boolean","Char","String",
+      "Unit","Any","Nothing","List","MutableList","Map","MutableMap","Set",
+      "MutableSet","Array","Pair","Triple","Result","Sequence","Flow","StateFlow"
+    ]}
+  ],
+  "completions": [
+    { "label": "fun", "insert": "fun ", "detail": "function" },
+    { "label": "val", "insert": "val ", "detail": "read-only" },
+    { "label": "var", "insert": "var ", "detail": "mutable" }
+  ]
+}

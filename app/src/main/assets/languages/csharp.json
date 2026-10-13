@@ -1,0 +1,770 @@
+{
+  "name": "C#",
+  "extensions": [
+    "cs"
+  ],
+  "indent": 4,
+  "operators": [
+    "=",
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "++",
+    "--",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "??",
+    "?.",
+    "=>",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "?",
+    ":",
+    "&",
+    "|",
+    "^",
+    "~"
+  ],
+  "punctuation": "()[]{};,.@",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "//",
+  "blockComment": [
+    "/*",
+    "*/"
+  ],
+  "quotes": [
+    "\""
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\""
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?[fFdDmMlLuU]?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "abstract",
+        "as",
+        "async",
+        "await",
+        "base",
+        "break",
+        "case",
+        "catch",
+        "checked",
+        "class",
+        "const",
+        "continue",
+        "default",
+        "delegate",
+        "do",
+        "else",
+        "enum",
+        "event",
+        "explicit",
+        "extern",
+        "false",
+        "finally",
+        "fixed",
+        "for",
+        "foreach",
+        "goto",
+        "if",
+        "implicit",
+        "in",
+        "interface",
+        "internal",
+        "is",
+        "lock",
+        "namespace",
+        "new",
+        "null",
+        "operator",
+        "out",
+        "override",
+        "params",
+        "private",
+        "protected",
+        "public",
+        "readonly",
+        "ref",
+        "return",
+        "sealed",
+        "sizeof",
+        "stackalloc",
+        "static",
+        "struct",
+        "switch",
+        "this",
+        "throw",
+        "true",
+        "try",
+        "typeof",
+        "unchecked",
+        "unsafe",
+        "using",
+        "var",
+        "virtual",
+        "void",
+        "volatile",
+        "while",
+        "yield"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "bool",
+        "byte",
+        "char",
+        "decimal",
+        "double",
+        "float",
+        "int",
+        "long",
+        "object",
+        "sbyte",
+        "short",
+        "string",
+        "uint",
+        "ulong",
+        "ushort",
+        "Boolean",
+        "Byte",
+        "Char",
+        "Decimal",
+        "Double",
+        "Int16",
+        "Int32",
+        "Int64",
+        "Object",
+        "String",
+        "UInt16",
+        "UInt32",
+        "UInt64",
+        "List",
+        "Dictionary",
+        "IEnumerable",
+        "Task",
+        "Action",
+        "Func"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "Console",
+        "WriteLine",
+        "ReadLine",
+        "Math",
+        "String",
+        "Enumerable",
+        "Linq",
+        "Exception",
+        "Debug",
+        "Environment"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "static void Main",
+      "insert": "static void Main(string[] args) {\n    \n}",
+      "detail": "Main"
+    },
+    {
+      "label": "Console.WriteLine",
+      "insert": "Console.WriteLine();",
+      "detail": "WriteLine"
+    },
+    {
+      "label": "foreach",
+      "insert": "foreach (var x in xs) {\n    \n}",
+      "detail": "foreach"
+    },
+    {
+      "label": "abstract",
+      "insert": "abstract",
+      "detail": "keyword"
+    },
+    {
+      "label": "as",
+      "insert": "as",
+      "detail": "keyword"
+    },
+    {
+      "label": "async",
+      "insert": "async",
+      "detail": "keyword"
+    },
+    {
+      "label": "await",
+      "insert": "await",
+      "detail": "keyword"
+    },
+    {
+      "label": "base",
+      "insert": "base",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "catch",
+      "insert": "catch",
+      "detail": "keyword"
+    },
+    {
+      "label": "checked",
+      "insert": "checked",
+      "detail": "keyword"
+    },
+    {
+      "label": "class",
+      "insert": "class",
+      "detail": "keyword"
+    },
+    {
+      "label": "const",
+      "insert": "const",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "default",
+      "insert": "default",
+      "detail": "keyword"
+    },
+    {
+      "label": "delegate",
+      "insert": "delegate",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "enum",
+      "insert": "enum",
+      "detail": "keyword"
+    },
+    {
+      "label": "event",
+      "insert": "event",
+      "detail": "keyword"
+    },
+    {
+      "label": "explicit",
+      "insert": "explicit",
+      "detail": "keyword"
+    },
+    {
+      "label": "extern",
+      "insert": "extern",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "finally",
+      "insert": "finally",
+      "detail": "keyword"
+    },
+    {
+      "label": "fixed",
+      "insert": "fixed",
+      "detail": "keyword"
+    },
+    {
+      "label": "for",
+      "insert": "for",
+      "detail": "keyword"
+    },
+    {
+      "label": "goto",
+      "insert": "goto",
+      "detail": "keyword"
+    },
+    {
+      "label": "if",
+      "insert": "if",
+      "detail": "keyword"
+    },
+    {
+      "label": "implicit",
+      "insert": "implicit",
+      "detail": "keyword"
+    },
+    {
+      "label": "in",
+      "insert": "in",
+      "detail": "keyword"
+    },
+    {
+      "label": "interface",
+      "insert": "interface",
+      "detail": "keyword"
+    },
+    {
+      "label": "internal",
+      "insert": "internal",
+      "detail": "keyword"
+    },
+    {
+      "label": "is",
+      "insert": "is",
+      "detail": "keyword"
+    },
+    {
+      "label": "lock",
+      "insert": "lock",
+      "detail": "keyword"
+    },
+    {
+      "label": "namespace",
+      "insert": "namespace",
+      "detail": "keyword"
+    },
+    {
+      "label": "new",
+      "insert": "new",
+      "detail": "keyword"
+    },
+    {
+      "label": "null",
+      "insert": "null",
+      "detail": "keyword"
+    },
+    {
+      "label": "operator",
+      "insert": "operator",
+      "detail": "keyword"
+    },
+    {
+      "label": "out",
+      "insert": "out",
+      "detail": "keyword"
+    },
+    {
+      "label": "override",
+      "insert": "override",
+      "detail": "keyword"
+    },
+    {
+      "label": "params",
+      "insert": "params",
+      "detail": "keyword"
+    },
+    {
+      "label": "private",
+      "insert": "private",
+      "detail": "keyword"
+    },
+    {
+      "label": "protected",
+      "insert": "protected",
+      "detail": "keyword"
+    },
+    {
+      "label": "public",
+      "insert": "public",
+      "detail": "keyword"
+    },
+    {
+      "label": "readonly",
+      "insert": "readonly",
+      "detail": "keyword"
+    },
+    {
+      "label": "ref",
+      "insert": "ref",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "sealed",
+      "insert": "sealed",
+      "detail": "keyword"
+    },
+    {
+      "label": "sizeof",
+      "insert": "sizeof",
+      "detail": "keyword"
+    },
+    {
+      "label": "stackalloc",
+      "insert": "stackalloc",
+      "detail": "keyword"
+    },
+    {
+      "label": "static",
+      "insert": "static",
+      "detail": "keyword"
+    },
+    {
+      "label": "struct",
+      "insert": "struct",
+      "detail": "keyword"
+    },
+    {
+      "label": "switch",
+      "insert": "switch",
+      "detail": "keyword"
+    },
+    {
+      "label": "this",
+      "insert": "this",
+      "detail": "keyword"
+    },
+    {
+      "label": "throw",
+      "insert": "throw",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "try",
+      "insert": "try",
+      "detail": "keyword"
+    },
+    {
+      "label": "typeof",
+      "insert": "typeof",
+      "detail": "keyword"
+    },
+    {
+      "label": "unchecked",
+      "insert": "unchecked",
+      "detail": "keyword"
+    },
+    {
+      "label": "unsafe",
+      "insert": "unsafe",
+      "detail": "keyword"
+    },
+    {
+      "label": "using",
+      "insert": "using",
+      "detail": "keyword"
+    },
+    {
+      "label": "var",
+      "insert": "var",
+      "detail": "keyword"
+    },
+    {
+      "label": "virtual",
+      "insert": "virtual",
+      "detail": "keyword"
+    },
+    {
+      "label": "void",
+      "insert": "void",
+      "detail": "keyword"
+    },
+    {
+      "label": "volatile",
+      "insert": "volatile",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "yield",
+      "insert": "yield",
+      "detail": "keyword"
+    },
+    {
+      "label": "bool",
+      "insert": "bool",
+      "detail": "type"
+    },
+    {
+      "label": "byte",
+      "insert": "byte",
+      "detail": "type"
+    },
+    {
+      "label": "char",
+      "insert": "char",
+      "detail": "type"
+    },
+    {
+      "label": "decimal",
+      "insert": "decimal",
+      "detail": "type"
+    },
+    {
+      "label": "double",
+      "insert": "double",
+      "detail": "type"
+    },
+    {
+      "label": "float",
+      "insert": "float",
+      "detail": "type"
+    },
+    {
+      "label": "int",
+      "insert": "int",
+      "detail": "type"
+    },
+    {
+      "label": "long",
+      "insert": "long",
+      "detail": "type"
+    },
+    {
+      "label": "object",
+      "insert": "object",
+      "detail": "type"
+    },
+    {
+      "label": "sbyte",
+      "insert": "sbyte",
+      "detail": "type"
+    },
+    {
+      "label": "short",
+      "insert": "short",
+      "detail": "type"
+    },
+    {
+      "label": "string",
+      "insert": "string",
+      "detail": "type"
+    },
+    {
+      "label": "uint",
+      "insert": "uint",
+      "detail": "type"
+    },
+    {
+      "label": "ulong",
+      "insert": "ulong",
+      "detail": "type"
+    },
+    {
+      "label": "ushort",
+      "insert": "ushort",
+      "detail": "type"
+    },
+    {
+      "label": "Boolean",
+      "insert": "Boolean",
+      "detail": "type"
+    },
+    {
+      "label": "Byte",
+      "insert": "Byte",
+      "detail": "type"
+    },
+    {
+      "label": "Char",
+      "insert": "Char",
+      "detail": "type"
+    },
+    {
+      "label": "Decimal",
+      "insert": "Decimal",
+      "detail": "type"
+    },
+    {
+      "label": "Double",
+      "insert": "Double",
+      "detail": "type"
+    },
+    {
+      "label": "Int16",
+      "insert": "Int16",
+      "detail": "type"
+    },
+    {
+      "label": "Int32",
+      "insert": "Int32",
+      "detail": "type"
+    },
+    {
+      "label": "Int64",
+      "insert": "Int64",
+      "detail": "type"
+    },
+    {
+      "label": "Object",
+      "insert": "Object",
+      "detail": "type"
+    },
+    {
+      "label": "String",
+      "insert": "String",
+      "detail": "type"
+    },
+    {
+      "label": "UInt16",
+      "insert": "UInt16",
+      "detail": "type"
+    },
+    {
+      "label": "UInt32",
+      "insert": "UInt32",
+      "detail": "type"
+    },
+    {
+      "label": "UInt64",
+      "insert": "UInt64",
+      "detail": "type"
+    },
+    {
+      "label": "List",
+      "insert": "List",
+      "detail": "type"
+    },
+    {
+      "label": "Dictionary",
+      "insert": "Dictionary",
+      "detail": "type"
+    },
+    {
+      "label": "IEnumerable",
+      "insert": "IEnumerable",
+      "detail": "type"
+    },
+    {
+      "label": "Task",
+      "insert": "Task",
+      "detail": "type"
+    },
+    {
+      "label": "Action",
+      "insert": "Action",
+      "detail": "type"
+    },
+    {
+      "label": "Func",
+      "insert": "Func",
+      "detail": "type"
+    },
+    {
+      "label": "Console",
+      "insert": "Console",
+      "detail": "builtin"
+    },
+    {
+      "label": "WriteLine",
+      "insert": "WriteLine",
+      "detail": "builtin"
+    },
+    {
+      "label": "ReadLine",
+      "insert": "ReadLine",
+      "detail": "builtin"
+    },
+    {
+      "label": "Math",
+      "insert": "Math",
+      "detail": "builtin"
+    },
+    {
+      "label": "Enumerable",
+      "insert": "Enumerable",
+      "detail": "builtin"
+    },
+    {
+      "label": "Linq",
+      "insert": "Linq",
+      "detail": "builtin"
+    },
+    {
+      "label": "Exception",
+      "insert": "Exception",
+      "detail": "builtin"
+    },
+    {
+      "label": "Debug",
+      "insert": "Debug",
+      "detail": "builtin"
+    },
+    {
+      "label": "Environment",
+      "insert": "Environment",
+      "detail": "builtin"
+    }
+  ]
+}

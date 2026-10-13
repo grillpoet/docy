@@ -1,0 +1,1098 @@
+{
+  "name": "PHP",
+  "extensions": [
+    "php"
+  ],
+  "indent": 4,
+  "operators": [
+    "=",
+    "==",
+    "===",
+    "!=",
+    "!==",
+    "<=",
+    ">=",
+    "<=>",
+    "&&",
+    "||",
+    "??",
+    "??=",
+    "->",
+    "=>",
+    "::",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    ".=",
+    "%=",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    ".",
+    "<",
+    ">",
+    "!",
+    "?",
+    ":",
+    "&",
+    "|",
+    "^",
+    "~"
+  ],
+  "punctuation": "()[]{};,.@$",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "//",
+  "blockComment": [
+    "/*",
+    "*/"
+  ],
+  "quotes": [
+    "\"",
+    "'"
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "#"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\"",
+        "'"
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "abstract",
+        "and",
+        "array",
+        "as",
+        "break",
+        "callable",
+        "case",
+        "catch",
+        "class",
+        "clone",
+        "const",
+        "continue",
+        "declare",
+        "default",
+        "do",
+        "echo",
+        "else",
+        "elseif",
+        "empty",
+        "enddeclare",
+        "endfor",
+        "endforeach",
+        "endif",
+        "endswitch",
+        "endwhile",
+        "enum",
+        "extends",
+        "final",
+        "finally",
+        "fn",
+        "for",
+        "foreach",
+        "function",
+        "global",
+        "goto",
+        "if",
+        "implements",
+        "include",
+        "include_once",
+        "instanceof",
+        "insteadof",
+        "interface",
+        "isset",
+        "list",
+        "match",
+        "namespace",
+        "new",
+        "or",
+        "print",
+        "private",
+        "protected",
+        "public",
+        "readonly",
+        "require",
+        "require_once",
+        "return",
+        "static",
+        "switch",
+        "throw",
+        "trait",
+        "try",
+        "unset",
+        "use",
+        "var",
+        "while",
+        "xor",
+        "yield",
+        "true",
+        "false",
+        "null"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "int",
+        "float",
+        "string",
+        "bool",
+        "array",
+        "object",
+        "callable",
+        "iterable",
+        "void",
+        "mixed",
+        "null",
+        "self",
+        "static",
+        "parent"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "strlen",
+        "str_replace",
+        "strpos",
+        "substr",
+        "explode",
+        "implode",
+        "trim",
+        "ltrim",
+        "rtrim",
+        "strtolower",
+        "strtoupper",
+        "ucfirst",
+        "lcfirst",
+        "str_repeat",
+        "str_pad",
+        "str_split",
+        "strrev",
+        "wordwrap",
+        "array_map",
+        "array_filter",
+        "array_reduce",
+        "array_push",
+        "array_pop",
+        "array_shift",
+        "array_unshift",
+        "array_merge",
+        "array_slice",
+        "array_splice",
+        "array_keys",
+        "array_values",
+        "array_search",
+        "in_array",
+        "array_key_exists",
+        "count",
+        "sizeof",
+        "sort",
+        "rsort",
+        "asort",
+        "arsort",
+        "ksort",
+        "krsort",
+        "usort",
+        "uasort",
+        "uksort",
+        "shuffle",
+        "array_rand",
+        "print_r",
+        "var_dump",
+        "var_export",
+        "json_encode",
+        "json_decode",
+        "file_get_contents",
+        "file_put_contents",
+        "fopen",
+        "fclose",
+        "fread",
+        "fwrite",
+        "fgets",
+        "fputs",
+        "file_exists",
+        "is_file",
+        "is_dir",
+        "mkdir",
+        "rmdir",
+        "unlink",
+        "rename",
+        "copy",
+        "scandir",
+        "glob",
+        "preg_match",
+        "preg_match_all",
+        "preg_replace",
+        "preg_split",
+        "date",
+        "time",
+        "strtotime",
+        "mktime",
+        "checkdate",
+        "filter_var",
+        "filter_input",
+        "htmlspecialchars",
+        "strip_tags"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "<?php",
+      "insert": "<?php\n\n",
+      "detail": "php open"
+    },
+    {
+      "label": "function",
+      "insert": "function () {\n    \n}",
+      "detail": "function"
+    },
+    {
+      "label": "echo",
+      "insert": "echo ;",
+      "detail": "echo"
+    },
+    {
+      "label": "foreach",
+      "insert": "foreach ($xs as $x) {\n    \n}",
+      "detail": "foreach"
+    },
+    {
+      "label": "if",
+      "insert": "if () {\n    \n}",
+      "detail": "if"
+    },
+    {
+      "label": "class",
+      "insert": "class  {\n    \n}",
+      "detail": "class"
+    },
+    {
+      "label": "try",
+      "insert": "try {\n    \n} catch (Exception $e) {\n    echo $e->getMessage();\n}",
+      "detail": "try-catch"
+    },
+    {
+      "label": "abstract",
+      "insert": "abstract",
+      "detail": "keyword"
+    },
+    {
+      "label": "and",
+      "insert": "and",
+      "detail": "keyword"
+    },
+    {
+      "label": "array",
+      "insert": "array",
+      "detail": "keyword"
+    },
+    {
+      "label": "as",
+      "insert": "as",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "callable",
+      "insert": "callable",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "catch",
+      "insert": "catch",
+      "detail": "keyword"
+    },
+    {
+      "label": "clone",
+      "insert": "clone",
+      "detail": "keyword"
+    },
+    {
+      "label": "const",
+      "insert": "const",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "declare",
+      "insert": "declare",
+      "detail": "keyword"
+    },
+    {
+      "label": "default",
+      "insert": "default",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "elseif",
+      "insert": "elseif",
+      "detail": "keyword"
+    },
+    {
+      "label": "empty",
+      "insert": "empty",
+      "detail": "keyword"
+    },
+    {
+      "label": "enddeclare",
+      "insert": "enddeclare",
+      "detail": "keyword"
+    },
+    {
+      "label": "endfor",
+      "insert": "endfor",
+      "detail": "keyword"
+    },
+    {
+      "label": "endforeach",
+      "insert": "endforeach",
+      "detail": "keyword"
+    },
+    {
+      "label": "endif",
+      "insert": "endif",
+      "detail": "keyword"
+    },
+    {
+      "label": "endswitch",
+      "insert": "endswitch",
+      "detail": "keyword"
+    },
+    {
+      "label": "endwhile",
+      "insert": "endwhile",
+      "detail": "keyword"
+    },
+    {
+      "label": "enum",
+      "insert": "enum",
+      "detail": "keyword"
+    },
+    {
+      "label": "extends",
+      "insert": "extends",
+      "detail": "keyword"
+    },
+    {
+      "label": "final",
+      "insert": "final",
+      "detail": "keyword"
+    },
+    {
+      "label": "finally",
+      "insert": "finally",
+      "detail": "keyword"
+    },
+    {
+      "label": "fn",
+      "insert": "fn",
+      "detail": "keyword"
+    },
+    {
+      "label": "for",
+      "insert": "for",
+      "detail": "keyword"
+    },
+    {
+      "label": "global",
+      "insert": "global",
+      "detail": "keyword"
+    },
+    {
+      "label": "goto",
+      "insert": "goto",
+      "detail": "keyword"
+    },
+    {
+      "label": "implements",
+      "insert": "implements",
+      "detail": "keyword"
+    },
+    {
+      "label": "include",
+      "insert": "include",
+      "detail": "keyword"
+    },
+    {
+      "label": "include_once",
+      "insert": "include_once",
+      "detail": "keyword"
+    },
+    {
+      "label": "instanceof",
+      "insert": "instanceof",
+      "detail": "keyword"
+    },
+    {
+      "label": "insteadof",
+      "insert": "insteadof",
+      "detail": "keyword"
+    },
+    {
+      "label": "interface",
+      "insert": "interface",
+      "detail": "keyword"
+    },
+    {
+      "label": "isset",
+      "insert": "isset",
+      "detail": "keyword"
+    },
+    {
+      "label": "list",
+      "insert": "list",
+      "detail": "keyword"
+    },
+    {
+      "label": "match",
+      "insert": "match",
+      "detail": "keyword"
+    },
+    {
+      "label": "namespace",
+      "insert": "namespace",
+      "detail": "keyword"
+    },
+    {
+      "label": "new",
+      "insert": "new",
+      "detail": "keyword"
+    },
+    {
+      "label": "or",
+      "insert": "or",
+      "detail": "keyword"
+    },
+    {
+      "label": "print",
+      "insert": "print",
+      "detail": "keyword"
+    },
+    {
+      "label": "private",
+      "insert": "private",
+      "detail": "keyword"
+    },
+    {
+      "label": "protected",
+      "insert": "protected",
+      "detail": "keyword"
+    },
+    {
+      "label": "public",
+      "insert": "public",
+      "detail": "keyword"
+    },
+    {
+      "label": "readonly",
+      "insert": "readonly",
+      "detail": "keyword"
+    },
+    {
+      "label": "require",
+      "insert": "require",
+      "detail": "keyword"
+    },
+    {
+      "label": "require_once",
+      "insert": "require_once",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "static",
+      "insert": "static",
+      "detail": "keyword"
+    },
+    {
+      "label": "switch",
+      "insert": "switch",
+      "detail": "keyword"
+    },
+    {
+      "label": "throw",
+      "insert": "throw",
+      "detail": "keyword"
+    },
+    {
+      "label": "trait",
+      "insert": "trait",
+      "detail": "keyword"
+    },
+    {
+      "label": "unset",
+      "insert": "unset",
+      "detail": "keyword"
+    },
+    {
+      "label": "use",
+      "insert": "use",
+      "detail": "keyword"
+    },
+    {
+      "label": "var",
+      "insert": "var",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "xor",
+      "insert": "xor",
+      "detail": "keyword"
+    },
+    {
+      "label": "yield",
+      "insert": "yield",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "null",
+      "insert": "null",
+      "detail": "keyword"
+    },
+    {
+      "label": "int",
+      "insert": "int",
+      "detail": "type"
+    },
+    {
+      "label": "float",
+      "insert": "float",
+      "detail": "type"
+    },
+    {
+      "label": "string",
+      "insert": "string",
+      "detail": "type"
+    },
+    {
+      "label": "bool",
+      "insert": "bool",
+      "detail": "type"
+    },
+    {
+      "label": "object",
+      "insert": "object",
+      "detail": "type"
+    },
+    {
+      "label": "iterable",
+      "insert": "iterable",
+      "detail": "type"
+    },
+    {
+      "label": "void",
+      "insert": "void",
+      "detail": "type"
+    },
+    {
+      "label": "mixed",
+      "insert": "mixed",
+      "detail": "type"
+    },
+    {
+      "label": "self",
+      "insert": "self",
+      "detail": "type"
+    },
+    {
+      "label": "parent",
+      "insert": "parent",
+      "detail": "type"
+    },
+    {
+      "label": "strlen",
+      "insert": "strlen",
+      "detail": "builtin"
+    },
+    {
+      "label": "str_replace",
+      "insert": "str_replace",
+      "detail": "builtin"
+    },
+    {
+      "label": "strpos",
+      "insert": "strpos",
+      "detail": "builtin"
+    },
+    {
+      "label": "substr",
+      "insert": "substr",
+      "detail": "builtin"
+    },
+    {
+      "label": "explode",
+      "insert": "explode",
+      "detail": "builtin"
+    },
+    {
+      "label": "implode",
+      "insert": "implode",
+      "detail": "builtin"
+    },
+    {
+      "label": "trim",
+      "insert": "trim",
+      "detail": "builtin"
+    },
+    {
+      "label": "ltrim",
+      "insert": "ltrim",
+      "detail": "builtin"
+    },
+    {
+      "label": "rtrim",
+      "insert": "rtrim",
+      "detail": "builtin"
+    },
+    {
+      "label": "strtolower",
+      "insert": "strtolower",
+      "detail": "builtin"
+    },
+    {
+      "label": "strtoupper",
+      "insert": "strtoupper",
+      "detail": "builtin"
+    },
+    {
+      "label": "ucfirst",
+      "insert": "ucfirst",
+      "detail": "builtin"
+    },
+    {
+      "label": "lcfirst",
+      "insert": "lcfirst",
+      "detail": "builtin"
+    },
+    {
+      "label": "str_repeat",
+      "insert": "str_repeat",
+      "detail": "builtin"
+    },
+    {
+      "label": "str_pad",
+      "insert": "str_pad",
+      "detail": "builtin"
+    },
+    {
+      "label": "str_split",
+      "insert": "str_split",
+      "detail": "builtin"
+    },
+    {
+      "label": "strrev",
+      "insert": "strrev",
+      "detail": "builtin"
+    },
+    {
+      "label": "wordwrap",
+      "insert": "wordwrap",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_map",
+      "insert": "array_map",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_filter",
+      "insert": "array_filter",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_reduce",
+      "insert": "array_reduce",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_push",
+      "insert": "array_push",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_pop",
+      "insert": "array_pop",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_shift",
+      "insert": "array_shift",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_unshift",
+      "insert": "array_unshift",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_merge",
+      "insert": "array_merge",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_slice",
+      "insert": "array_slice",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_splice",
+      "insert": "array_splice",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_keys",
+      "insert": "array_keys",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_values",
+      "insert": "array_values",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_search",
+      "insert": "array_search",
+      "detail": "builtin"
+    },
+    {
+      "label": "in_array",
+      "insert": "in_array",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_key_exists",
+      "insert": "array_key_exists",
+      "detail": "builtin"
+    },
+    {
+      "label": "count",
+      "insert": "count",
+      "detail": "builtin"
+    },
+    {
+      "label": "sizeof",
+      "insert": "sizeof",
+      "detail": "builtin"
+    },
+    {
+      "label": "sort",
+      "insert": "sort",
+      "detail": "builtin"
+    },
+    {
+      "label": "rsort",
+      "insert": "rsort",
+      "detail": "builtin"
+    },
+    {
+      "label": "asort",
+      "insert": "asort",
+      "detail": "builtin"
+    },
+    {
+      "label": "arsort",
+      "insert": "arsort",
+      "detail": "builtin"
+    },
+    {
+      "label": "ksort",
+      "insert": "ksort",
+      "detail": "builtin"
+    },
+    {
+      "label": "krsort",
+      "insert": "krsort",
+      "detail": "builtin"
+    },
+    {
+      "label": "usort",
+      "insert": "usort",
+      "detail": "builtin"
+    },
+    {
+      "label": "uasort",
+      "insert": "uasort",
+      "detail": "builtin"
+    },
+    {
+      "label": "uksort",
+      "insert": "uksort",
+      "detail": "builtin"
+    },
+    {
+      "label": "shuffle",
+      "insert": "shuffle",
+      "detail": "builtin"
+    },
+    {
+      "label": "array_rand",
+      "insert": "array_rand",
+      "detail": "builtin"
+    },
+    {
+      "label": "print_r",
+      "insert": "print_r",
+      "detail": "builtin"
+    },
+    {
+      "label": "var_dump",
+      "insert": "var_dump",
+      "detail": "builtin"
+    },
+    {
+      "label": "var_export",
+      "insert": "var_export",
+      "detail": "builtin"
+    },
+    {
+      "label": "json_encode",
+      "insert": "json_encode",
+      "detail": "builtin"
+    },
+    {
+      "label": "json_decode",
+      "insert": "json_decode",
+      "detail": "builtin"
+    },
+    {
+      "label": "file_get_contents",
+      "insert": "file_get_contents",
+      "detail": "builtin"
+    },
+    {
+      "label": "file_put_contents",
+      "insert": "file_put_contents",
+      "detail": "builtin"
+    },
+    {
+      "label": "fopen",
+      "insert": "fopen",
+      "detail": "builtin"
+    },
+    {
+      "label": "fclose",
+      "insert": "fclose",
+      "detail": "builtin"
+    },
+    {
+      "label": "fread",
+      "insert": "fread",
+      "detail": "builtin"
+    },
+    {
+      "label": "fwrite",
+      "insert": "fwrite",
+      "detail": "builtin"
+    },
+    {
+      "label": "fgets",
+      "insert": "fgets",
+      "detail": "builtin"
+    },
+    {
+      "label": "fputs",
+      "insert": "fputs",
+      "detail": "builtin"
+    },
+    {
+      "label": "file_exists",
+      "insert": "file_exists",
+      "detail": "builtin"
+    },
+    {
+      "label": "is_file",
+      "insert": "is_file",
+      "detail": "builtin"
+    },
+    {
+      "label": "is_dir",
+      "insert": "is_dir",
+      "detail": "builtin"
+    },
+    {
+      "label": "mkdir",
+      "insert": "mkdir",
+      "detail": "builtin"
+    },
+    {
+      "label": "rmdir",
+      "insert": "rmdir",
+      "detail": "builtin"
+    },
+    {
+      "label": "unlink",
+      "insert": "unlink",
+      "detail": "builtin"
+    },
+    {
+      "label": "rename",
+      "insert": "rename",
+      "detail": "builtin"
+    },
+    {
+      "label": "copy",
+      "insert": "copy",
+      "detail": "builtin"
+    },
+    {
+      "label": "scandir",
+      "insert": "scandir",
+      "detail": "builtin"
+    },
+    {
+      "label": "glob",
+      "insert": "glob",
+      "detail": "builtin"
+    },
+    {
+      "label": "preg_match",
+      "insert": "preg_match",
+      "detail": "builtin"
+    },
+    {
+      "label": "preg_match_all",
+      "insert": "preg_match_all",
+      "detail": "builtin"
+    },
+    {
+      "label": "preg_replace",
+      "insert": "preg_replace",
+      "detail": "builtin"
+    },
+    {
+      "label": "preg_split",
+      "insert": "preg_split",
+      "detail": "builtin"
+    },
+    {
+      "label": "date",
+      "insert": "date",
+      "detail": "builtin"
+    },
+    {
+      "label": "time",
+      "insert": "time",
+      "detail": "builtin"
+    },
+    {
+      "label": "strtotime",
+      "insert": "strtotime",
+      "detail": "builtin"
+    },
+    {
+      "label": "mktime",
+      "insert": "mktime",
+      "detail": "builtin"
+    },
+    {
+      "label": "checkdate",
+      "insert": "checkdate",
+      "detail": "builtin"
+    },
+    {
+      "label": "filter_var",
+      "insert": "filter_var",
+      "detail": "builtin"
+    },
+    {
+      "label": "filter_input",
+      "insert": "filter_input",
+      "detail": "builtin"
+    },
+    {
+      "label": "htmlspecialchars",
+      "insert": "htmlspecialchars",
+      "detail": "builtin"
+    },
+    {
+      "label": "strip_tags",
+      "insert": "strip_tags",
+      "detail": "builtin"
+    }
+  ]
+}

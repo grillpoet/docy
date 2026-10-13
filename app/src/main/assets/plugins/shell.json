@@ -1,0 +1,36 @@
+{
+  "name": "Shell",
+  "extensions": ["sh", "bash", "zsh"],
+  "indent": 2,
+  "operators": ["=", "==", "!=", "=~", "&&", "||", "|", "&", ";", ">", ">>", "<", "<<"],
+  "punctuation": "()[]{};,.",
+  "brackets": [["{", "}"], ["(", ")"], ["[", "]"]],
+  "lineComment": "#",
+  "blockComment": [],
+  "quotes": ["\"", "'", "`"],
+  "blockQuotes": [],
+  "rules": [
+    { "kind": "comment", "type": "line",  "start": "#" },
+    { "kind": "string",  "type": "quote", "quotes": ["\"", "'", "`"] },
+    { "kind": "number",  "regex": "\\b\\d+\\b" },
+    { "kind": "keyword", "words": [
+      "if","then","else","elif","fi","case","esac","for","while","until",
+      "do","done","in","function","select","time","coproc","return","exit",
+      "break","continue","local","export","readonly","declare","typeset",
+      "unset","shift","eval","exec","source","alias","unalias"
+    ]},
+    { "kind": "type", "words": [] },
+    { "kind": "library", "words": [
+      "echo","printf","read","cd","pwd","ls","cp","mv","rm","mkdir","rmdir",
+      "cat","head","tail","grep","sed","awk","find","sort","uniq","wc",
+      "test","expr","true","false","set","trap","wait","kill","sleep",
+      "sudo","chmod","chown","ln","touch","tar","gzip","gunzip","curl","wget"
+    ]}
+  ],
+  "completions": [
+    { "label": "#!/bin/bash", "insert": "#!/bin/bash\nset -euo pipefail\n\n", "detail": "shebang" },
+    { "label": "if", "insert": "if [ ]; then\n  \nfi", "detail": "if" },
+    { "label": "for", "insert": "for x in \"$@\"; do\n  \ndone", "detail": "for" },
+    { "label": "function", "insert": "function name() {\n  \n}", "detail": "function" }
+  ]
+}

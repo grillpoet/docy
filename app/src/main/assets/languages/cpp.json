@@ -1,0 +1,1162 @@
+{
+  "name": "C++",
+  "extensions": [
+    "cpp",
+    "cc",
+    "cxx",
+    "hpp",
+    "hxx",
+    "hh",
+    "h"
+  ],
+  "indent": 4,
+  "operators": [
+    "=",
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "++",
+    "--",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "<<=",
+    ">>=",
+    "&=",
+    "|=",
+    "^=",
+    "<<",
+    ">>",
+    "->",
+    "::",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "?",
+    ":",
+    "&",
+    "|",
+    "^",
+    "~"
+  ],
+  "punctuation": "()[]{};,.@",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "//",
+  "blockComment": [
+    "/*",
+    "*/"
+  ],
+  "quotes": [
+    "\""
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\""
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?[fFuUlL]?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "alignas",
+        "alignof",
+        "and",
+        "and_eq",
+        "asm",
+        "auto",
+        "bitand",
+        "bitor",
+        "bool",
+        "break",
+        "case",
+        "catch",
+        "char",
+        "char8_t",
+        "char16_t",
+        "char32_t",
+        "class",
+        "compl",
+        "concept",
+        "const",
+        "consteval",
+        "constexpr",
+        "constinit",
+        "const_cast",
+        "continue",
+        "co_await",
+        "co_return",
+        "co_yield",
+        "decltype",
+        "default",
+        "delete",
+        "do",
+        "double",
+        "dynamic_cast",
+        "else",
+        "enum",
+        "explicit",
+        "export",
+        "extern",
+        "false",
+        "float",
+        "for",
+        "friend",
+        "goto",
+        "if",
+        "inline",
+        "int",
+        "long",
+        "mutable",
+        "namespace",
+        "new",
+        "noexcept",
+        "not",
+        "not_eq",
+        "nullptr",
+        "operator",
+        "or",
+        "or_eq",
+        "private",
+        "protected",
+        "public",
+        "register",
+        "reinterpret_cast",
+        "requires",
+        "return",
+        "short",
+        "signed",
+        "sizeof",
+        "static",
+        "static_assert",
+        "static_cast",
+        "struct",
+        "switch",
+        "template",
+        "this",
+        "thread_local",
+        "throw",
+        "true",
+        "try",
+        "typedef",
+        "typeid",
+        "typename",
+        "union",
+        "unsigned",
+        "using",
+        "virtual",
+        "void",
+        "volatile",
+        "wchar_t",
+        "while",
+        "xor",
+        "xor_eq"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "bool",
+        "char",
+        "double",
+        "float",
+        "int",
+        "long",
+        "short",
+        "void",
+        "wchar_t",
+        "size_t",
+        "string",
+        "wstring",
+        "u8string",
+        "u16string",
+        "u32string",
+        "vector",
+        "map",
+        "set",
+        "unordered_map",
+        "unordered_set",
+        "array",
+        "shared_ptr",
+        "unique_ptr",
+        "weak_ptr",
+        "pair",
+        "tuple",
+        "optional",
+        "variant",
+        "function",
+        "string_view",
+        "span",
+        "atomic",
+        "mutex",
+        "thread",
+        "condition_variable",
+        "future",
+        "promise",
+        "stack",
+        "queue",
+        "deque",
+        "list",
+        "forward_list",
+        "bitset",
+        "complex",
+        "valarray"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "std::cout",
+        "std::cin",
+        "std::cerr",
+        "std::endl",
+        "std::printf",
+        "std::scanf",
+        "std::malloc",
+        "std::free",
+        "std::make_shared",
+        "std::make_unique",
+        "std::move",
+        "std::forward",
+        "std::swap",
+        "std::sort",
+        "std::find",
+        "std::begin",
+        "std::end",
+        "std::size",
+        "std::min",
+        "std::max",
+        "std::abs",
+        "std::sqrt",
+        "std::pow",
+        "std::sin",
+        "std::cos",
+        "std::tan",
+        "std::string",
+        "std::to_string",
+        "std::stoi",
+        "std::stod",
+        "std::vector",
+        "std::map",
+        "std::set",
+        "std::unordered_map",
+        "std::unordered_set",
+        "std::shared_ptr",
+        "std::unique_ptr",
+        "std::make_pair",
+        "std::make_tuple",
+        "std::get",
+        "std::tie",
+        "std::optional",
+        "std::variant"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "int main",
+      "insert": "int main(int argc, char *argv[]) {\n    \n    return 0;\n}",
+      "detail": "main"
+    },
+    {
+      "label": "std::cout",
+      "insert": "std::cout <<  << std::endl;",
+      "detail": "cout"
+    },
+    {
+      "label": "for-range",
+      "insert": "for (auto& x : xs) {\n    \n}",
+      "detail": "range-for"
+    },
+    {
+      "label": "class",
+      "insert": "class  {\npublic:\n    \n};",
+      "detail": "class"
+    },
+    {
+      "label": "struct",
+      "insert": "struct  {\n    \n};",
+      "detail": "struct"
+    },
+    {
+      "label": "template",
+      "insert": "template <typename T>\n",
+      "detail": "template"
+    },
+    {
+      "label": "auto",
+      "insert": "auto  = ;",
+      "detail": "auto"
+    },
+    {
+      "label": "alignas",
+      "insert": "alignas",
+      "detail": "keyword"
+    },
+    {
+      "label": "alignof",
+      "insert": "alignof",
+      "detail": "keyword"
+    },
+    {
+      "label": "and",
+      "insert": "and",
+      "detail": "keyword"
+    },
+    {
+      "label": "and_eq",
+      "insert": "and_eq",
+      "detail": "keyword"
+    },
+    {
+      "label": "asm",
+      "insert": "asm",
+      "detail": "keyword"
+    },
+    {
+      "label": "bitand",
+      "insert": "bitand",
+      "detail": "keyword"
+    },
+    {
+      "label": "bitor",
+      "insert": "bitor",
+      "detail": "keyword"
+    },
+    {
+      "label": "bool",
+      "insert": "bool",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "catch",
+      "insert": "catch",
+      "detail": "keyword"
+    },
+    {
+      "label": "char",
+      "insert": "char",
+      "detail": "keyword"
+    },
+    {
+      "label": "char8_t",
+      "insert": "char8_t",
+      "detail": "keyword"
+    },
+    {
+      "label": "char16_t",
+      "insert": "char16_t",
+      "detail": "keyword"
+    },
+    {
+      "label": "char32_t",
+      "insert": "char32_t",
+      "detail": "keyword"
+    },
+    {
+      "label": "compl",
+      "insert": "compl",
+      "detail": "keyword"
+    },
+    {
+      "label": "concept",
+      "insert": "concept",
+      "detail": "keyword"
+    },
+    {
+      "label": "const",
+      "insert": "const",
+      "detail": "keyword"
+    },
+    {
+      "label": "consteval",
+      "insert": "consteval",
+      "detail": "keyword"
+    },
+    {
+      "label": "constexpr",
+      "insert": "constexpr",
+      "detail": "keyword"
+    },
+    {
+      "label": "constinit",
+      "insert": "constinit",
+      "detail": "keyword"
+    },
+    {
+      "label": "const_cast",
+      "insert": "const_cast",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "co_await",
+      "insert": "co_await",
+      "detail": "keyword"
+    },
+    {
+      "label": "co_return",
+      "insert": "co_return",
+      "detail": "keyword"
+    },
+    {
+      "label": "co_yield",
+      "insert": "co_yield",
+      "detail": "keyword"
+    },
+    {
+      "label": "decltype",
+      "insert": "decltype",
+      "detail": "keyword"
+    },
+    {
+      "label": "default",
+      "insert": "default",
+      "detail": "keyword"
+    },
+    {
+      "label": "delete",
+      "insert": "delete",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "double",
+      "insert": "double",
+      "detail": "keyword"
+    },
+    {
+      "label": "dynamic_cast",
+      "insert": "dynamic_cast",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "enum",
+      "insert": "enum",
+      "detail": "keyword"
+    },
+    {
+      "label": "explicit",
+      "insert": "explicit",
+      "detail": "keyword"
+    },
+    {
+      "label": "export",
+      "insert": "export",
+      "detail": "keyword"
+    },
+    {
+      "label": "extern",
+      "insert": "extern",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "float",
+      "insert": "float",
+      "detail": "keyword"
+    },
+    {
+      "label": "for",
+      "insert": "for",
+      "detail": "keyword"
+    },
+    {
+      "label": "friend",
+      "insert": "friend",
+      "detail": "keyword"
+    },
+    {
+      "label": "goto",
+      "insert": "goto",
+      "detail": "keyword"
+    },
+    {
+      "label": "if",
+      "insert": "if",
+      "detail": "keyword"
+    },
+    {
+      "label": "inline",
+      "insert": "inline",
+      "detail": "keyword"
+    },
+    {
+      "label": "int",
+      "insert": "int",
+      "detail": "keyword"
+    },
+    {
+      "label": "long",
+      "insert": "long",
+      "detail": "keyword"
+    },
+    {
+      "label": "mutable",
+      "insert": "mutable",
+      "detail": "keyword"
+    },
+    {
+      "label": "namespace",
+      "insert": "namespace",
+      "detail": "keyword"
+    },
+    {
+      "label": "new",
+      "insert": "new",
+      "detail": "keyword"
+    },
+    {
+      "label": "noexcept",
+      "insert": "noexcept",
+      "detail": "keyword"
+    },
+    {
+      "label": "not",
+      "insert": "not",
+      "detail": "keyword"
+    },
+    {
+      "label": "not_eq",
+      "insert": "not_eq",
+      "detail": "keyword"
+    },
+    {
+      "label": "nullptr",
+      "insert": "nullptr",
+      "detail": "keyword"
+    },
+    {
+      "label": "operator",
+      "insert": "operator",
+      "detail": "keyword"
+    },
+    {
+      "label": "or",
+      "insert": "or",
+      "detail": "keyword"
+    },
+    {
+      "label": "or_eq",
+      "insert": "or_eq",
+      "detail": "keyword"
+    },
+    {
+      "label": "private",
+      "insert": "private",
+      "detail": "keyword"
+    },
+    {
+      "label": "protected",
+      "insert": "protected",
+      "detail": "keyword"
+    },
+    {
+      "label": "public",
+      "insert": "public",
+      "detail": "keyword"
+    },
+    {
+      "label": "register",
+      "insert": "register",
+      "detail": "keyword"
+    },
+    {
+      "label": "reinterpret_cast",
+      "insert": "reinterpret_cast",
+      "detail": "keyword"
+    },
+    {
+      "label": "requires",
+      "insert": "requires",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "short",
+      "insert": "short",
+      "detail": "keyword"
+    },
+    {
+      "label": "signed",
+      "insert": "signed",
+      "detail": "keyword"
+    },
+    {
+      "label": "sizeof",
+      "insert": "sizeof",
+      "detail": "keyword"
+    },
+    {
+      "label": "static",
+      "insert": "static",
+      "detail": "keyword"
+    },
+    {
+      "label": "static_assert",
+      "insert": "static_assert",
+      "detail": "keyword"
+    },
+    {
+      "label": "static_cast",
+      "insert": "static_cast",
+      "detail": "keyword"
+    },
+    {
+      "label": "switch",
+      "insert": "switch",
+      "detail": "keyword"
+    },
+    {
+      "label": "this",
+      "insert": "this",
+      "detail": "keyword"
+    },
+    {
+      "label": "thread_local",
+      "insert": "thread_local",
+      "detail": "keyword"
+    },
+    {
+      "label": "throw",
+      "insert": "throw",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "try",
+      "insert": "try",
+      "detail": "keyword"
+    },
+    {
+      "label": "typedef",
+      "insert": "typedef",
+      "detail": "keyword"
+    },
+    {
+      "label": "typeid",
+      "insert": "typeid",
+      "detail": "keyword"
+    },
+    {
+      "label": "typename",
+      "insert": "typename",
+      "detail": "keyword"
+    },
+    {
+      "label": "union",
+      "insert": "union",
+      "detail": "keyword"
+    },
+    {
+      "label": "unsigned",
+      "insert": "unsigned",
+      "detail": "keyword"
+    },
+    {
+      "label": "using",
+      "insert": "using",
+      "detail": "keyword"
+    },
+    {
+      "label": "virtual",
+      "insert": "virtual",
+      "detail": "keyword"
+    },
+    {
+      "label": "void",
+      "insert": "void",
+      "detail": "keyword"
+    },
+    {
+      "label": "volatile",
+      "insert": "volatile",
+      "detail": "keyword"
+    },
+    {
+      "label": "wchar_t",
+      "insert": "wchar_t",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "xor",
+      "insert": "xor",
+      "detail": "keyword"
+    },
+    {
+      "label": "xor_eq",
+      "insert": "xor_eq",
+      "detail": "keyword"
+    },
+    {
+      "label": "size_t",
+      "insert": "size_t",
+      "detail": "type"
+    },
+    {
+      "label": "string",
+      "insert": "string",
+      "detail": "type"
+    },
+    {
+      "label": "wstring",
+      "insert": "wstring",
+      "detail": "type"
+    },
+    {
+      "label": "u8string",
+      "insert": "u8string",
+      "detail": "type"
+    },
+    {
+      "label": "u16string",
+      "insert": "u16string",
+      "detail": "type"
+    },
+    {
+      "label": "u32string",
+      "insert": "u32string",
+      "detail": "type"
+    },
+    {
+      "label": "vector",
+      "insert": "vector",
+      "detail": "type"
+    },
+    {
+      "label": "map",
+      "insert": "map",
+      "detail": "type"
+    },
+    {
+      "label": "set",
+      "insert": "set",
+      "detail": "type"
+    },
+    {
+      "label": "unordered_map",
+      "insert": "unordered_map",
+      "detail": "type"
+    },
+    {
+      "label": "unordered_set",
+      "insert": "unordered_set",
+      "detail": "type"
+    },
+    {
+      "label": "array",
+      "insert": "array",
+      "detail": "type"
+    },
+    {
+      "label": "shared_ptr",
+      "insert": "shared_ptr",
+      "detail": "type"
+    },
+    {
+      "label": "unique_ptr",
+      "insert": "unique_ptr",
+      "detail": "type"
+    },
+    {
+      "label": "weak_ptr",
+      "insert": "weak_ptr",
+      "detail": "type"
+    },
+    {
+      "label": "pair",
+      "insert": "pair",
+      "detail": "type"
+    },
+    {
+      "label": "tuple",
+      "insert": "tuple",
+      "detail": "type"
+    },
+    {
+      "label": "optional",
+      "insert": "optional",
+      "detail": "type"
+    },
+    {
+      "label": "variant",
+      "insert": "variant",
+      "detail": "type"
+    },
+    {
+      "label": "function",
+      "insert": "function",
+      "detail": "type"
+    },
+    {
+      "label": "string_view",
+      "insert": "string_view",
+      "detail": "type"
+    },
+    {
+      "label": "span",
+      "insert": "span",
+      "detail": "type"
+    },
+    {
+      "label": "atomic",
+      "insert": "atomic",
+      "detail": "type"
+    },
+    {
+      "label": "mutex",
+      "insert": "mutex",
+      "detail": "type"
+    },
+    {
+      "label": "thread",
+      "insert": "thread",
+      "detail": "type"
+    },
+    {
+      "label": "condition_variable",
+      "insert": "condition_variable",
+      "detail": "type"
+    },
+    {
+      "label": "future",
+      "insert": "future",
+      "detail": "type"
+    },
+    {
+      "label": "promise",
+      "insert": "promise",
+      "detail": "type"
+    },
+    {
+      "label": "stack",
+      "insert": "stack",
+      "detail": "type"
+    },
+    {
+      "label": "queue",
+      "insert": "queue",
+      "detail": "type"
+    },
+    {
+      "label": "deque",
+      "insert": "deque",
+      "detail": "type"
+    },
+    {
+      "label": "list",
+      "insert": "list",
+      "detail": "type"
+    },
+    {
+      "label": "forward_list",
+      "insert": "forward_list",
+      "detail": "type"
+    },
+    {
+      "label": "bitset",
+      "insert": "bitset",
+      "detail": "type"
+    },
+    {
+      "label": "complex",
+      "insert": "complex",
+      "detail": "type"
+    },
+    {
+      "label": "valarray",
+      "insert": "valarray",
+      "detail": "type"
+    },
+    {
+      "label": "std::cin",
+      "insert": "std::cin",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::cerr",
+      "insert": "std::cerr",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::endl",
+      "insert": "std::endl",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::printf",
+      "insert": "std::printf",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::scanf",
+      "insert": "std::scanf",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::malloc",
+      "insert": "std::malloc",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::free",
+      "insert": "std::free",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::make_shared",
+      "insert": "std::make_shared",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::make_unique",
+      "insert": "std::make_unique",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::move",
+      "insert": "std::move",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::forward",
+      "insert": "std::forward",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::swap",
+      "insert": "std::swap",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::sort",
+      "insert": "std::sort",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::find",
+      "insert": "std::find",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::begin",
+      "insert": "std::begin",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::end",
+      "insert": "std::end",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::size",
+      "insert": "std::size",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::min",
+      "insert": "std::min",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::max",
+      "insert": "std::max",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::abs",
+      "insert": "std::abs",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::sqrt",
+      "insert": "std::sqrt",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::pow",
+      "insert": "std::pow",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::sin",
+      "insert": "std::sin",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::cos",
+      "insert": "std::cos",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::tan",
+      "insert": "std::tan",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::string",
+      "insert": "std::string",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::to_string",
+      "insert": "std::to_string",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::stoi",
+      "insert": "std::stoi",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::stod",
+      "insert": "std::stod",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::vector",
+      "insert": "std::vector",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::map",
+      "insert": "std::map",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::set",
+      "insert": "std::set",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::unordered_map",
+      "insert": "std::unordered_map",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::unordered_set",
+      "insert": "std::unordered_set",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::shared_ptr",
+      "insert": "std::shared_ptr",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::unique_ptr",
+      "insert": "std::unique_ptr",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::make_pair",
+      "insert": "std::make_pair",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::make_tuple",
+      "insert": "std::make_tuple",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::get",
+      "insert": "std::get",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::tie",
+      "insert": "std::tie",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::optional",
+      "insert": "std::optional",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::variant",
+      "insert": "std::variant",
+      "detail": "builtin"
+    }
+  ]
+}

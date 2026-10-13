@@ -1,0 +1,9 @@
+{
+  "name": "Markdown",
+  "extensions": ["md", "markdown"],
+  "indent": 2,
+  "rules": [
+    { "kind": "comment", "type": "line", "start": ">" }
+  ],
+  "completions": []
+}

@@ -1,0 +1,47 @@
+{
+  "name": "C++",
+  "extensions": ["cpp", "cc", "cxx", "hpp", "hxx", "hh"],
+  "indent": 4,
+  "operators": ["=", "==", "!=", "<=", ">=", "&&", "||", "++", "--",
+                "+=", "-=", "*=", "/=", "%=", "<<=", ">>=", "&=", "|=", "^=",
+                "<<", ">>", "->", "::", "+", "-", "*", "/", "%", "<", ">", "!",
+                "?", ":", "&", "|", "^", "~"],
+  "punctuation": "()[]{};,.@",
+  "brackets": [["{", "}"], ["(", ")"], ["[", "]"]],
+  "lineComment": "//",
+  "blockComment": ["/*", "*/"],
+  "quotes": ["\""],
+  "blockQuotes": [],
+  "rules": [
+    { "kind": "comment", "type": "block", "start": "/*", "end": "*/" },
+    { "kind": "comment", "type": "line",  "start": "//" },
+    { "kind": "string",  "type": "quote", "quotes": ["\""] },
+    { "kind": "number",  "regex": "\\b\\d+(\\.\\d+)?[fFuUlL]?\\b" },
+    { "kind": "keyword", "words": [
+      "alignas","alignof","asm","auto","break","case","catch","class",
+      "const","constexpr","const_cast","continue","decltype","default",
+      "delete","do","dynamic_cast","else","enum","explicit","export",
+      "extern","final","for","friend","goto","if","inline","mutable",
+      "namespace","new","noexcept","nullptr","operator","override","private",
+      "protected","public","register","reinterpret_cast","return","sizeof",
+      "static","static_cast","struct","switch","template","this","throw",
+      "try","typedef","typeid","typename","union","using","virtual","volatile",
+      "while","true","false","and","or","not"
+    ]},
+    { "kind": "type", "words": [
+      "bool","char","double","float","int","long","short","signed","unsigned",
+      "void","wchar_t","size_t","string","wstring","vector","map","set",
+      "unordered_map","unordered_set","shared_ptr","unique_ptr","weak_ptr",
+      "pair","tuple","optional","variant","function"
+    ]},
+    { "kind": "library", "words": [
+      "std","cout","cin","cerr","endl","printf","scanf","malloc","free",
+      "make_shared","make_unique","move","forward","begin","end"
+    ]}
+  ],
+  "completions": [
+    { "label": "int main", "insert": "int main(int argc, char *argv[]) {\n    \n    return 0;\n}", "detail": "main" },
+    { "label": "std::cout", "insert": "std::cout <<  << std::endl;", "detail": "cout" },
+    { "label": "for", "insert": "for (auto& x : xs) {\n    \n}", "detail": "range-for" }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "YAML",
+  "extensions": [
+    "yaml",
+    "yml"
+  ],
+  "indent": 2,
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "#"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\"",
+        "'"
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "true",
+        "false",
+        "null",
+        "yes",
+        "no",
+        "on",
+        "off"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "null",
+      "insert": "null",
+      "detail": "keyword"
+    },
+    {
+      "label": "yes",
+      "insert": "yes",
+      "detail": "keyword"
+    },
+    {
+      "label": "no",
+      "insert": "no",
+      "detail": "keyword"
+    },
+    {
+      "label": "on",
+      "insert": "on",
+      "detail": "keyword"
+    },
+    {
+      "label": "off",
+      "insert": "off",
+      "detail": "keyword"
+    }
+  ]
+}

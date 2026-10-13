@@ -1,0 +1,29 @@
+{
+  "name": "Python",
+  "extensions": ["py"],
+  "indent": 4,
+  "rules": [
+    { "kind": "comment", "type": "line", "start": "#" },
+    { "kind": "string",  "type": "block", "start": "\"\"\"", "end": "\"\"\"" },
+    { "kind": "string",  "type": "block", "start": "'''", "end": "'''" },
+    { "kind": "string",  "type": "quote", "quotes": ["\"", "'"] },
+    { "kind": "number",  "regex": "\\b\\d+(\\.\\d+)?\\b" },
+    { "kind": "keyword", "words": [
+      "and","as","assert","async","await","break","class","continue","def",
+      "del","elif","else","except","False","finally","for","from","global",
+      "if","import","in","is","lambda","None","nonlocal","not","or","pass",
+      "raise","return","True","try","while","with","yield","match","case"
+    ]},
+    { "kind": "library", "words": [
+      "print","len","range","str","int","float","list","dict","set","tuple",
+      "self","super","open","enumerate","zip","map","filter","sorted","sum",
+      "min","max","abs","all","any","isinstance","type","repr"
+    ]}
+  ],
+  "completions": [
+    { "label": "def", "insert": "def ", "detail": "function" },
+    { "label": "class", "insert": "class ", "detail": "class" },
+    { "label": "if", "insert": "if :\n    ", "detail": "if" },
+    { "label": "for", "insert": "for x in :\n    ", "detail": "for" }
+  ]
+}

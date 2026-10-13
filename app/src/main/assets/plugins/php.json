@@ -1,0 +1,50 @@
+{
+  "name": "PHP",
+  "extensions": ["php"],
+  "indent": 4,
+  "operators": ["=", "==", "===", "!=", "!==", "<=", ">=", "<=>",
+                "&&", "||", "??", "??=", "->", "=>", "::",
+                "+=", "-=", "*=", "/=", ".=", "%=",
+                "+", "-", "*", "/", "%", ".", "<", ">", "!", "?", ":", "&", "|", "^", "~"],
+  "punctuation": "()[]{};,.@$",
+  "brackets": [["{", "}"], ["(", ")"], ["[", "]"]],
+  "lineComment": "//",
+  "blockComment": ["/*", "*/"],
+  "quotes": ["\"", "'"],
+  "blockQuotes": [],
+  "rules": [
+    { "kind": "comment", "type": "block", "start": "/*", "end": "*/" },
+    { "kind": "comment", "type": "line",  "start": "//" },
+    { "kind": "comment", "type": "line",  "start": "#" },
+    { "kind": "string",  "type": "quote", "quotes": ["\"", "'"] },
+    { "kind": "number",  "regex": "\\b\\d+(\\.\\d+)?\\b" },
+    { "kind": "keyword", "words": [
+      "abstract","and","array","as","break","callable","case","catch","class",
+      "clone","const","continue","declare","default","do","echo","else",
+      "elseif","empty","enddeclare","endfor","endforeach","endif","endswitch",
+      "endwhile","enum","extends","final","finally","fn","for","foreach",
+      "function","global","goto","if","implements","include","include_once",
+      "instanceof","insteadof","interface","isset","list","match","namespace",
+      "new","or","print","private","protected","public","readonly","require",
+      "require_once","return","static","switch","throw","trait","try","unset",
+      "use","var","while","xor","yield","true","false","null"
+    ]},
+    { "kind": "type", "words": [
+      "int","float","string","bool","array","object","callable","iterable",
+      "void","mixed","null","self","static","parent"
+    ]},
+    { "kind": "library", "words": [
+      "strlen","str_replace","strpos","substr","explode","implode",
+      "array_map","array_filter","array_push","array_pop","array_merge",
+      "count","in_array","array_keys","array_values","sort","usort",
+      "print_r","var_dump","json_encode","json_decode","file_get_contents",
+      "file_put_contents","preg_match","preg_replace"
+    ]}
+  ],
+  "completions": [
+    { "label": "<?php", "insert": "<?php\n\n", "detail": "php open" },
+    { "label": "function", "insert": "function () {\n    \n}", "detail": "function" },
+    { "label": "echo", "insert": "echo ;", "detail": "echo" },
+    { "label": "foreach", "insert": "foreach ($xs as $x) {\n    \n}", "detail": "foreach" }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "name": "Lua",
+  "extensions": [
+    "lua"
+  ],
+  "indent": 2,
+  "operators": [
+    "==",
+    "~=",
+    "<=",
+    ">=",
+    "..",
+    "...",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "^",
+    "#",
+    "<",
+    ">",
+    "=",
+    "and",
+    "or",
+    "not"
+  ],
+  "punctuation": "()[]{};,.@:",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "--",
+  "blockComment": [
+    "--[[",
+    "]]"
+  ],
+  "quotes": [
+    "\"",
+    "'"
+  ],
+  "blockQuotes": [
+    [
+      "[[",
+      "]]"
+    ]
+  ],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "--[[",
+      "end": "]]"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "--"
+    },
+    {
+      "kind": "string",
+      "type": "block",
+      "start": "[[",
+      "end": "]]"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\"",
+        "'"
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "and",
+        "break",
+        "do",
+        "else",
+        "elseif",
+        "end",
+        "false",
+        "for",
+        "function",
+        "goto",
+        "if",
+        "in",
+        "local",
+        "nil",
+        "not",
+        "or",
+        "repeat",
+        "return",
+        "then",
+        "true",
+        "until",
+        "while"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "print",
+        "pairs",
+        "ipairs",
+        "require",
+        "type",
+        "tostring",
+        "tonumber",
+        "pcall",
+        "xpcall",
+        "error",
+        "assert",
+        "select",
+        "setmetatable",
+        "getmetatable",
+        "rawget",
+        "rawset",
+        "next",
+        "unpack",
+        "_G",
+        "_ENV",
+        "string",
+        "table",
+        "math",
+        "io",
+        "os",
+        "coroutine",
+        "debug"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "function",
+      "insert": "function ()\n  \nend",
+      "detail": "function"
+    },
+    {
+      "label": "local",
+      "insert": "local  = ",
+      "detail": "local"
+    },
+    {
+      "label": "if",
+      "insert": "if  then\n  \nend",
+      "detail": "if"
+    },
+    {
+      "label": "for",
+      "insert": "for i = 1, n do\n  \nend",
+      "detail": "for"
+    },
+    {
+      "label": "and",
+      "insert": "and",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "elseif",
+      "insert": "elseif",
+      "detail": "keyword"
+    },
+    {
+      "label": "end",
+      "insert": "end",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "goto",
+      "insert": "goto",
+      "detail": "keyword"
+    },
+    {
+      "label": "in",
+      "insert": "in",
+      "detail": "keyword"
+    },
+    {
+      "label": "nil",
+      "insert": "nil",
+      "detail": "keyword"
+    },
+    {
+      "label": "not",
+      "insert": "not",
+      "detail": "keyword"
+    },
+    {
+      "label": "or",
+      "insert": "or",
+      "detail": "keyword"
+    },
+    {
+      "label": "repeat",
+      "insert": "repeat",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "then",
+      "insert": "then",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "until",
+      "insert": "until",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "print",
+      "insert": "print",
+      "detail": "builtin"
+    },
+    {
+      "label": "pairs",
+      "insert": "pairs",
+      "detail": "builtin"
+    },
+    {
+      "label": "ipairs",
+      "insert": "ipairs",
+      "detail": "builtin"
+    },
+    {
+      "label": "require",
+      "insert": "require",
+      "detail": "builtin"
+    },
+    {
+      "label": "type",
+      "insert": "type",
+      "detail": "builtin"
+    },
+    {
+      "label": "tostring",
+      "insert": "tostring",
+      "detail": "builtin"
+    },
+    {
+      "label": "tonumber",
+      "insert": "tonumber",
+      "detail": "builtin"
+    },
+    {
+      "label": "pcall",
+      "insert": "pcall",
+      "detail": "builtin"
+    },
+    {
+      "label": "xpcall",
+      "insert": "xpcall",
+      "detail": "builtin"
+    },
+    {
+      "label": "error",
+      "insert": "error",
+      "detail": "builtin"
+    },
+    {
+      "label": "assert",
+      "insert": "assert",
+      "detail": "builtin"
+    },
+    {
+      "label": "select",
+      "insert": "select",
+      "detail": "builtin"
+    },
+    {
+      "label": "setmetatable",
+      "insert": "setmetatable",
+      "detail": "builtin"
+    },
+    {
+      "label": "getmetatable",
+      "insert": "getmetatable",
+      "detail": "builtin"
+    },
+    {
+      "label": "rawget",
+      "insert": "rawget",
+      "detail": "builtin"
+    },
+    {
+      "label": "rawset",
+      "insert": "rawset",
+      "detail": "builtin"
+    },
+    {
+      "label": "next",
+      "insert": "next",
+      "detail": "builtin"
+    },
+    {
+      "label": "unpack",
+      "insert": "unpack",
+      "detail": "builtin"
+    },
+    {
+      "label": "_G",
+      "insert": "_G",
+      "detail": "builtin"
+    },
+    {
+      "label": "_ENV",
+      "insert": "_ENV",
+      "detail": "builtin"
+    },
+    {
+      "label": "string",
+      "insert": "string",
+      "detail": "builtin"
+    },
+    {
+      "label": "table",
+      "insert": "table",
+      "detail": "builtin"
+    },
+    {
+      "label": "math",
+      "insert": "math",
+      "detail": "builtin"
+    },
+    {
+      "label": "io",
+      "insert": "io",
+      "detail": "builtin"
+    },
+    {
+      "label": "os",
+      "insert": "os",
+      "detail": "builtin"
+    },
+    {
+      "label": "coroutine",
+      "insert": "coroutine",
+      "detail": "builtin"
+    },
+    {
+      "label": "debug",
+      "insert": "debug",
+      "detail": "builtin"
+    }
+  ],
+  "linter": "lua"
+}

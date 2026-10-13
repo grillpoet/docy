@@ -1,0 +1,795 @@
+{
+  "name": "Swift",
+  "extensions": [
+    "swift"
+  ],
+  "indent": 4,
+  "operators": [
+    "=",
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "??",
+    "->",
+    "=>",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "..<",
+    "...",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "?",
+    ":",
+    "&",
+    "|",
+    "^",
+    "~"
+  ],
+  "punctuation": "()[]{};,.@",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "//",
+  "blockComment": [
+    "/*",
+    "*/"
+  ],
+  "quotes": [
+    "\""
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\""
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "associatedtype",
+        "class",
+        "deinit",
+        "enum",
+        "extension",
+        "fileprivate",
+        "func",
+        "import",
+        "init",
+        "inout",
+        "internal",
+        "let",
+        "open",
+        "operator",
+        "private",
+        "protocol",
+        "public",
+        "static",
+        "struct",
+        "subscript",
+        "typealias",
+        "var",
+        "break",
+        "case",
+        "catch",
+        "continue",
+        "default",
+        "defer",
+        "do",
+        "else",
+        "fallthrough",
+        "for",
+        "guard",
+        "if",
+        "in",
+        "repeat",
+        "return",
+        "switch",
+        "where",
+        "while",
+        "as",
+        "Any",
+        "catch",
+        "false",
+        "is",
+        "nil",
+        "rethrows",
+        "self",
+        "Self",
+        "super",
+        "throw",
+        "throws",
+        "true",
+        "try",
+        "async",
+        "await",
+        "actor",
+        "some",
+        "any",
+        "each",
+        "borrowing",
+        "consuming"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "Int",
+        "Int8",
+        "Int16",
+        "Int32",
+        "Int64",
+        "UInt",
+        "UInt8",
+        "UInt16",
+        "UInt32",
+        "UInt64",
+        "Float",
+        "Double",
+        "Bool",
+        "String",
+        "Character",
+        "Array",
+        "Dictionary",
+        "Set",
+        "Optional",
+        "Result",
+        "Error",
+        "Void",
+        "Never",
+        "AnyObject",
+        "Codable",
+        "Encodable",
+        "Decodable",
+        "Equatable",
+        "Hashable",
+        "Comparable",
+        "Identifiable",
+        "ObservableObject",
+        "Published"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "print",
+        "debugPrint",
+        "dump",
+        "assert",
+        "precondition",
+        "fatalError",
+        "min",
+        "max",
+        "abs",
+        "sqrt",
+        "pow",
+        "floor",
+        "ceil",
+        "round",
+        "String(format:)",
+        "String(describing:)",
+        "Array(repeating:count:)",
+        "DispatchQueue.main.async",
+        "DispatchQueue.global().async",
+        "Task",
+        "Task.detached",
+        "URLSession.shared.dataTask",
+        "UserDefaults.standard",
+        "FileManager.default",
+        "Bundle.main"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "func",
+      "insert": "func () {\n    \n}",
+      "detail": "function"
+    },
+    {
+      "label": "guard let",
+      "insert": "guard let x = x else { return }",
+      "detail": "guard"
+    },
+    {
+      "label": "if let",
+      "insert": "if let x = x {\n    \n}",
+      "detail": "if-let"
+    },
+    {
+      "label": "class",
+      "insert": "class  {\n    \n}",
+      "detail": "class"
+    },
+    {
+      "label": "struct",
+      "insert": "struct  {\n    \n}",
+      "detail": "struct"
+    },
+    {
+      "label": "enum",
+      "insert": "enum  {\n    case \n}",
+      "detail": "enum"
+    },
+    {
+      "label": "extension",
+      "insert": "extension  {\n    \n}",
+      "detail": "extension"
+    },
+    {
+      "label": "associatedtype",
+      "insert": "associatedtype",
+      "detail": "keyword"
+    },
+    {
+      "label": "deinit",
+      "insert": "deinit",
+      "detail": "keyword"
+    },
+    {
+      "label": "fileprivate",
+      "insert": "fileprivate",
+      "detail": "keyword"
+    },
+    {
+      "label": "import",
+      "insert": "import",
+      "detail": "keyword"
+    },
+    {
+      "label": "init",
+      "insert": "init",
+      "detail": "keyword"
+    },
+    {
+      "label": "inout",
+      "insert": "inout",
+      "detail": "keyword"
+    },
+    {
+      "label": "internal",
+      "insert": "internal",
+      "detail": "keyword"
+    },
+    {
+      "label": "let",
+      "insert": "let",
+      "detail": "keyword"
+    },
+    {
+      "label": "open",
+      "insert": "open",
+      "detail": "keyword"
+    },
+    {
+      "label": "operator",
+      "insert": "operator",
+      "detail": "keyword"
+    },
+    {
+      "label": "private",
+      "insert": "private",
+      "detail": "keyword"
+    },
+    {
+      "label": "protocol",
+      "insert": "protocol",
+      "detail": "keyword"
+    },
+    {
+      "label": "public",
+      "insert": "public",
+      "detail": "keyword"
+    },
+    {
+      "label": "static",
+      "insert": "static",
+      "detail": "keyword"
+    },
+    {
+      "label": "subscript",
+      "insert": "subscript",
+      "detail": "keyword"
+    },
+    {
+      "label": "typealias",
+      "insert": "typealias",
+      "detail": "keyword"
+    },
+    {
+      "label": "var",
+      "insert": "var",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "catch",
+      "insert": "catch",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "default",
+      "insert": "default",
+      "detail": "keyword"
+    },
+    {
+      "label": "defer",
+      "insert": "defer",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "fallthrough",
+      "insert": "fallthrough",
+      "detail": "keyword"
+    },
+    {
+      "label": "for",
+      "insert": "for",
+      "detail": "keyword"
+    },
+    {
+      "label": "guard",
+      "insert": "guard",
+      "detail": "keyword"
+    },
+    {
+      "label": "if",
+      "insert": "if",
+      "detail": "keyword"
+    },
+    {
+      "label": "in",
+      "insert": "in",
+      "detail": "keyword"
+    },
+    {
+      "label": "repeat",
+      "insert": "repeat",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "switch",
+      "insert": "switch",
+      "detail": "keyword"
+    },
+    {
+      "label": "where",
+      "insert": "where",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "as",
+      "insert": "as",
+      "detail": "keyword"
+    },
+    {
+      "label": "Any",
+      "insert": "Any",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "is",
+      "insert": "is",
+      "detail": "keyword"
+    },
+    {
+      "label": "nil",
+      "insert": "nil",
+      "detail": "keyword"
+    },
+    {
+      "label": "rethrows",
+      "insert": "rethrows",
+      "detail": "keyword"
+    },
+    {
+      "label": "self",
+      "insert": "self",
+      "detail": "keyword"
+    },
+    {
+      "label": "Self",
+      "insert": "Self",
+      "detail": "keyword"
+    },
+    {
+      "label": "super",
+      "insert": "super",
+      "detail": "keyword"
+    },
+    {
+      "label": "throw",
+      "insert": "throw",
+      "detail": "keyword"
+    },
+    {
+      "label": "throws",
+      "insert": "throws",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "try",
+      "insert": "try",
+      "detail": "keyword"
+    },
+    {
+      "label": "async",
+      "insert": "async",
+      "detail": "keyword"
+    },
+    {
+      "label": "await",
+      "insert": "await",
+      "detail": "keyword"
+    },
+    {
+      "label": "actor",
+      "insert": "actor",
+      "detail": "keyword"
+    },
+    {
+      "label": "some",
+      "insert": "some",
+      "detail": "keyword"
+    },
+    {
+      "label": "any",
+      "insert": "any",
+      "detail": "keyword"
+    },
+    {
+      "label": "each",
+      "insert": "each",
+      "detail": "keyword"
+    },
+    {
+      "label": "borrowing",
+      "insert": "borrowing",
+      "detail": "keyword"
+    },
+    {
+      "label": "consuming",
+      "insert": "consuming",
+      "detail": "keyword"
+    },
+    {
+      "label": "Int",
+      "insert": "Int",
+      "detail": "type"
+    },
+    {
+      "label": "Int8",
+      "insert": "Int8",
+      "detail": "type"
+    },
+    {
+      "label": "Int16",
+      "insert": "Int16",
+      "detail": "type"
+    },
+    {
+      "label": "Int32",
+      "insert": "Int32",
+      "detail": "type"
+    },
+    {
+      "label": "Int64",
+      "insert": "Int64",
+      "detail": "type"
+    },
+    {
+      "label": "UInt",
+      "insert": "UInt",
+      "detail": "type"
+    },
+    {
+      "label": "UInt8",
+      "insert": "UInt8",
+      "detail": "type"
+    },
+    {
+      "label": "UInt16",
+      "insert": "UInt16",
+      "detail": "type"
+    },
+    {
+      "label": "UInt32",
+      "insert": "UInt32",
+      "detail": "type"
+    },
+    {
+      "label": "UInt64",
+      "insert": "UInt64",
+      "detail": "type"
+    },
+    {
+      "label": "Float",
+      "insert": "Float",
+      "detail": "type"
+    },
+    {
+      "label": "Double",
+      "insert": "Double",
+      "detail": "type"
+    },
+    {
+      "label": "Bool",
+      "insert": "Bool",
+      "detail": "type"
+    },
+    {
+      "label": "String",
+      "insert": "String",
+      "detail": "type"
+    },
+    {
+      "label": "Character",
+      "insert": "Character",
+      "detail": "type"
+    },
+    {
+      "label": "Array",
+      "insert": "Array",
+      "detail": "type"
+    },
+    {
+      "label": "Dictionary",
+      "insert": "Dictionary",
+      "detail": "type"
+    },
+    {
+      "label": "Set",
+      "insert": "Set",
+      "detail": "type"
+    },
+    {
+      "label": "Optional",
+      "insert": "Optional",
+      "detail": "type"
+    },
+    {
+      "label": "Result",
+      "insert": "Result",
+      "detail": "type"
+    },
+    {
+      "label": "Error",
+      "insert": "Error",
+      "detail": "type"
+    },
+    {
+      "label": "Void",
+      "insert": "Void",
+      "detail": "type"
+    },
+    {
+      "label": "Never",
+      "insert": "Never",
+      "detail": "type"
+    },
+    {
+      "label": "AnyObject",
+      "insert": "AnyObject",
+      "detail": "type"
+    },
+    {
+      "label": "Codable",
+      "insert": "Codable",
+      "detail": "type"
+    },
+    {
+      "label": "Encodable",
+      "insert": "Encodable",
+      "detail": "type"
+    },
+    {
+      "label": "Decodable",
+      "insert": "Decodable",
+      "detail": "type"
+    },
+    {
+      "label": "Equatable",
+      "insert": "Equatable",
+      "detail": "type"
+    },
+    {
+      "label": "Hashable",
+      "insert": "Hashable",
+      "detail": "type"
+    },
+    {
+      "label": "Comparable",
+      "insert": "Comparable",
+      "detail": "type"
+    },
+    {
+      "label": "Identifiable",
+      "insert": "Identifiable",
+      "detail": "type"
+    },
+    {
+      "label": "ObservableObject",
+      "insert": "ObservableObject",
+      "detail": "type"
+    },
+    {
+      "label": "Published",
+      "insert": "Published",
+      "detail": "type"
+    },
+    {
+      "label": "print",
+      "insert": "print",
+      "detail": "builtin"
+    },
+    {
+      "label": "debugPrint",
+      "insert": "debugPrint",
+      "detail": "builtin"
+    },
+    {
+      "label": "dump",
+      "insert": "dump",
+      "detail": "builtin"
+    },
+    {
+      "label": "assert",
+      "insert": "assert",
+      "detail": "builtin"
+    },
+    {
+      "label": "precondition",
+      "insert": "precondition",
+      "detail": "builtin"
+    },
+    {
+      "label": "fatalError",
+      "insert": "fatalError",
+      "detail": "builtin"
+    },
+    {
+      "label": "min",
+      "insert": "min",
+      "detail": "builtin"
+    },
+    {
+      "label": "max",
+      "insert": "max",
+      "detail": "builtin"
+    },
+    {
+      "label": "abs",
+      "insert": "abs",
+      "detail": "builtin"
+    },
+    {
+      "label": "sqrt",
+      "insert": "sqrt",
+      "detail": "builtin"
+    },
+    {
+      "label": "pow",
+      "insert": "pow",
+      "detail": "builtin"
+    },
+    {
+      "label": "floor",
+      "insert": "floor",
+      "detail": "builtin"
+    },
+    {
+      "label": "ceil",
+      "insert": "ceil",
+      "detail": "builtin"
+    },
+    {
+      "label": "round",
+      "insert": "round",
+      "detail": "builtin"
+    },
+    {
+      "label": "String(format:)",
+      "insert": "String(format:)",
+      "detail": "builtin"
+    },
+    {
+      "label": "String(describing:)",
+      "insert": "String(describing:)",
+      "detail": "builtin"
+    },
+    {
+      "label": "Array(repeating:count:)",
+      "insert": "Array(repeating:count:)",
+      "detail": "builtin"
+    },
+    {
+      "label": "Task",
+      "insert": "Task",
+      "detail": "builtin"
+    }
+  ]
+}

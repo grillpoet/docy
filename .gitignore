@@ -1,0 +1,78 @@
+# ============================================================
+# docy .gitignore
+# ============================================================
+
+# ---------- Gradle ----------
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/**/build/
+gradle-app.setting
+.gradletasknamecache
+local.properties
+gradle/gradle-daemon-jvm.properties
+
+# ---------- Android ----------
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+release/
+captures/
+.cxx/
+.externalNativeBuild/
+*.jks
+*.keystore
+keystore.properties
+
+# ---------- IDE ----------
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+
+# ---------- Kotlin ----------
+.kotlin/
+*.kotlin_module
+
+# ---------- 系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# ---------- 日志 / 临时 ----------
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# ---------- 项目本地 ----------
+# 编辑器打包 .love 的缓存目录
+.docy_cache/
+
+# 插件调试时挂进去的外置插件（不进仓库）
+/plugins-local/
+
+# 导出给 AI 的 kt 合并文件
+kt_dump.txt
+*.dump.txt
+
+# 生成的交接文档（如要版本化则删除这行）
+# PLUGIN_DEV.md
+
+# 根目录临时脚本（交接 / 调试用，不进仓库）
+/*.py
+
+# ---------- 空目录占位 ----------
+!.gitkeep

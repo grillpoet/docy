@@ -1,0 +1,32 @@
+{
+  "name": "JavaScript",
+  "extensions": ["js", "mjs", "cjs", "ts", "jsx", "tsx"],
+  "indent": 2,
+  "rules": [
+    { "kind": "comment", "type": "block", "start": "/*", "end": "*/" },
+    { "kind": "comment", "type": "line",  "start": "//" },
+    { "kind": "string",  "type": "block", "start": "`", "end": "`" },
+    { "kind": "string",  "type": "quote", "quotes": ["\"", "'"] },
+    { "kind": "number",  "regex": "\\b\\d+(\\.\\d+)?\\b" },
+    { "kind": "keyword", "words": [
+      "async","await","break","case","catch","class","const","continue",
+      "debugger","default","delete","do","else","export","extends","finally",
+      "for","function","if","import","in","instanceof","let","new","of",
+      "return","static","super","switch","this","throw","try","typeof","var",
+      "void","while","with","yield","true","false","null","undefined"
+    ]},
+    { "kind": "type", "words": [
+      "Array","Object","String","Number","Boolean","Promise","Map","Set",
+      "Date","RegExp","Error","Symbol","BigInt"
+    ]},
+    { "kind": "library", "words": [
+      "console","document","window","Math","JSON","parseInt","parseFloat",
+      "setTimeout","setInterval","fetch"
+    ]}
+  ],
+  "completions": [
+    { "label": "function", "insert": "function () {\n  \n}", "detail": "function" },
+    { "label": "const", "insert": "const ", "detail": "constant" },
+    { "label": "let", "insert": "let ", "detail": "let" }
+  ]
+}

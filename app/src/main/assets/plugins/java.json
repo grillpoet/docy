@@ -1,0 +1,45 @@
+{
+  "name": "Java",
+  "extensions": ["java"],
+  "indent": 4,
+  "operators": ["=", "==", "!=", "<=", ">=", "&&", "||", "++", "--",
+                "+=", "-=", "*=", "/=", "%=", "<<", ">>", ">>>", "&=", "|=", "^=",
+                "+", "-", "*", "/", "%", "<", ">", "!", "?", ":", "&", "|", "^", "~"],
+  "punctuation": "()[]{};,.@",
+  "brackets": [["{", "}"], ["(", ")"], ["[", "]"]],
+  "lineComment": "//",
+  "blockComment": ["/*", "*/"],
+  "quotes": ["\""],
+  "blockQuotes": [],
+  "rules": [
+    { "kind": "comment", "type": "block", "start": "/*", "end": "*/" },
+    { "kind": "comment", "type": "line",  "start": "//" },
+    { "kind": "string",  "type": "quote", "quotes": ["\""] },
+    { "kind": "number",  "regex": "\\b\\d+(\\.\\d+)?[fFlLdD]?\\b" },
+    { "kind": "keyword", "words": [
+      "abstract","assert","break","case","catch","class","const","continue",
+      "default","do","else","enum","extends","final","finally","for","goto",
+      "if","implements","import","instanceof","interface","native","new",
+      "package","private","protected","public","return","static","strictfp",
+      "super","switch","synchronized","this","throw","throws","transient",
+      "try","volatile","while","true","false","null","var","record","sealed",
+      "permits","yield"
+    ]},
+    { "kind": "type", "words": [
+      "boolean","byte","char","double","float","int","long","short","void",
+      "Boolean","Byte","Character","Double","Float","Integer","Long","Object",
+      "Short","String","Void","List","Map","Set","ArrayList","HashMap",
+      "HashSet","Optional","Stream","Collectors"
+    ]},
+    { "kind": "library", "words": [
+      "System","out","err","println","print","printf","Math","Objects",
+      "Arrays","Collections","String","StringBuilder","IOException","Exception"
+    ]}
+  ],
+  "completions": [
+    { "label": "public static void main", "insert": "public static void main(String[] args) {\n    \n}", "detail": "main" },
+    { "label": "System.out.println", "insert": "System.out.println();", "detail": "println" },
+    { "label": "for", "insert": "for (int i = 0; i < n; i++) {\n    \n}", "detail": "for" },
+    { "label": "if", "insert": "if () {\n    \n}", "detail": "if" }
+  ]
+}

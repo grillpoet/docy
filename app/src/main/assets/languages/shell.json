@@ -1,0 +1,689 @@
+{
+  "name": "Shell",
+  "extensions": [
+    "sh",
+    "bash",
+    "zsh"
+  ],
+  "indent": 2,
+  "operators": [
+    "=",
+    "==",
+    "!=",
+    "=~",
+    "&&",
+    "||",
+    "|",
+    "&",
+    ";",
+    ">",
+    ">>",
+    "<",
+    "<<"
+  ],
+  "punctuation": "()[]{};,.",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "#",
+  "blockComment": [],
+  "quotes": [
+    "\"",
+    "'",
+    "`"
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "#"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\"",
+        "'",
+        "`"
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "if",
+        "then",
+        "else",
+        "elif",
+        "fi",
+        "case",
+        "esac",
+        "for",
+        "while",
+        "until",
+        "do",
+        "done",
+        "in",
+        "function",
+        "select",
+        "time",
+        "coproc",
+        "return",
+        "exit",
+        "break",
+        "continue",
+        "local",
+        "export",
+        "readonly",
+        "declare",
+        "typeset",
+        "unset",
+        "shift",
+        "eval",
+        "exec",
+        "source",
+        "alias",
+        "unalias",
+        "trap",
+        "wait",
+        "set",
+        "shopt",
+        "true",
+        "false"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "echo",
+        "printf",
+        "read",
+        "cd",
+        "pwd",
+        "ls",
+        "cp",
+        "mv",
+        "rm",
+        "mkdir",
+        "rmdir",
+        "cat",
+        "head",
+        "tail",
+        "grep",
+        "sed",
+        "awk",
+        "find",
+        "sort",
+        "uniq",
+        "wc",
+        "test",
+        "expr",
+        "true",
+        "false",
+        "set",
+        "trap",
+        "wait",
+        "kill",
+        "sleep",
+        "sudo",
+        "chmod",
+        "chown",
+        "ln",
+        "touch",
+        "tar",
+        "gzip",
+        "gunzip",
+        "curl",
+        "wget",
+        "bash",
+        "sh",
+        "zsh",
+        "env",
+        "which",
+        "whereis",
+        "type",
+        "file",
+        "stat",
+        "du",
+        "df",
+        "mount",
+        "umount",
+        "ps",
+        "top",
+        "killall",
+        "pkill",
+        "git",
+        "make",
+        "cmake",
+        "gcc",
+        "clang",
+        "python",
+        "pip",
+        "npm",
+        "node"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "#!/bin/bash",
+      "insert": "#!/bin/bash\nset -euo pipefail\n\n",
+      "detail": "shebang"
+    },
+    {
+      "label": "if",
+      "insert": "if [ ]; then\n  \nfi",
+      "detail": "if"
+    },
+    {
+      "label": "for",
+      "insert": "for x in \"$@\"; do\n  \ndone",
+      "detail": "for"
+    },
+    {
+      "label": "while",
+      "insert": "while [ ]; do\n  \ndone",
+      "detail": "while"
+    },
+    {
+      "label": "function",
+      "insert": "function name() {\n  \n}",
+      "detail": "function"
+    },
+    {
+      "label": "case",
+      "insert": "case $1 in\n  start)\n    ;;\n  stop)\n    ;;\n  *)\n    ;;\nesac",
+      "detail": "case"
+    },
+    {
+      "label": "then",
+      "insert": "then",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "elif",
+      "insert": "elif",
+      "detail": "keyword"
+    },
+    {
+      "label": "fi",
+      "insert": "fi",
+      "detail": "keyword"
+    },
+    {
+      "label": "esac",
+      "insert": "esac",
+      "detail": "keyword"
+    },
+    {
+      "label": "until",
+      "insert": "until",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "done",
+      "insert": "done",
+      "detail": "keyword"
+    },
+    {
+      "label": "in",
+      "insert": "in",
+      "detail": "keyword"
+    },
+    {
+      "label": "select",
+      "insert": "select",
+      "detail": "keyword"
+    },
+    {
+      "label": "time",
+      "insert": "time",
+      "detail": "keyword"
+    },
+    {
+      "label": "coproc",
+      "insert": "coproc",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "exit",
+      "insert": "exit",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "local",
+      "insert": "local",
+      "detail": "keyword"
+    },
+    {
+      "label": "export",
+      "insert": "export",
+      "detail": "keyword"
+    },
+    {
+      "label": "readonly",
+      "insert": "readonly",
+      "detail": "keyword"
+    },
+    {
+      "label": "declare",
+      "insert": "declare",
+      "detail": "keyword"
+    },
+    {
+      "label": "typeset",
+      "insert": "typeset",
+      "detail": "keyword"
+    },
+    {
+      "label": "unset",
+      "insert": "unset",
+      "detail": "keyword"
+    },
+    {
+      "label": "shift",
+      "insert": "shift",
+      "detail": "keyword"
+    },
+    {
+      "label": "eval",
+      "insert": "eval",
+      "detail": "keyword"
+    },
+    {
+      "label": "exec",
+      "insert": "exec",
+      "detail": "keyword"
+    },
+    {
+      "label": "source",
+      "insert": "source",
+      "detail": "keyword"
+    },
+    {
+      "label": "alias",
+      "insert": "alias",
+      "detail": "keyword"
+    },
+    {
+      "label": "unalias",
+      "insert": "unalias",
+      "detail": "keyword"
+    },
+    {
+      "label": "trap",
+      "insert": "trap",
+      "detail": "keyword"
+    },
+    {
+      "label": "wait",
+      "insert": "wait",
+      "detail": "keyword"
+    },
+    {
+      "label": "set",
+      "insert": "set",
+      "detail": "keyword"
+    },
+    {
+      "label": "shopt",
+      "insert": "shopt",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "echo",
+      "insert": "echo",
+      "detail": "builtin"
+    },
+    {
+      "label": "printf",
+      "insert": "printf",
+      "detail": "builtin"
+    },
+    {
+      "label": "read",
+      "insert": "read",
+      "detail": "builtin"
+    },
+    {
+      "label": "cd",
+      "insert": "cd",
+      "detail": "builtin"
+    },
+    {
+      "label": "pwd",
+      "insert": "pwd",
+      "detail": "builtin"
+    },
+    {
+      "label": "ls",
+      "insert": "ls",
+      "detail": "builtin"
+    },
+    {
+      "label": "cp",
+      "insert": "cp",
+      "detail": "builtin"
+    },
+    {
+      "label": "mv",
+      "insert": "mv",
+      "detail": "builtin"
+    },
+    {
+      "label": "rm",
+      "insert": "rm",
+      "detail": "builtin"
+    },
+    {
+      "label": "mkdir",
+      "insert": "mkdir",
+      "detail": "builtin"
+    },
+    {
+      "label": "rmdir",
+      "insert": "rmdir",
+      "detail": "builtin"
+    },
+    {
+      "label": "cat",
+      "insert": "cat",
+      "detail": "builtin"
+    },
+    {
+      "label": "head",
+      "insert": "head",
+      "detail": "builtin"
+    },
+    {
+      "label": "tail",
+      "insert": "tail",
+      "detail": "builtin"
+    },
+    {
+      "label": "grep",
+      "insert": "grep",
+      "detail": "builtin"
+    },
+    {
+      "label": "sed",
+      "insert": "sed",
+      "detail": "builtin"
+    },
+    {
+      "label": "awk",
+      "insert": "awk",
+      "detail": "builtin"
+    },
+    {
+      "label": "find",
+      "insert": "find",
+      "detail": "builtin"
+    },
+    {
+      "label": "sort",
+      "insert": "sort",
+      "detail": "builtin"
+    },
+    {
+      "label": "uniq",
+      "insert": "uniq",
+      "detail": "builtin"
+    },
+    {
+      "label": "wc",
+      "insert": "wc",
+      "detail": "builtin"
+    },
+    {
+      "label": "test",
+      "insert": "test",
+      "detail": "builtin"
+    },
+    {
+      "label": "expr",
+      "insert": "expr",
+      "detail": "builtin"
+    },
+    {
+      "label": "kill",
+      "insert": "kill",
+      "detail": "builtin"
+    },
+    {
+      "label": "sleep",
+      "insert": "sleep",
+      "detail": "builtin"
+    },
+    {
+      "label": "sudo",
+      "insert": "sudo",
+      "detail": "builtin"
+    },
+    {
+      "label": "chmod",
+      "insert": "chmod",
+      "detail": "builtin"
+    },
+    {
+      "label": "chown",
+      "insert": "chown",
+      "detail": "builtin"
+    },
+    {
+      "label": "ln",
+      "insert": "ln",
+      "detail": "builtin"
+    },
+    {
+      "label": "touch",
+      "insert": "touch",
+      "detail": "builtin"
+    },
+    {
+      "label": "tar",
+      "insert": "tar",
+      "detail": "builtin"
+    },
+    {
+      "label": "gzip",
+      "insert": "gzip",
+      "detail": "builtin"
+    },
+    {
+      "label": "gunzip",
+      "insert": "gunzip",
+      "detail": "builtin"
+    },
+    {
+      "label": "curl",
+      "insert": "curl",
+      "detail": "builtin"
+    },
+    {
+      "label": "wget",
+      "insert": "wget",
+      "detail": "builtin"
+    },
+    {
+      "label": "bash",
+      "insert": "bash",
+      "detail": "builtin"
+    },
+    {
+      "label": "sh",
+      "insert": "sh",
+      "detail": "builtin"
+    },
+    {
+      "label": "zsh",
+      "insert": "zsh",
+      "detail": "builtin"
+    },
+    {
+      "label": "env",
+      "insert": "env",
+      "detail": "builtin"
+    },
+    {
+      "label": "which",
+      "insert": "which",
+      "detail": "builtin"
+    },
+    {
+      "label": "whereis",
+      "insert": "whereis",
+      "detail": "builtin"
+    },
+    {
+      "label": "type",
+      "insert": "type",
+      "detail": "builtin"
+    },
+    {
+      "label": "file",
+      "insert": "file",
+      "detail": "builtin"
+    },
+    {
+      "label": "stat",
+      "insert": "stat",
+      "detail": "builtin"
+    },
+    {
+      "label": "du",
+      "insert": "du",
+      "detail": "builtin"
+    },
+    {
+      "label": "df",
+      "insert": "df",
+      "detail": "builtin"
+    },
+    {
+      "label": "mount",
+      "insert": "mount",
+      "detail": "builtin"
+    },
+    {
+      "label": "umount",
+      "insert": "umount",
+      "detail": "builtin"
+    },
+    {
+      "label": "ps",
+      "insert": "ps",
+      "detail": "builtin"
+    },
+    {
+      "label": "top",
+      "insert": "top",
+      "detail": "builtin"
+    },
+    {
+      "label": "killall",
+      "insert": "killall",
+      "detail": "builtin"
+    },
+    {
+      "label": "pkill",
+      "insert": "pkill",
+      "detail": "builtin"
+    },
+    {
+      "label": "git",
+      "insert": "git",
+      "detail": "builtin"
+    },
+    {
+      "label": "make",
+      "insert": "make",
+      "detail": "builtin"
+    },
+    {
+      "label": "cmake",
+      "insert": "cmake",
+      "detail": "builtin"
+    },
+    {
+      "label": "gcc",
+      "insert": "gcc",
+      "detail": "builtin"
+    },
+    {
+      "label": "clang",
+      "insert": "clang",
+      "detail": "builtin"
+    },
+    {
+      "label": "python",
+      "insert": "python",
+      "detail": "builtin"
+    },
+    {
+      "label": "pip",
+      "insert": "pip",
+      "detail": "builtin"
+    },
+    {
+      "label": "npm",
+      "insert": "npm",
+      "detail": "builtin"
+    },
+    {
+      "label": "node",
+      "insert": "node",
+      "detail": "builtin"
+    }
+  ]
+}

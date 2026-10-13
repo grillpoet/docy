@@ -1,0 +1,46 @@
+{
+  "name": "C#",
+  "extensions": ["cs"],
+  "indent": 4,
+  "operators": ["=", "==", "!=", "<=", ">=", "&&", "||", "++", "--",
+                "+=", "-=", "*=", "/=", "%=", "??", "?.", "=>",
+                "+", "-", "*", "/", "%", "<", ">", "!", "?", ":", "&", "|", "^", "~"],
+  "punctuation": "()[]{};,.@",
+  "brackets": [["{", "}"], ["(", ")"], ["[", "]"]],
+  "lineComment": "//",
+  "blockComment": ["/*", "*/"],
+  "quotes": ["\""],
+  "blockQuotes": [],
+  "rules": [
+    { "kind": "comment", "type": "block", "start": "/*", "end": "*/" },
+    { "kind": "comment", "type": "line",  "start": "//" },
+    { "kind": "string",  "type": "quote", "quotes": ["\""] },
+    { "kind": "number",  "regex": "\\b\\d+(\\.\\d+)?[fFdDmMlLuU]?\\b" },
+    { "kind": "keyword", "words": [
+      "abstract","as","async","await","base","break","case","catch","checked",
+      "class","const","continue","default","delegate","do","else","enum",
+      "event","explicit","extern","false","finally","fixed","for","foreach",
+      "goto","if","implicit","in","interface","internal","is","lock",
+      "namespace","new","null","operator","out","override","params","private",
+      "protected","public","readonly","ref","return","sealed","sizeof",
+      "stackalloc","static","struct","switch","this","throw","true","try",
+      "typeof","unchecked","unsafe","using","var","virtual","void","volatile",
+      "while","yield"
+    ]},
+    { "kind": "type", "words": [
+      "bool","byte","char","decimal","double","float","int","long","object",
+      "sbyte","short","string","uint","ulong","ushort","Boolean","Byte","Char",
+      "Decimal","Double","Int16","Int32","Int64","Object","String","UInt16",
+      "UInt32","UInt64","List","Dictionary","IEnumerable","Task","Action","Func"
+    ]},
+    { "kind": "library", "words": [
+      "Console","WriteLine","ReadLine","Math","String","Enumerable","Linq",
+      "Exception","Debug","Environment"
+    ]}
+  ],
+  "completions": [
+    { "label": "static void Main", "insert": "static void Main(string[] args) {\n    \n}", "detail": "Main" },
+    { "label": "Console.WriteLine", "insert": "Console.WriteLine();", "detail": "WriteLine" },
+    { "label": "foreach", "insert": "foreach (var x in xs) {\n    \n}", "detail": "foreach" }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "name": "Lisp",
+  "extensions": [
+    "lisp",
+    "cl",
+    "el",
+    "lsp",
+    "asd"
+  ],
+  "indent": 2,
+  "operators": [
+    "=",
+    "/=",
+    "<",
+    ">",
+    "<=",
+    ">=",
+    "+",
+    "-",
+    "*",
+    "/",
+    "mod",
+    "rem"
+  ],
+  "punctuation": "()[],'`;",
+  "brackets": [
+    [
+      "(",
+      ")"
+    ]
+  ],
+  "lineComment": ";",
+  "blockComment": [
+    "#|",
+    "|#"
+  ],
+  "quotes": [
+    "\""
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "#|",
+      "end": "|#"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": ";"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\""
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "defun",
+        "defmacro",
+        "defvar",
+        "defparameter",
+        "defconstant",
+        "defstruct",
+        "defclass",
+        "defmethod",
+        "defgeneric",
+        "defpackage",
+        "in-package",
+        "lambda",
+        "let",
+        "let*",
+        "flet",
+        "labels",
+        "if",
+        "when",
+        "unless",
+        "cond",
+        "case",
+        "ecase",
+        "typecase",
+        "loop",
+        "do",
+        "dolist",
+        "dotimes",
+        "block",
+        "return-from",
+        "return",
+        "catch",
+        "throw",
+        "unwind-protect",
+        "handler-case",
+        "handler-bind",
+        "funcall",
+        "apply",
+        "quote",
+        "function",
+        "setq",
+        "setf",
+        "psetq",
+        "psetf",
+        "and",
+        "or",
+        "not",
+        "nil",
+        "t"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "integer",
+        "float",
+        "string",
+        "symbol",
+        "list",
+        "cons",
+        "array",
+        "vector",
+        "hash-table",
+        "character",
+        "number",
+        "function",
+        "t",
+        "nil"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "format",
+        "print",
+        "princ",
+        "prin1",
+        "terpri",
+        "read",
+        "read-line",
+        "car",
+        "cdr",
+        "caar",
+        "cadr",
+        "cddr",
+        "cons",
+        "list",
+        "append",
+        "reverse",
+        "length",
+        "nth",
+        "first",
+        "second",
+        "third",
+        "rest",
+        "last",
+        "mapcar",
+        "mapc",
+        "maplist",
+        "reduce",
+        "remove",
+        "find",
+        "position",
+        "sort",
+        "member",
+        "assoc",
+        "push",
+        "pop",
+        "add",
+        "remove"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "defun",
+      "insert": "(defun name (args)\n  )",
+      "detail": "defun"
+    },
+    {
+      "label": "defvar",
+      "insert": "(defvar *name* value)",
+      "detail": "defvar"
+    },
+    {
+      "label": "let",
+      "insert": "(let ((x value))\n  )",
+      "detail": "let"
+    },
+    {
+      "label": "format",
+      "insert": "(format t \"~a~%\" )",
+      "detail": "format"
+    },
+    {
+      "label": "defmacro",
+      "insert": "defmacro",
+      "detail": "keyword"
+    },
+    {
+      "label": "defparameter",
+      "insert": "defparameter",
+      "detail": "keyword"
+    },
+    {
+      "label": "defconstant",
+      "insert": "defconstant",
+      "detail": "keyword"
+    },
+    {
+      "label": "defstruct",
+      "insert": "defstruct",
+      "detail": "keyword"
+    },
+    {
+      "label": "defclass",
+      "insert": "defclass",
+      "detail": "keyword"
+    },
+    {
+      "label": "defmethod",
+      "insert": "defmethod",
+      "detail": "keyword"
+    },
+    {
+      "label": "defgeneric",
+      "insert": "defgeneric",
+      "detail": "keyword"
+    },
+    {
+      "label": "defpackage",
+      "insert": "defpackage",
+      "detail": "keyword"
+    },
+    {
+      "label": "in-package",
+      "insert": "in-package",
+      "detail": "keyword"
+    },
+    {
+      "label": "lambda",
+      "insert": "lambda",
+      "detail": "keyword"
+    },
+    {
+      "label": "let*",
+      "insert": "let*",
+      "detail": "keyword"
+    },
+    {
+      "label": "flet",
+      "insert": "flet",
+      "detail": "keyword"
+    },
+    {
+      "label": "labels",
+      "insert": "labels",
+      "detail": "keyword"
+    },
+    {
+      "label": "if",
+      "insert": "if",
+      "detail": "keyword"
+    },
+    {
+      "label": "when",
+      "insert": "when",
+      "detail": "keyword"
+    },
+    {
+      "label": "unless",
+      "insert": "unless",
+      "detail": "keyword"
+    },
+    {
+      "label": "cond",
+      "insert": "cond",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "ecase",
+      "insert": "ecase",
+      "detail": "keyword"
+    },
+    {
+      "label": "typecase",
+      "insert": "typecase",
+      "detail": "keyword"
+    },
+    {
+      "label": "loop",
+      "insert": "loop",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "dolist",
+      "insert": "dolist",
+      "detail": "keyword"
+    },
+    {
+      "label": "dotimes",
+      "insert": "dotimes",
+      "detail": "keyword"
+    },
+    {
+      "label": "block",
+      "insert": "block",
+      "detail": "keyword"
+    },
+    {
+      "label": "return-from",
+      "insert": "return-from",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "catch",
+      "insert": "catch",
+      "detail": "keyword"
+    },
+    {
+      "label": "throw",
+      "insert": "throw",
+      "detail": "keyword"
+    },
+    {
+      "label": "unwind-protect",
+      "insert": "unwind-protect",
+      "detail": "keyword"
+    },
+    {
+      "label": "handler-case",
+      "insert": "handler-case",
+      "detail": "keyword"
+    },
+    {
+      "label": "handler-bind",
+      "insert": "handler-bind",
+      "detail": "keyword"
+    },
+    {
+      "label": "funcall",
+      "insert": "funcall",
+      "detail": "keyword"
+    },
+    {
+      "label": "apply",
+      "insert": "apply",
+      "detail": "keyword"
+    },
+    {
+      "label": "quote",
+      "insert": "quote",
+      "detail": "keyword"
+    },
+    {
+      "label": "function",
+      "insert": "function",
+      "detail": "keyword"
+    },
+    {
+      "label": "setq",
+      "insert": "setq",
+      "detail": "keyword"
+    },
+    {
+      "label": "setf",
+      "insert": "setf",
+      "detail": "keyword"
+    },
+    {
+      "label": "psetq",
+      "insert": "psetq",
+      "detail": "keyword"
+    },
+    {
+      "label": "psetf",
+      "insert": "psetf",
+      "detail": "keyword"
+    },
+    {
+      "label": "and",
+      "insert": "and",
+      "detail": "keyword"
+    },
+    {
+      "label": "or",
+      "insert": "or",
+      "detail": "keyword"
+    },
+    {
+      "label": "not",
+      "insert": "not",
+      "detail": "keyword"
+    },
+    {
+      "label": "nil",
+      "insert": "nil",
+      "detail": "keyword"
+    },
+    {
+      "label": "t",
+      "insert": "t",
+      "detail": "keyword"
+    },
+    {
+      "label": "integer",
+      "insert": "integer",
+      "detail": "type"
+    },
+    {
+      "label": "float",
+      "insert": "float",
+      "detail": "type"
+    },
+    {
+      "label": "string",
+      "insert": "string",
+      "detail": "type"
+    },
+    {
+      "label": "symbol",
+      "insert": "symbol",
+      "detail": "type"
+    },
+    {
+      "label": "list",
+      "insert": "list",
+      "detail": "type"
+    },
+    {
+      "label": "cons",
+      "insert": "cons",
+      "detail": "type"
+    },
+    {
+      "label": "array",
+      "insert": "array",
+      "detail": "type"
+    },
+    {
+      "label": "vector",
+      "insert": "vector",
+      "detail": "type"
+    },
+    {
+      "label": "hash-table",
+      "insert": "hash-table",
+      "detail": "type"
+    },
+    {
+      "label": "character",
+      "insert": "character",
+      "detail": "type"
+    },
+    {
+      "label": "number",
+      "insert": "number",
+      "detail": "type"
+    },
+    {
+      "label": "print",
+      "insert": "print",
+      "detail": "builtin"
+    },
+    {
+      "label": "princ",
+      "insert": "princ",
+      "detail": "builtin"
+    },
+    {
+      "label": "prin1",
+      "insert": "prin1",
+      "detail": "builtin"
+    },
+    {
+      "label": "terpri",
+      "insert": "terpri",
+      "detail": "builtin"
+    },
+    {
+      "label": "read",
+      "insert": "read",
+      "detail": "builtin"
+    },
+    {
+      "label": "read-line",
+      "insert": "read-line",
+      "detail": "builtin"
+    },
+    {
+      "label": "car",
+      "insert": "car",
+      "detail": "builtin"
+    },
+    {
+      "label": "cdr",
+      "insert": "cdr",
+      "detail": "builtin"
+    },
+    {
+      "label": "caar",
+      "insert": "caar",
+      "detail": "builtin"
+    },
+    {
+      "label": "cadr",
+      "insert": "cadr",
+      "detail": "builtin"
+    },
+    {
+      "label": "cddr",
+      "insert": "cddr",
+      "detail": "builtin"
+    },
+    {
+      "label": "append",
+      "insert": "append",
+      "detail": "builtin"
+    },
+    {
+      "label": "reverse",
+      "insert": "reverse",
+      "detail": "builtin"
+    },
+    {
+      "label": "length",
+      "insert": "length",
+      "detail": "builtin"
+    },
+    {
+      "label": "nth",
+      "insert": "nth",
+      "detail": "builtin"
+    },
+    {
+      "label": "first",
+      "insert": "first",
+      "detail": "builtin"
+    },
+    {
+      "label": "second",
+      "insert": "second",
+      "detail": "builtin"
+    },
+    {
+      "label": "third",
+      "insert": "third",
+      "detail": "builtin"
+    },
+    {
+      "label": "rest",
+      "insert": "rest",
+      "detail": "builtin"
+    },
+    {
+      "label": "last",
+      "insert": "last",
+      "detail": "builtin"
+    },
+    {
+      "label": "mapcar",
+      "insert": "mapcar",
+      "detail": "builtin"
+    },
+    {
+      "label": "mapc",
+      "insert": "mapc",
+      "detail": "builtin"
+    },
+    {
+      "label": "maplist",
+      "insert": "maplist",
+      "detail": "builtin"
+    },
+    {
+      "label": "reduce",
+      "insert": "reduce",
+      "detail": "builtin"
+    },
+    {
+      "label": "remove",
+      "insert": "remove",
+      "detail": "builtin"
+    },
+    {
+      "label": "find",
+      "insert": "find",
+      "detail": "builtin"
+    },
+    {
+      "label": "position",
+      "insert": "position",
+      "detail": "builtin"
+    },
+    {
+      "label": "sort",
+      "insert": "sort",
+      "detail": "builtin"
+    },
+    {
+      "label": "member",
+      "insert": "member",
+      "detail": "builtin"
+    },
+    {
+      "label": "assoc",
+      "insert": "assoc",
+      "detail": "builtin"
+    },
+    {
+      "label": "push",
+      "insert": "push",
+      "detail": "builtin"
+    },
+    {
+      "label": "pop",
+      "insert": "pop",
+      "detail": "builtin"
+    },
+    {
+      "label": "add",
+      "insert": "add",
+      "detail": "builtin"
+    }
+  ]
+}

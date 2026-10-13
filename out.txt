@@ -1,0 +1,52 @@
+========================================================================
+refactor_step4：性能修复 + 光标细节
+时间    : 2026-10-11 17:19:42
+========================================================================
+
+[1] DocyCodeEditor.computeVisualLines 改单调指针
+  [BAK ] DocyCodeEditor.kt -> DocyCodeEditor.kt.bak
+  [EDIT] DocyCodeEditor.kt : computeVisualLines 改单调指针
+
+[2] EditorViewModel 新增字段
+  [EDIT] EditorViewModel.kt : 加 preferredColumn 字段
+  [EDIT] EditorViewModel.kt : 加 matchJob 字段
+
+[3] updateValue
+  [EDIT] EditorViewModel.kt : updateValue 清列偏好 + 防抖
+
+[4] insertAtCursor
+  [EDIT] EditorViewModel.kt : insertAtCursor 清列偏好
+
+[5] moveCursorHorizontal
+  [EDIT] EditorViewModel.kt : moveCursorHorizontal 清列偏好
+
+[6] moveCursorVertical
+  [EDIT] EditorViewModel.kt : moveCursorVertical 保留列偏好
+
+[7] updateQuery
+  [EDIT] EditorViewModel.kt : updateQuery 走防抖
+
+[8] scheduleRefreshMatches
+  [EDIT] EditorViewModel.kt : 加 scheduleRefreshMatches
+
+========================================================================
+refactor_step4 完成。
+
+改动摘要：
+  DocyCodeEditor.computeVisualLines：
+    单调指针，把 O(视觉行 × 换行数) 降为 O(视觉行 + 换行)
+  EditorViewModel：
+    · preferredColumn 字段 + moveCursorVertical 保留列偏好
+    · matchJob + scheduleRefreshMatches 防抖 150ms
+    · updateValue / updateQuery / insertAtCursor / moveCursorHorizontal 适配
+
+不做（按轻量优先原则砍掉）：
+  U1 EditorTopBar 图标收敛（影响操作习惯）
+  U5 Tab 键按实际缩进对齐（锦上添花）
+
+下一步：Sync + 编译 :editor:assembleDebug
+  手动验证：
+    · 打开 1000 行以上文件，输入/删除流畅
+    · 打开查找面板，快速打字，光标位置和匹配数正确
+    · 键盘上下键连续移动光标，长行↔短行切换时列位置保持
+========================================================================

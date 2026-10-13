@@ -1,0 +1,908 @@
+{
+  "name": "Rust",
+  "extensions": [
+    "rs"
+  ],
+  "indent": 4,
+  "operators": [
+    "=",
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "->",
+    "=>",
+    "::",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "<<",
+    ">>",
+    "&=",
+    "|=",
+    "^=",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "?",
+    "&",
+    "|",
+    "^"
+  ],
+  "punctuation": "()[]{};,.@#",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "//",
+  "blockComment": [
+    "/*",
+    "*/"
+  ],
+  "quotes": [
+    "\""
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\""
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?([iu](8|16|32|64|128|size)|f(32|64))?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "as",
+        "async",
+        "await",
+        "break",
+        "const",
+        "continue",
+        "crate",
+        "dyn",
+        "else",
+        "enum",
+        "extern",
+        "false",
+        "fn",
+        "for",
+        "if",
+        "impl",
+        "in",
+        "let",
+        "loop",
+        "match",
+        "mod",
+        "move",
+        "mut",
+        "pub",
+        "ref",
+        "return",
+        "self",
+        "Self",
+        "static",
+        "struct",
+        "super",
+        "trait",
+        "true",
+        "type",
+        "unsafe",
+        "use",
+        "where",
+        "while",
+        "yield",
+        "abstract",
+        "become",
+        "box",
+        "do",
+        "final",
+        "macro",
+        "override",
+        "priv",
+        "try",
+        "typeof",
+        "unsized",
+        "virtual"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "i8",
+        "i16",
+        "i32",
+        "i64",
+        "i128",
+        "isize",
+        "u8",
+        "u16",
+        "u32",
+        "u64",
+        "u128",
+        "usize",
+        "f32",
+        "f64",
+        "bool",
+        "char",
+        "str",
+        "String",
+        "Vec",
+        "Option",
+        "Result",
+        "Box",
+        "Rc",
+        "Arc",
+        "RefCell",
+        "Cell",
+        "HashMap",
+        "HashSet",
+        "BTreeMap",
+        "BTreeSet",
+        "VecDeque",
+        "LinkedList",
+        "BinaryHeap",
+        "Cow",
+        "Path",
+        "PathBuf",
+        "File",
+        "Mutex",
+        "RwLock",
+        "AtomicBool",
+        "AtomicUsize"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "println!",
+        "print!",
+        "eprintln!",
+        "eprint!",
+        "format!",
+        "vec!",
+        "panic!",
+        "assert!",
+        "assert_eq!",
+        "assert_ne!",
+        "debug_assert!",
+        "debug_assert_eq!",
+        "write!",
+        "writeln!",
+        "todo!",
+        "unimplemented!",
+        "unreachable!",
+        "dbg!",
+        "matches!",
+        "include!",
+        "include_str!",
+        "include_bytes!",
+        "env!",
+        "option_env!",
+        "cfg!",
+        "stringify!",
+        "concat!",
+        "line!",
+        "column!",
+        "file!",
+        "module_path!",
+        "std::mem::swap",
+        "std::mem::replace",
+        "std::mem::take",
+        "std::mem::size_of",
+        "std::mem::align_of",
+        "std::ptr::null",
+        "std::ptr::null_mut",
+        "std::ptr::read",
+        "std::ptr::write"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "fn main",
+      "insert": "fn main() {\n    \n}",
+      "detail": "main"
+    },
+    {
+      "label": "println!",
+      "insert": "println!(\"{}\", );",
+      "detail": "println"
+    },
+    {
+      "label": "match",
+      "insert": "match x {\n    _ => ,\n}",
+      "detail": "match"
+    },
+    {
+      "label": "if let",
+      "insert": "if let Some(x) = opt {\n    \n}",
+      "detail": "if-let"
+    },
+    {
+      "label": "impl",
+      "insert": "impl  {\n    \n}",
+      "detail": "impl"
+    },
+    {
+      "label": "struct",
+      "insert": "struct  {\n    \n}",
+      "detail": "struct"
+    },
+    {
+      "label": "enum",
+      "insert": "enum  {\n    ,\n}",
+      "detail": "enum"
+    },
+    {
+      "label": "for",
+      "insert": "for item in collection {\n    \n}",
+      "detail": "for loop"
+    },
+    {
+      "label": "as",
+      "insert": "as",
+      "detail": "keyword"
+    },
+    {
+      "label": "async",
+      "insert": "async",
+      "detail": "keyword"
+    },
+    {
+      "label": "await",
+      "insert": "await",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "const",
+      "insert": "const",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "crate",
+      "insert": "crate",
+      "detail": "keyword"
+    },
+    {
+      "label": "dyn",
+      "insert": "dyn",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "extern",
+      "insert": "extern",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "fn",
+      "insert": "fn",
+      "detail": "keyword"
+    },
+    {
+      "label": "if",
+      "insert": "if",
+      "detail": "keyword"
+    },
+    {
+      "label": "in",
+      "insert": "in",
+      "detail": "keyword"
+    },
+    {
+      "label": "let",
+      "insert": "let",
+      "detail": "keyword"
+    },
+    {
+      "label": "loop",
+      "insert": "loop",
+      "detail": "keyword"
+    },
+    {
+      "label": "mod",
+      "insert": "mod",
+      "detail": "keyword"
+    },
+    {
+      "label": "move",
+      "insert": "move",
+      "detail": "keyword"
+    },
+    {
+      "label": "mut",
+      "insert": "mut",
+      "detail": "keyword"
+    },
+    {
+      "label": "pub",
+      "insert": "pub",
+      "detail": "keyword"
+    },
+    {
+      "label": "ref",
+      "insert": "ref",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "self",
+      "insert": "self",
+      "detail": "keyword"
+    },
+    {
+      "label": "Self",
+      "insert": "Self",
+      "detail": "keyword"
+    },
+    {
+      "label": "static",
+      "insert": "static",
+      "detail": "keyword"
+    },
+    {
+      "label": "super",
+      "insert": "super",
+      "detail": "keyword"
+    },
+    {
+      "label": "trait",
+      "insert": "trait",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "type",
+      "insert": "type",
+      "detail": "keyword"
+    },
+    {
+      "label": "unsafe",
+      "insert": "unsafe",
+      "detail": "keyword"
+    },
+    {
+      "label": "use",
+      "insert": "use",
+      "detail": "keyword"
+    },
+    {
+      "label": "where",
+      "insert": "where",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "yield",
+      "insert": "yield",
+      "detail": "keyword"
+    },
+    {
+      "label": "abstract",
+      "insert": "abstract",
+      "detail": "keyword"
+    },
+    {
+      "label": "become",
+      "insert": "become",
+      "detail": "keyword"
+    },
+    {
+      "label": "box",
+      "insert": "box",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "final",
+      "insert": "final",
+      "detail": "keyword"
+    },
+    {
+      "label": "macro",
+      "insert": "macro",
+      "detail": "keyword"
+    },
+    {
+      "label": "override",
+      "insert": "override",
+      "detail": "keyword"
+    },
+    {
+      "label": "priv",
+      "insert": "priv",
+      "detail": "keyword"
+    },
+    {
+      "label": "try",
+      "insert": "try",
+      "detail": "keyword"
+    },
+    {
+      "label": "typeof",
+      "insert": "typeof",
+      "detail": "keyword"
+    },
+    {
+      "label": "unsized",
+      "insert": "unsized",
+      "detail": "keyword"
+    },
+    {
+      "label": "virtual",
+      "insert": "virtual",
+      "detail": "keyword"
+    },
+    {
+      "label": "i8",
+      "insert": "i8",
+      "detail": "type"
+    },
+    {
+      "label": "i16",
+      "insert": "i16",
+      "detail": "type"
+    },
+    {
+      "label": "i32",
+      "insert": "i32",
+      "detail": "type"
+    },
+    {
+      "label": "i64",
+      "insert": "i64",
+      "detail": "type"
+    },
+    {
+      "label": "i128",
+      "insert": "i128",
+      "detail": "type"
+    },
+    {
+      "label": "isize",
+      "insert": "isize",
+      "detail": "type"
+    },
+    {
+      "label": "u8",
+      "insert": "u8",
+      "detail": "type"
+    },
+    {
+      "label": "u16",
+      "insert": "u16",
+      "detail": "type"
+    },
+    {
+      "label": "u32",
+      "insert": "u32",
+      "detail": "type"
+    },
+    {
+      "label": "u64",
+      "insert": "u64",
+      "detail": "type"
+    },
+    {
+      "label": "u128",
+      "insert": "u128",
+      "detail": "type"
+    },
+    {
+      "label": "usize",
+      "insert": "usize",
+      "detail": "type"
+    },
+    {
+      "label": "f32",
+      "insert": "f32",
+      "detail": "type"
+    },
+    {
+      "label": "f64",
+      "insert": "f64",
+      "detail": "type"
+    },
+    {
+      "label": "bool",
+      "insert": "bool",
+      "detail": "type"
+    },
+    {
+      "label": "char",
+      "insert": "char",
+      "detail": "type"
+    },
+    {
+      "label": "str",
+      "insert": "str",
+      "detail": "type"
+    },
+    {
+      "label": "String",
+      "insert": "String",
+      "detail": "type"
+    },
+    {
+      "label": "Vec",
+      "insert": "Vec",
+      "detail": "type"
+    },
+    {
+      "label": "Option",
+      "insert": "Option",
+      "detail": "type"
+    },
+    {
+      "label": "Result",
+      "insert": "Result",
+      "detail": "type"
+    },
+    {
+      "label": "Box",
+      "insert": "Box",
+      "detail": "type"
+    },
+    {
+      "label": "Rc",
+      "insert": "Rc",
+      "detail": "type"
+    },
+    {
+      "label": "Arc",
+      "insert": "Arc",
+      "detail": "type"
+    },
+    {
+      "label": "RefCell",
+      "insert": "RefCell",
+      "detail": "type"
+    },
+    {
+      "label": "Cell",
+      "insert": "Cell",
+      "detail": "type"
+    },
+    {
+      "label": "HashMap",
+      "insert": "HashMap",
+      "detail": "type"
+    },
+    {
+      "label": "HashSet",
+      "insert": "HashSet",
+      "detail": "type"
+    },
+    {
+      "label": "BTreeMap",
+      "insert": "BTreeMap",
+      "detail": "type"
+    },
+    {
+      "label": "BTreeSet",
+      "insert": "BTreeSet",
+      "detail": "type"
+    },
+    {
+      "label": "VecDeque",
+      "insert": "VecDeque",
+      "detail": "type"
+    },
+    {
+      "label": "LinkedList",
+      "insert": "LinkedList",
+      "detail": "type"
+    },
+    {
+      "label": "BinaryHeap",
+      "insert": "BinaryHeap",
+      "detail": "type"
+    },
+    {
+      "label": "Cow",
+      "insert": "Cow",
+      "detail": "type"
+    },
+    {
+      "label": "Path",
+      "insert": "Path",
+      "detail": "type"
+    },
+    {
+      "label": "PathBuf",
+      "insert": "PathBuf",
+      "detail": "type"
+    },
+    {
+      "label": "File",
+      "insert": "File",
+      "detail": "type"
+    },
+    {
+      "label": "Mutex",
+      "insert": "Mutex",
+      "detail": "type"
+    },
+    {
+      "label": "RwLock",
+      "insert": "RwLock",
+      "detail": "type"
+    },
+    {
+      "label": "AtomicBool",
+      "insert": "AtomicBool",
+      "detail": "type"
+    },
+    {
+      "label": "AtomicUsize",
+      "insert": "AtomicUsize",
+      "detail": "type"
+    },
+    {
+      "label": "print!",
+      "insert": "print!",
+      "detail": "builtin"
+    },
+    {
+      "label": "eprintln!",
+      "insert": "eprintln!",
+      "detail": "builtin"
+    },
+    {
+      "label": "eprint!",
+      "insert": "eprint!",
+      "detail": "builtin"
+    },
+    {
+      "label": "format!",
+      "insert": "format!",
+      "detail": "builtin"
+    },
+    {
+      "label": "vec!",
+      "insert": "vec!",
+      "detail": "builtin"
+    },
+    {
+      "label": "panic!",
+      "insert": "panic!",
+      "detail": "builtin"
+    },
+    {
+      "label": "assert!",
+      "insert": "assert!",
+      "detail": "builtin"
+    },
+    {
+      "label": "assert_eq!",
+      "insert": "assert_eq!",
+      "detail": "builtin"
+    },
+    {
+      "label": "assert_ne!",
+      "insert": "assert_ne!",
+      "detail": "builtin"
+    },
+    {
+      "label": "debug_assert!",
+      "insert": "debug_assert!",
+      "detail": "builtin"
+    },
+    {
+      "label": "debug_assert_eq!",
+      "insert": "debug_assert_eq!",
+      "detail": "builtin"
+    },
+    {
+      "label": "write!",
+      "insert": "write!",
+      "detail": "builtin"
+    },
+    {
+      "label": "writeln!",
+      "insert": "writeln!",
+      "detail": "builtin"
+    },
+    {
+      "label": "todo!",
+      "insert": "todo!",
+      "detail": "builtin"
+    },
+    {
+      "label": "unimplemented!",
+      "insert": "unimplemented!",
+      "detail": "builtin"
+    },
+    {
+      "label": "unreachable!",
+      "insert": "unreachable!",
+      "detail": "builtin"
+    },
+    {
+      "label": "dbg!",
+      "insert": "dbg!",
+      "detail": "builtin"
+    },
+    {
+      "label": "matches!",
+      "insert": "matches!",
+      "detail": "builtin"
+    },
+    {
+      "label": "include!",
+      "insert": "include!",
+      "detail": "builtin"
+    },
+    {
+      "label": "include_str!",
+      "insert": "include_str!",
+      "detail": "builtin"
+    },
+    {
+      "label": "include_bytes!",
+      "insert": "include_bytes!",
+      "detail": "builtin"
+    },
+    {
+      "label": "env!",
+      "insert": "env!",
+      "detail": "builtin"
+    },
+    {
+      "label": "option_env!",
+      "insert": "option_env!",
+      "detail": "builtin"
+    },
+    {
+      "label": "cfg!",
+      "insert": "cfg!",
+      "detail": "builtin"
+    },
+    {
+      "label": "stringify!",
+      "insert": "stringify!",
+      "detail": "builtin"
+    },
+    {
+      "label": "concat!",
+      "insert": "concat!",
+      "detail": "builtin"
+    },
+    {
+      "label": "line!",
+      "insert": "line!",
+      "detail": "builtin"
+    },
+    {
+      "label": "column!",
+      "insert": "column!",
+      "detail": "builtin"
+    },
+    {
+      "label": "file!",
+      "insert": "file!",
+      "detail": "builtin"
+    },
+    {
+      "label": "module_path!",
+      "insert": "module_path!",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::mem::swap",
+      "insert": "std::mem::swap",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::mem::replace",
+      "insert": "std::mem::replace",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::mem::take",
+      "insert": "std::mem::take",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::mem::size_of",
+      "insert": "std::mem::size_of",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::mem::align_of",
+      "insert": "std::mem::align_of",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::ptr::null",
+      "insert": "std::ptr::null",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::ptr::null_mut",
+      "insert": "std::ptr::null_mut",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::ptr::read",
+      "insert": "std::ptr::read",
+      "detail": "builtin"
+    },
+    {
+      "label": "std::ptr::write",
+      "insert": "std::ptr::write",
+      "detail": "builtin"
+    }
+  ]
+}

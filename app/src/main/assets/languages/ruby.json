@@ -1,0 +1,917 @@
+{
+  "name": "Ruby",
+  "extensions": [
+    "rb",
+    "rake",
+    "gemspec"
+  ],
+  "indent": 2,
+  "operators": [
+    "=",
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "<=>",
+    "===",
+    "=~",
+    "!~",
+    "&&",
+    "||",
+    "**",
+    "..",
+    "...",
+    "<<",
+    ">>",
+    "->",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "||=",
+    "&&=",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "?",
+    ":",
+    "&",
+    "|",
+    "^",
+    "~"
+  ],
+  "punctuation": "()[]{};,.@$",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "#",
+  "blockComment": [],
+  "quotes": [
+    "\"",
+    "'"
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "#"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\"",
+        "'"
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "__ENCODING__",
+        "__LINE__",
+        "__FILE__",
+        "BEGIN",
+        "END",
+        "alias",
+        "and",
+        "begin",
+        "break",
+        "case",
+        "class",
+        "def",
+        "defined?",
+        "do",
+        "else",
+        "elsif",
+        "end",
+        "ensure",
+        "false",
+        "for",
+        "if",
+        "in",
+        "module",
+        "next",
+        "nil",
+        "not",
+        "or",
+        "redo",
+        "rescue",
+        "retry",
+        "return",
+        "self",
+        "super",
+        "then",
+        "true",
+        "undef",
+        "unless",
+        "until",
+        "when",
+        "while",
+        "yield"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "Integer",
+        "Float",
+        "String",
+        "Symbol",
+        "Array",
+        "Hash",
+        "Range",
+        "Proc",
+        "Lambda",
+        "Object",
+        "Class",
+        "Module",
+        "NilClass",
+        "TrueClass",
+        "FalseClass",
+        "Numeric",
+        "Comparable",
+        "Enumerable",
+        "Struct",
+        "Time",
+        "File",
+        "Dir",
+        "IO",
+        "Thread",
+        "Mutex",
+        "Queue",
+        "Set"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "puts",
+        "print",
+        "p",
+        "gets",
+        "loop",
+        "each",
+        "map",
+        "select",
+        "reject",
+        "reduce",
+        "inject",
+        "times",
+        "upto",
+        "downto",
+        "new",
+        "freeze",
+        "dup",
+        "clone",
+        "to_s",
+        "to_i",
+        "to_f",
+        "to_sym",
+        "to_a",
+        "to_h",
+        "length",
+        "size",
+        "first",
+        "last",
+        "push",
+        "pop",
+        "shift",
+        "unshift",
+        "sort",
+        "sort_by",
+        "reverse",
+        "include?",
+        "respond_to?",
+        "is_a?",
+        "nil?",
+        "empty?",
+        "any?",
+        "all?",
+        "none?",
+        "find",
+        "detect",
+        "grep",
+        "flat_map",
+        "each_with_index",
+        "each_with_object",
+        "zip",
+        "join",
+        "split",
+        "strip",
+        "chomp",
+        "gsub",
+        "sub",
+        "match",
+        "scan",
+        "format",
+        "sprintf",
+        "printf",
+        "require",
+        "require_relative",
+        "load",
+        "raise",
+        "rescue",
+        "catch",
+        "throw"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "def",
+      "insert": "def \n  \nend",
+      "detail": "method"
+    },
+    {
+      "label": "class",
+      "insert": "class \n  \nend",
+      "detail": "class"
+    },
+    {
+      "label": "module",
+      "insert": "module \n  \nend",
+      "detail": "module"
+    },
+    {
+      "label": "if",
+      "insert": "if \n  \nend",
+      "detail": "if"
+    },
+    {
+      "label": "unless",
+      "insert": "unless \n  \nend",
+      "detail": "unless"
+    },
+    {
+      "label": "each",
+      "insert": ".each do |item|\n  \nend",
+      "detail": "each"
+    },
+    {
+      "label": "puts",
+      "insert": "puts ",
+      "detail": "puts"
+    },
+    {
+      "label": "__ENCODING__",
+      "insert": "__ENCODING__",
+      "detail": "keyword"
+    },
+    {
+      "label": "__LINE__",
+      "insert": "__LINE__",
+      "detail": "keyword"
+    },
+    {
+      "label": "__FILE__",
+      "insert": "__FILE__",
+      "detail": "keyword"
+    },
+    {
+      "label": "BEGIN",
+      "insert": "BEGIN",
+      "detail": "keyword"
+    },
+    {
+      "label": "END",
+      "insert": "END",
+      "detail": "keyword"
+    },
+    {
+      "label": "alias",
+      "insert": "alias",
+      "detail": "keyword"
+    },
+    {
+      "label": "and",
+      "insert": "and",
+      "detail": "keyword"
+    },
+    {
+      "label": "begin",
+      "insert": "begin",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "defined?",
+      "insert": "defined?",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "elsif",
+      "insert": "elsif",
+      "detail": "keyword"
+    },
+    {
+      "label": "end",
+      "insert": "end",
+      "detail": "keyword"
+    },
+    {
+      "label": "ensure",
+      "insert": "ensure",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "for",
+      "insert": "for",
+      "detail": "keyword"
+    },
+    {
+      "label": "in",
+      "insert": "in",
+      "detail": "keyword"
+    },
+    {
+      "label": "next",
+      "insert": "next",
+      "detail": "keyword"
+    },
+    {
+      "label": "nil",
+      "insert": "nil",
+      "detail": "keyword"
+    },
+    {
+      "label": "not",
+      "insert": "not",
+      "detail": "keyword"
+    },
+    {
+      "label": "or",
+      "insert": "or",
+      "detail": "keyword"
+    },
+    {
+      "label": "redo",
+      "insert": "redo",
+      "detail": "keyword"
+    },
+    {
+      "label": "rescue",
+      "insert": "rescue",
+      "detail": "keyword"
+    },
+    {
+      "label": "retry",
+      "insert": "retry",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "self",
+      "insert": "self",
+      "detail": "keyword"
+    },
+    {
+      "label": "super",
+      "insert": "super",
+      "detail": "keyword"
+    },
+    {
+      "label": "then",
+      "insert": "then",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "undef",
+      "insert": "undef",
+      "detail": "keyword"
+    },
+    {
+      "label": "until",
+      "insert": "until",
+      "detail": "keyword"
+    },
+    {
+      "label": "when",
+      "insert": "when",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "yield",
+      "insert": "yield",
+      "detail": "keyword"
+    },
+    {
+      "label": "Integer",
+      "insert": "Integer",
+      "detail": "type"
+    },
+    {
+      "label": "Float",
+      "insert": "Float",
+      "detail": "type"
+    },
+    {
+      "label": "String",
+      "insert": "String",
+      "detail": "type"
+    },
+    {
+      "label": "Symbol",
+      "insert": "Symbol",
+      "detail": "type"
+    },
+    {
+      "label": "Array",
+      "insert": "Array",
+      "detail": "type"
+    },
+    {
+      "label": "Hash",
+      "insert": "Hash",
+      "detail": "type"
+    },
+    {
+      "label": "Range",
+      "insert": "Range",
+      "detail": "type"
+    },
+    {
+      "label": "Proc",
+      "insert": "Proc",
+      "detail": "type"
+    },
+    {
+      "label": "Lambda",
+      "insert": "Lambda",
+      "detail": "type"
+    },
+    {
+      "label": "Object",
+      "insert": "Object",
+      "detail": "type"
+    },
+    {
+      "label": "Class",
+      "insert": "Class",
+      "detail": "type"
+    },
+    {
+      "label": "Module",
+      "insert": "Module",
+      "detail": "type"
+    },
+    {
+      "label": "NilClass",
+      "insert": "NilClass",
+      "detail": "type"
+    },
+    {
+      "label": "TrueClass",
+      "insert": "TrueClass",
+      "detail": "type"
+    },
+    {
+      "label": "FalseClass",
+      "insert": "FalseClass",
+      "detail": "type"
+    },
+    {
+      "label": "Numeric",
+      "insert": "Numeric",
+      "detail": "type"
+    },
+    {
+      "label": "Comparable",
+      "insert": "Comparable",
+      "detail": "type"
+    },
+    {
+      "label": "Enumerable",
+      "insert": "Enumerable",
+      "detail": "type"
+    },
+    {
+      "label": "Struct",
+      "insert": "Struct",
+      "detail": "type"
+    },
+    {
+      "label": "Time",
+      "insert": "Time",
+      "detail": "type"
+    },
+    {
+      "label": "File",
+      "insert": "File",
+      "detail": "type"
+    },
+    {
+      "label": "Dir",
+      "insert": "Dir",
+      "detail": "type"
+    },
+    {
+      "label": "IO",
+      "insert": "IO",
+      "detail": "type"
+    },
+    {
+      "label": "Thread",
+      "insert": "Thread",
+      "detail": "type"
+    },
+    {
+      "label": "Mutex",
+      "insert": "Mutex",
+      "detail": "type"
+    },
+    {
+      "label": "Queue",
+      "insert": "Queue",
+      "detail": "type"
+    },
+    {
+      "label": "Set",
+      "insert": "Set",
+      "detail": "type"
+    },
+    {
+      "label": "print",
+      "insert": "print",
+      "detail": "builtin"
+    },
+    {
+      "label": "p",
+      "insert": "p",
+      "detail": "builtin"
+    },
+    {
+      "label": "gets",
+      "insert": "gets",
+      "detail": "builtin"
+    },
+    {
+      "label": "loop",
+      "insert": "loop",
+      "detail": "builtin"
+    },
+    {
+      "label": "map",
+      "insert": "map",
+      "detail": "builtin"
+    },
+    {
+      "label": "select",
+      "insert": "select",
+      "detail": "builtin"
+    },
+    {
+      "label": "reject",
+      "insert": "reject",
+      "detail": "builtin"
+    },
+    {
+      "label": "reduce",
+      "insert": "reduce",
+      "detail": "builtin"
+    },
+    {
+      "label": "inject",
+      "insert": "inject",
+      "detail": "builtin"
+    },
+    {
+      "label": "times",
+      "insert": "times",
+      "detail": "builtin"
+    },
+    {
+      "label": "upto",
+      "insert": "upto",
+      "detail": "builtin"
+    },
+    {
+      "label": "downto",
+      "insert": "downto",
+      "detail": "builtin"
+    },
+    {
+      "label": "new",
+      "insert": "new",
+      "detail": "builtin"
+    },
+    {
+      "label": "freeze",
+      "insert": "freeze",
+      "detail": "builtin"
+    },
+    {
+      "label": "dup",
+      "insert": "dup",
+      "detail": "builtin"
+    },
+    {
+      "label": "clone",
+      "insert": "clone",
+      "detail": "builtin"
+    },
+    {
+      "label": "to_s",
+      "insert": "to_s",
+      "detail": "builtin"
+    },
+    {
+      "label": "to_i",
+      "insert": "to_i",
+      "detail": "builtin"
+    },
+    {
+      "label": "to_f",
+      "insert": "to_f",
+      "detail": "builtin"
+    },
+    {
+      "label": "to_sym",
+      "insert": "to_sym",
+      "detail": "builtin"
+    },
+    {
+      "label": "to_a",
+      "insert": "to_a",
+      "detail": "builtin"
+    },
+    {
+      "label": "to_h",
+      "insert": "to_h",
+      "detail": "builtin"
+    },
+    {
+      "label": "length",
+      "insert": "length",
+      "detail": "builtin"
+    },
+    {
+      "label": "size",
+      "insert": "size",
+      "detail": "builtin"
+    },
+    {
+      "label": "first",
+      "insert": "first",
+      "detail": "builtin"
+    },
+    {
+      "label": "last",
+      "insert": "last",
+      "detail": "builtin"
+    },
+    {
+      "label": "push",
+      "insert": "push",
+      "detail": "builtin"
+    },
+    {
+      "label": "pop",
+      "insert": "pop",
+      "detail": "builtin"
+    },
+    {
+      "label": "shift",
+      "insert": "shift",
+      "detail": "builtin"
+    },
+    {
+      "label": "unshift",
+      "insert": "unshift",
+      "detail": "builtin"
+    },
+    {
+      "label": "sort",
+      "insert": "sort",
+      "detail": "builtin"
+    },
+    {
+      "label": "sort_by",
+      "insert": "sort_by",
+      "detail": "builtin"
+    },
+    {
+      "label": "reverse",
+      "insert": "reverse",
+      "detail": "builtin"
+    },
+    {
+      "label": "include?",
+      "insert": "include?",
+      "detail": "builtin"
+    },
+    {
+      "label": "respond_to?",
+      "insert": "respond_to?",
+      "detail": "builtin"
+    },
+    {
+      "label": "is_a?",
+      "insert": "is_a?",
+      "detail": "builtin"
+    },
+    {
+      "label": "nil?",
+      "insert": "nil?",
+      "detail": "builtin"
+    },
+    {
+      "label": "empty?",
+      "insert": "empty?",
+      "detail": "builtin"
+    },
+    {
+      "label": "any?",
+      "insert": "any?",
+      "detail": "builtin"
+    },
+    {
+      "label": "all?",
+      "insert": "all?",
+      "detail": "builtin"
+    },
+    {
+      "label": "none?",
+      "insert": "none?",
+      "detail": "builtin"
+    },
+    {
+      "label": "find",
+      "insert": "find",
+      "detail": "builtin"
+    },
+    {
+      "label": "detect",
+      "insert": "detect",
+      "detail": "builtin"
+    },
+    {
+      "label": "grep",
+      "insert": "grep",
+      "detail": "builtin"
+    },
+    {
+      "label": "flat_map",
+      "insert": "flat_map",
+      "detail": "builtin"
+    },
+    {
+      "label": "each_with_index",
+      "insert": "each_with_index",
+      "detail": "builtin"
+    },
+    {
+      "label": "each_with_object",
+      "insert": "each_with_object",
+      "detail": "builtin"
+    },
+    {
+      "label": "zip",
+      "insert": "zip",
+      "detail": "builtin"
+    },
+    {
+      "label": "join",
+      "insert": "join",
+      "detail": "builtin"
+    },
+    {
+      "label": "split",
+      "insert": "split",
+      "detail": "builtin"
+    },
+    {
+      "label": "strip",
+      "insert": "strip",
+      "detail": "builtin"
+    },
+    {
+      "label": "chomp",
+      "insert": "chomp",
+      "detail": "builtin"
+    },
+    {
+      "label": "gsub",
+      "insert": "gsub",
+      "detail": "builtin"
+    },
+    {
+      "label": "sub",
+      "insert": "sub",
+      "detail": "builtin"
+    },
+    {
+      "label": "match",
+      "insert": "match",
+      "detail": "builtin"
+    },
+    {
+      "label": "scan",
+      "insert": "scan",
+      "detail": "builtin"
+    },
+    {
+      "label": "format",
+      "insert": "format",
+      "detail": "builtin"
+    },
+    {
+      "label": "sprintf",
+      "insert": "sprintf",
+      "detail": "builtin"
+    },
+    {
+      "label": "printf",
+      "insert": "printf",
+      "detail": "builtin"
+    },
+    {
+      "label": "require",
+      "insert": "require",
+      "detail": "builtin"
+    },
+    {
+      "label": "require_relative",
+      "insert": "require_relative",
+      "detail": "builtin"
+    },
+    {
+      "label": "load",
+      "insert": "load",
+      "detail": "builtin"
+    },
+    {
+      "label": "raise",
+      "insert": "raise",
+      "detail": "builtin"
+    },
+    {
+      "label": "catch",
+      "insert": "catch",
+      "detail": "builtin"
+    },
+    {
+      "label": "throw",
+      "insert": "throw",
+      "detail": "builtin"
+    }
+  ]
+}

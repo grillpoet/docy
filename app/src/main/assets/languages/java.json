@@ -1,0 +1,682 @@
+{
+  "name": "Java",
+  "extensions": [
+    "java"
+  ],
+  "indent": 4,
+  "operators": [
+    "=",
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "++",
+    "--",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "<<",
+    ">>",
+    ">>>",
+    "&=",
+    "|=",
+    "^=",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "?",
+    ":",
+    "&",
+    "|",
+    "^",
+    "~"
+  ],
+  "punctuation": "()[]{};,.@",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "//",
+  "blockComment": [
+    "/*",
+    "*/"
+  ],
+  "quotes": [
+    "\""
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\""
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?[fFlLdD]?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "abstract",
+        "assert",
+        "boolean",
+        "break",
+        "byte",
+        "case",
+        "catch",
+        "char",
+        "class",
+        "const",
+        "continue",
+        "default",
+        "do",
+        "double",
+        "else",
+        "enum",
+        "extends",
+        "final",
+        "finally",
+        "float",
+        "for",
+        "goto",
+        "if",
+        "implements",
+        "import",
+        "instanceof",
+        "int",
+        "interface",
+        "long",
+        "native",
+        "new",
+        "package",
+        "private",
+        "protected",
+        "public",
+        "return",
+        "short",
+        "static",
+        "strictfp",
+        "super",
+        "switch",
+        "synchronized",
+        "this",
+        "throw",
+        "throws",
+        "transient",
+        "try",
+        "void",
+        "volatile",
+        "while",
+        "true",
+        "false",
+        "null"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "Boolean",
+        "Byte",
+        "Character",
+        "Class",
+        "Double",
+        "Enum",
+        "Float",
+        "Integer",
+        "Long",
+        "Math",
+        "Number",
+        "Object",
+        "Package",
+        "Process",
+        "Runtime",
+        "Short",
+        "String",
+        "StringBuffer",
+        "StringBuilder",
+        "System",
+        "Thread",
+        "Void",
+        "List",
+        "Map",
+        "Set",
+        "ArrayList",
+        "HashMap",
+        "HashSet",
+        "LinkedList",
+        "TreeMap",
+        "TreeSet",
+        "Optional",
+        "Stream",
+        "Collectors",
+        "Arrays",
+        "Collections"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "System.out.println",
+        "System.out.print",
+        "System.out.printf",
+        "System.err.println",
+        "System.currentTimeMillis",
+        "System.nanoTime",
+        "System.arraycopy",
+        "Math.abs",
+        "Math.max",
+        "Math.min",
+        "Math.pow",
+        "Math.sqrt",
+        "Math.random",
+        "String.format",
+        "String.valueOf",
+        "String.join",
+        "Integer.parseInt",
+        "Integer.valueOf",
+        "Double.parseDouble",
+        "Long.parseLong"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "public static void main",
+      "insert": "public static void main(String[] args) {\n    \n}",
+      "detail": "main"
+    },
+    {
+      "label": "System.out.println",
+      "insert": "System.out.println();",
+      "detail": "println"
+    },
+    {
+      "label": "for",
+      "insert": "for (int i = 0; i < n; i++) {\n    \n}",
+      "detail": "for loop"
+    },
+    {
+      "label": "for-each",
+      "insert": "for (var item : collection) {\n    \n}",
+      "detail": "for-each"
+    },
+    {
+      "label": "if",
+      "insert": "if () {\n    \n}",
+      "detail": "if"
+    },
+    {
+      "label": "try-catch",
+      "insert": "try {\n    \n} catch (Exception e) {\n    e.printStackTrace();\n}",
+      "detail": "try-catch"
+    },
+    {
+      "label": "class",
+      "insert": "public class  {\n    \n}",
+      "detail": "class"
+    },
+    {
+      "label": "abstract",
+      "insert": "abstract",
+      "detail": "keyword"
+    },
+    {
+      "label": "assert",
+      "insert": "assert",
+      "detail": "keyword"
+    },
+    {
+      "label": "boolean",
+      "insert": "boolean",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "byte",
+      "insert": "byte",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "catch",
+      "insert": "catch",
+      "detail": "keyword"
+    },
+    {
+      "label": "char",
+      "insert": "char",
+      "detail": "keyword"
+    },
+    {
+      "label": "const",
+      "insert": "const",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "default",
+      "insert": "default",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "double",
+      "insert": "double",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "enum",
+      "insert": "enum",
+      "detail": "keyword"
+    },
+    {
+      "label": "extends",
+      "insert": "extends",
+      "detail": "keyword"
+    },
+    {
+      "label": "final",
+      "insert": "final",
+      "detail": "keyword"
+    },
+    {
+      "label": "finally",
+      "insert": "finally",
+      "detail": "keyword"
+    },
+    {
+      "label": "float",
+      "insert": "float",
+      "detail": "keyword"
+    },
+    {
+      "label": "goto",
+      "insert": "goto",
+      "detail": "keyword"
+    },
+    {
+      "label": "implements",
+      "insert": "implements",
+      "detail": "keyword"
+    },
+    {
+      "label": "import",
+      "insert": "import",
+      "detail": "keyword"
+    },
+    {
+      "label": "instanceof",
+      "insert": "instanceof",
+      "detail": "keyword"
+    },
+    {
+      "label": "int",
+      "insert": "int",
+      "detail": "keyword"
+    },
+    {
+      "label": "interface",
+      "insert": "interface",
+      "detail": "keyword"
+    },
+    {
+      "label": "long",
+      "insert": "long",
+      "detail": "keyword"
+    },
+    {
+      "label": "native",
+      "insert": "native",
+      "detail": "keyword"
+    },
+    {
+      "label": "new",
+      "insert": "new",
+      "detail": "keyword"
+    },
+    {
+      "label": "package",
+      "insert": "package",
+      "detail": "keyword"
+    },
+    {
+      "label": "private",
+      "insert": "private",
+      "detail": "keyword"
+    },
+    {
+      "label": "protected",
+      "insert": "protected",
+      "detail": "keyword"
+    },
+    {
+      "label": "public",
+      "insert": "public",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "short",
+      "insert": "short",
+      "detail": "keyword"
+    },
+    {
+      "label": "static",
+      "insert": "static",
+      "detail": "keyword"
+    },
+    {
+      "label": "strictfp",
+      "insert": "strictfp",
+      "detail": "keyword"
+    },
+    {
+      "label": "super",
+      "insert": "super",
+      "detail": "keyword"
+    },
+    {
+      "label": "switch",
+      "insert": "switch",
+      "detail": "keyword"
+    },
+    {
+      "label": "synchronized",
+      "insert": "synchronized",
+      "detail": "keyword"
+    },
+    {
+      "label": "this",
+      "insert": "this",
+      "detail": "keyword"
+    },
+    {
+      "label": "throw",
+      "insert": "throw",
+      "detail": "keyword"
+    },
+    {
+      "label": "throws",
+      "insert": "throws",
+      "detail": "keyword"
+    },
+    {
+      "label": "transient",
+      "insert": "transient",
+      "detail": "keyword"
+    },
+    {
+      "label": "try",
+      "insert": "try",
+      "detail": "keyword"
+    },
+    {
+      "label": "void",
+      "insert": "void",
+      "detail": "keyword"
+    },
+    {
+      "label": "volatile",
+      "insert": "volatile",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "null",
+      "insert": "null",
+      "detail": "keyword"
+    },
+    {
+      "label": "Boolean",
+      "insert": "Boolean",
+      "detail": "type"
+    },
+    {
+      "label": "Byte",
+      "insert": "Byte",
+      "detail": "type"
+    },
+    {
+      "label": "Character",
+      "insert": "Character",
+      "detail": "type"
+    },
+    {
+      "label": "Class",
+      "insert": "Class",
+      "detail": "type"
+    },
+    {
+      "label": "Double",
+      "insert": "Double",
+      "detail": "type"
+    },
+    {
+      "label": "Enum",
+      "insert": "Enum",
+      "detail": "type"
+    },
+    {
+      "label": "Float",
+      "insert": "Float",
+      "detail": "type"
+    },
+    {
+      "label": "Integer",
+      "insert": "Integer",
+      "detail": "type"
+    },
+    {
+      "label": "Long",
+      "insert": "Long",
+      "detail": "type"
+    },
+    {
+      "label": "Math",
+      "insert": "Math",
+      "detail": "type"
+    },
+    {
+      "label": "Number",
+      "insert": "Number",
+      "detail": "type"
+    },
+    {
+      "label": "Object",
+      "insert": "Object",
+      "detail": "type"
+    },
+    {
+      "label": "Package",
+      "insert": "Package",
+      "detail": "type"
+    },
+    {
+      "label": "Process",
+      "insert": "Process",
+      "detail": "type"
+    },
+    {
+      "label": "Runtime",
+      "insert": "Runtime",
+      "detail": "type"
+    },
+    {
+      "label": "Short",
+      "insert": "Short",
+      "detail": "type"
+    },
+    {
+      "label": "String",
+      "insert": "String",
+      "detail": "type"
+    },
+    {
+      "label": "StringBuffer",
+      "insert": "StringBuffer",
+      "detail": "type"
+    },
+    {
+      "label": "StringBuilder",
+      "insert": "StringBuilder",
+      "detail": "type"
+    },
+    {
+      "label": "System",
+      "insert": "System",
+      "detail": "type"
+    },
+    {
+      "label": "Thread",
+      "insert": "Thread",
+      "detail": "type"
+    },
+    {
+      "label": "Void",
+      "insert": "Void",
+      "detail": "type"
+    },
+    {
+      "label": "List",
+      "insert": "List",
+      "detail": "type"
+    },
+    {
+      "label": "Map",
+      "insert": "Map",
+      "detail": "type"
+    },
+    {
+      "label": "Set",
+      "insert": "Set",
+      "detail": "type"
+    },
+    {
+      "label": "ArrayList",
+      "insert": "ArrayList",
+      "detail": "type"
+    },
+    {
+      "label": "HashMap",
+      "insert": "HashMap",
+      "detail": "type"
+    },
+    {
+      "label": "HashSet",
+      "insert": "HashSet",
+      "detail": "type"
+    },
+    {
+      "label": "LinkedList",
+      "insert": "LinkedList",
+      "detail": "type"
+    },
+    {
+      "label": "TreeMap",
+      "insert": "TreeMap",
+      "detail": "type"
+    },
+    {
+      "label": "TreeSet",
+      "insert": "TreeSet",
+      "detail": "type"
+    },
+    {
+      "label": "Optional",
+      "insert": "Optional",
+      "detail": "type"
+    },
+    {
+      "label": "Stream",
+      "insert": "Stream",
+      "detail": "type"
+    },
+    {
+      "label": "Collectors",
+      "insert": "Collectors",
+      "detail": "type"
+    },
+    {
+      "label": "Arrays",
+      "insert": "Arrays",
+      "detail": "type"
+    },
+    {
+      "label": "Collections",
+      "insert": "Collections",
+      "detail": "type"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Go",
+  "extensions": ["go"],
+  "indent": 4,
+  "operators": ["=", ":=", "==", "!=", "<=", ">=", "&&", "||", "<-",
+                "+=", "-=", "*=", "/=", "%=", "&=", "|=", "^=", "<<=", ">>=",
+                "+", "-", "*", "/", "%", "<", ">", "!", "&", "|", "^", "<<"],
+  "punctuation": "()[]{};,.@",
+  "brackets": [["{", "}"], ["(", ")"], ["[", "]"]],
+  "lineComment": "//",
+  "blockComment": ["/*", "*/"],
+  "quotes": ["\"", "`"],
+  "blockQuotes": [],
+  "rules": [
+    { "kind": "comment", "type": "block", "start": "/*", "end": "*/" },
+    { "kind": "comment", "type": "line",  "start": "//" },
+    { "kind": "string",  "type": "quote", "quotes": ["\"", "`"] },
+    { "kind": "number",  "regex": "\\b\\d+(\\.\\d+)?\\b" },
+    { "kind": "keyword", "words": [
+      "break","case","chan","const","continue","default","defer","else",
+      "fallthrough","for","func","go","goto","if","import","interface",
+      "map","package","range","return","select","struct","switch","type",
+      "var","true","false","nil","iota"
+    ]},
+    { "kind": "type", "words": [
+      "bool","byte","complex64","complex128","error","float32","float64",
+      "int","int8","int16","int32","int64","rune","string","uint","uint8",
+      "uint16","uint32","uint64","uintptr","any"
+    ]},
+    { "kind": "library", "words": [
+      "fmt","Println","Printf","Sprintf","Errorf","make","new","len","cap",
+      "append","copy","delete","panic","recover","close","println"
+    ]}
+  ],
+  "completions": [
+    { "label": "func main", "insert": "func main() {\n    \n}", "detail": "main" },
+    { "label": "fmt.Println", "insert": "fmt.Println()", "detail": "Println" },
+    { "label": "if err != nil", "insert": "if err != nil {\n    return err\n}", "detail": "err check" }
+  ]
+}

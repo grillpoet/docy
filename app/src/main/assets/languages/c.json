@@ -1,0 +1,997 @@
+{
+  "name": "C",
+  "extensions": [
+    "c"
+  ],
+  "indent": 4,
+  "operators": [
+    "=",
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "++",
+    "--",
+    "+=",
+    "-=",
+    "*=",
+    "/=",
+    "%=",
+    "<<=",
+    ">>=",
+    "&=",
+    "|=",
+    "^=",
+    "<<",
+    ">>",
+    "->",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "?",
+    ":",
+    "&",
+    "|",
+    "^",
+    "~"
+  ],
+  "punctuation": "()[]{};,.@",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "//",
+  "blockComment": [
+    "/*",
+    "*/"
+  ],
+  "quotes": [
+    "\""
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\""
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?[fFuUlL]?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "auto",
+        "break",
+        "case",
+        "const",
+        "continue",
+        "default",
+        "do",
+        "else",
+        "enum",
+        "extern",
+        "for",
+        "goto",
+        "if",
+        "inline",
+        "register",
+        "restrict",
+        "return",
+        "sizeof",
+        "static",
+        "struct",
+        "switch",
+        "typedef",
+        "union",
+        "volatile",
+        "while",
+        "_Alignas",
+        "_Alignof",
+        "_Atomic",
+        "_Bool",
+        "_Complex",
+        "_Generic",
+        "_Imaginary",
+        "_Noreturn",
+        "_Static_assert",
+        "_Thread_local",
+        "NULL"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "char",
+        "double",
+        "float",
+        "int",
+        "long",
+        "short",
+        "signed",
+        "unsigned",
+        "void",
+        "size_t",
+        "ssize_t",
+        "ptrdiff_t",
+        "int8_t",
+        "int16_t",
+        "int32_t",
+        "int64_t",
+        "uint8_t",
+        "uint16_t",
+        "uint32_t",
+        "uint64_t",
+        "intptr_t",
+        "uintptr_t",
+        "FILE",
+        "bool",
+        "va_list",
+        "time_t",
+        "clock_t",
+        "off_t",
+        "pid_t"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "printf",
+        "fprintf",
+        "sprintf",
+        "snprintf",
+        "scanf",
+        "fscanf",
+        "sscanf",
+        "malloc",
+        "calloc",
+        "realloc",
+        "free",
+        "memcpy",
+        "memset",
+        "memmove",
+        "memcmp",
+        "strlen",
+        "strcmp",
+        "strncmp",
+        "strcpy",
+        "strncpy",
+        "strcat",
+        "strncat",
+        "strstr",
+        "strchr",
+        "strrchr",
+        "strtok",
+        "strerror",
+        "fopen",
+        "fclose",
+        "fread",
+        "fwrite",
+        "fgets",
+        "fputs",
+        "fgetc",
+        "fputc",
+        "fseek",
+        "ftell",
+        "rewind",
+        "feof",
+        "ferror",
+        "fflush",
+        "perror",
+        "exit",
+        "abort",
+        "atexit",
+        "atoi",
+        "atof",
+        "atol",
+        "strtol",
+        "strtod",
+        "rand",
+        "srand",
+        "qsort",
+        "bsearch",
+        "abs",
+        "labs",
+        "div",
+        "ldiv",
+        "sin",
+        "cos",
+        "tan",
+        "sqrt",
+        "pow",
+        "exp",
+        "log",
+        "log10",
+        "ceil",
+        "floor",
+        "fmod",
+        "isalpha",
+        "isdigit",
+        "isalnum",
+        "isspace",
+        "isupper",
+        "islower",
+        "toupper",
+        "tolower",
+        "assert",
+        "setjmp",
+        "longjmp",
+        "signal",
+        "raise"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "int main",
+      "insert": "int main(int argc, char *argv[]) {\n    \n    return 0;\n}",
+      "detail": "main"
+    },
+    {
+      "label": "printf",
+      "insert": "printf(\"\\n\");",
+      "detail": "printf"
+    },
+    {
+      "label": "for",
+      "insert": "for (int i = 0; i < n; i++) {\n    \n}",
+      "detail": "for loop"
+    },
+    {
+      "label": "if",
+      "insert": "if () {\n    \n}",
+      "detail": "if"
+    },
+    {
+      "label": "malloc",
+      "insert": "malloc(sizeof());",
+      "detail": "malloc"
+    },
+    {
+      "label": "struct",
+      "insert": "struct  {\n    \n};",
+      "detail": "struct"
+    },
+    {
+      "label": "auto",
+      "insert": "auto",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "const",
+      "insert": "const",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "default",
+      "insert": "default",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "enum",
+      "insert": "enum",
+      "detail": "keyword"
+    },
+    {
+      "label": "extern",
+      "insert": "extern",
+      "detail": "keyword"
+    },
+    {
+      "label": "goto",
+      "insert": "goto",
+      "detail": "keyword"
+    },
+    {
+      "label": "inline",
+      "insert": "inline",
+      "detail": "keyword"
+    },
+    {
+      "label": "register",
+      "insert": "register",
+      "detail": "keyword"
+    },
+    {
+      "label": "restrict",
+      "insert": "restrict",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "sizeof",
+      "insert": "sizeof",
+      "detail": "keyword"
+    },
+    {
+      "label": "static",
+      "insert": "static",
+      "detail": "keyword"
+    },
+    {
+      "label": "switch",
+      "insert": "switch",
+      "detail": "keyword"
+    },
+    {
+      "label": "typedef",
+      "insert": "typedef",
+      "detail": "keyword"
+    },
+    {
+      "label": "union",
+      "insert": "union",
+      "detail": "keyword"
+    },
+    {
+      "label": "volatile",
+      "insert": "volatile",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "_Alignas",
+      "insert": "_Alignas",
+      "detail": "keyword"
+    },
+    {
+      "label": "_Alignof",
+      "insert": "_Alignof",
+      "detail": "keyword"
+    },
+    {
+      "label": "_Atomic",
+      "insert": "_Atomic",
+      "detail": "keyword"
+    },
+    {
+      "label": "_Bool",
+      "insert": "_Bool",
+      "detail": "keyword"
+    },
+    {
+      "label": "_Complex",
+      "insert": "_Complex",
+      "detail": "keyword"
+    },
+    {
+      "label": "_Generic",
+      "insert": "_Generic",
+      "detail": "keyword"
+    },
+    {
+      "label": "_Imaginary",
+      "insert": "_Imaginary",
+      "detail": "keyword"
+    },
+    {
+      "label": "_Noreturn",
+      "insert": "_Noreturn",
+      "detail": "keyword"
+    },
+    {
+      "label": "_Static_assert",
+      "insert": "_Static_assert",
+      "detail": "keyword"
+    },
+    {
+      "label": "_Thread_local",
+      "insert": "_Thread_local",
+      "detail": "keyword"
+    },
+    {
+      "label": "NULL",
+      "insert": "NULL",
+      "detail": "keyword"
+    },
+    {
+      "label": "char",
+      "insert": "char",
+      "detail": "type"
+    },
+    {
+      "label": "double",
+      "insert": "double",
+      "detail": "type"
+    },
+    {
+      "label": "float",
+      "insert": "float",
+      "detail": "type"
+    },
+    {
+      "label": "int",
+      "insert": "int",
+      "detail": "type"
+    },
+    {
+      "label": "long",
+      "insert": "long",
+      "detail": "type"
+    },
+    {
+      "label": "short",
+      "insert": "short",
+      "detail": "type"
+    },
+    {
+      "label": "signed",
+      "insert": "signed",
+      "detail": "type"
+    },
+    {
+      "label": "unsigned",
+      "insert": "unsigned",
+      "detail": "type"
+    },
+    {
+      "label": "void",
+      "insert": "void",
+      "detail": "type"
+    },
+    {
+      "label": "size_t",
+      "insert": "size_t",
+      "detail": "type"
+    },
+    {
+      "label": "ssize_t",
+      "insert": "ssize_t",
+      "detail": "type"
+    },
+    {
+      "label": "ptrdiff_t",
+      "insert": "ptrdiff_t",
+      "detail": "type"
+    },
+    {
+      "label": "int8_t",
+      "insert": "int8_t",
+      "detail": "type"
+    },
+    {
+      "label": "int16_t",
+      "insert": "int16_t",
+      "detail": "type"
+    },
+    {
+      "label": "int32_t",
+      "insert": "int32_t",
+      "detail": "type"
+    },
+    {
+      "label": "int64_t",
+      "insert": "int64_t",
+      "detail": "type"
+    },
+    {
+      "label": "uint8_t",
+      "insert": "uint8_t",
+      "detail": "type"
+    },
+    {
+      "label": "uint16_t",
+      "insert": "uint16_t",
+      "detail": "type"
+    },
+    {
+      "label": "uint32_t",
+      "insert": "uint32_t",
+      "detail": "type"
+    },
+    {
+      "label": "uint64_t",
+      "insert": "uint64_t",
+      "detail": "type"
+    },
+    {
+      "label": "intptr_t",
+      "insert": "intptr_t",
+      "detail": "type"
+    },
+    {
+      "label": "uintptr_t",
+      "insert": "uintptr_t",
+      "detail": "type"
+    },
+    {
+      "label": "FILE",
+      "insert": "FILE",
+      "detail": "type"
+    },
+    {
+      "label": "bool",
+      "insert": "bool",
+      "detail": "type"
+    },
+    {
+      "label": "va_list",
+      "insert": "va_list",
+      "detail": "type"
+    },
+    {
+      "label": "time_t",
+      "insert": "time_t",
+      "detail": "type"
+    },
+    {
+      "label": "clock_t",
+      "insert": "clock_t",
+      "detail": "type"
+    },
+    {
+      "label": "off_t",
+      "insert": "off_t",
+      "detail": "type"
+    },
+    {
+      "label": "pid_t",
+      "insert": "pid_t",
+      "detail": "type"
+    },
+    {
+      "label": "fprintf",
+      "insert": "fprintf",
+      "detail": "builtin"
+    },
+    {
+      "label": "sprintf",
+      "insert": "sprintf",
+      "detail": "builtin"
+    },
+    {
+      "label": "snprintf",
+      "insert": "snprintf",
+      "detail": "builtin"
+    },
+    {
+      "label": "scanf",
+      "insert": "scanf",
+      "detail": "builtin"
+    },
+    {
+      "label": "fscanf",
+      "insert": "fscanf",
+      "detail": "builtin"
+    },
+    {
+      "label": "sscanf",
+      "insert": "sscanf",
+      "detail": "builtin"
+    },
+    {
+      "label": "calloc",
+      "insert": "calloc",
+      "detail": "builtin"
+    },
+    {
+      "label": "realloc",
+      "insert": "realloc",
+      "detail": "builtin"
+    },
+    {
+      "label": "free",
+      "insert": "free",
+      "detail": "builtin"
+    },
+    {
+      "label": "memcpy",
+      "insert": "memcpy",
+      "detail": "builtin"
+    },
+    {
+      "label": "memset",
+      "insert": "memset",
+      "detail": "builtin"
+    },
+    {
+      "label": "memmove",
+      "insert": "memmove",
+      "detail": "builtin"
+    },
+    {
+      "label": "memcmp",
+      "insert": "memcmp",
+      "detail": "builtin"
+    },
+    {
+      "label": "strlen",
+      "insert": "strlen",
+      "detail": "builtin"
+    },
+    {
+      "label": "strcmp",
+      "insert": "strcmp",
+      "detail": "builtin"
+    },
+    {
+      "label": "strncmp",
+      "insert": "strncmp",
+      "detail": "builtin"
+    },
+    {
+      "label": "strcpy",
+      "insert": "strcpy",
+      "detail": "builtin"
+    },
+    {
+      "label": "strncpy",
+      "insert": "strncpy",
+      "detail": "builtin"
+    },
+    {
+      "label": "strcat",
+      "insert": "strcat",
+      "detail": "builtin"
+    },
+    {
+      "label": "strncat",
+      "insert": "strncat",
+      "detail": "builtin"
+    },
+    {
+      "label": "strstr",
+      "insert": "strstr",
+      "detail": "builtin"
+    },
+    {
+      "label": "strchr",
+      "insert": "strchr",
+      "detail": "builtin"
+    },
+    {
+      "label": "strrchr",
+      "insert": "strrchr",
+      "detail": "builtin"
+    },
+    {
+      "label": "strtok",
+      "insert": "strtok",
+      "detail": "builtin"
+    },
+    {
+      "label": "strerror",
+      "insert": "strerror",
+      "detail": "builtin"
+    },
+    {
+      "label": "fopen",
+      "insert": "fopen",
+      "detail": "builtin"
+    },
+    {
+      "label": "fclose",
+      "insert": "fclose",
+      "detail": "builtin"
+    },
+    {
+      "label": "fread",
+      "insert": "fread",
+      "detail": "builtin"
+    },
+    {
+      "label": "fwrite",
+      "insert": "fwrite",
+      "detail": "builtin"
+    },
+    {
+      "label": "fgets",
+      "insert": "fgets",
+      "detail": "builtin"
+    },
+    {
+      "label": "fputs",
+      "insert": "fputs",
+      "detail": "builtin"
+    },
+    {
+      "label": "fgetc",
+      "insert": "fgetc",
+      "detail": "builtin"
+    },
+    {
+      "label": "fputc",
+      "insert": "fputc",
+      "detail": "builtin"
+    },
+    {
+      "label": "fseek",
+      "insert": "fseek",
+      "detail": "builtin"
+    },
+    {
+      "label": "ftell",
+      "insert": "ftell",
+      "detail": "builtin"
+    },
+    {
+      "label": "rewind",
+      "insert": "rewind",
+      "detail": "builtin"
+    },
+    {
+      "label": "feof",
+      "insert": "feof",
+      "detail": "builtin"
+    },
+    {
+      "label": "ferror",
+      "insert": "ferror",
+      "detail": "builtin"
+    },
+    {
+      "label": "fflush",
+      "insert": "fflush",
+      "detail": "builtin"
+    },
+    {
+      "label": "perror",
+      "insert": "perror",
+      "detail": "builtin"
+    },
+    {
+      "label": "exit",
+      "insert": "exit",
+      "detail": "builtin"
+    },
+    {
+      "label": "abort",
+      "insert": "abort",
+      "detail": "builtin"
+    },
+    {
+      "label": "atexit",
+      "insert": "atexit",
+      "detail": "builtin"
+    },
+    {
+      "label": "atoi",
+      "insert": "atoi",
+      "detail": "builtin"
+    },
+    {
+      "label": "atof",
+      "insert": "atof",
+      "detail": "builtin"
+    },
+    {
+      "label": "atol",
+      "insert": "atol",
+      "detail": "builtin"
+    },
+    {
+      "label": "strtol",
+      "insert": "strtol",
+      "detail": "builtin"
+    },
+    {
+      "label": "strtod",
+      "insert": "strtod",
+      "detail": "builtin"
+    },
+    {
+      "label": "rand",
+      "insert": "rand",
+      "detail": "builtin"
+    },
+    {
+      "label": "srand",
+      "insert": "srand",
+      "detail": "builtin"
+    },
+    {
+      "label": "qsort",
+      "insert": "qsort",
+      "detail": "builtin"
+    },
+    {
+      "label": "bsearch",
+      "insert": "bsearch",
+      "detail": "builtin"
+    },
+    {
+      "label": "abs",
+      "insert": "abs",
+      "detail": "builtin"
+    },
+    {
+      "label": "labs",
+      "insert": "labs",
+      "detail": "builtin"
+    },
+    {
+      "label": "div",
+      "insert": "div",
+      "detail": "builtin"
+    },
+    {
+      "label": "ldiv",
+      "insert": "ldiv",
+      "detail": "builtin"
+    },
+    {
+      "label": "sin",
+      "insert": "sin",
+      "detail": "builtin"
+    },
+    {
+      "label": "cos",
+      "insert": "cos",
+      "detail": "builtin"
+    },
+    {
+      "label": "tan",
+      "insert": "tan",
+      "detail": "builtin"
+    },
+    {
+      "label": "sqrt",
+      "insert": "sqrt",
+      "detail": "builtin"
+    },
+    {
+      "label": "pow",
+      "insert": "pow",
+      "detail": "builtin"
+    },
+    {
+      "label": "exp",
+      "insert": "exp",
+      "detail": "builtin"
+    },
+    {
+      "label": "log",
+      "insert": "log",
+      "detail": "builtin"
+    },
+    {
+      "label": "log10",
+      "insert": "log10",
+      "detail": "builtin"
+    },
+    {
+      "label": "ceil",
+      "insert": "ceil",
+      "detail": "builtin"
+    },
+    {
+      "label": "floor",
+      "insert": "floor",
+      "detail": "builtin"
+    },
+    {
+      "label": "fmod",
+      "insert": "fmod",
+      "detail": "builtin"
+    },
+    {
+      "label": "isalpha",
+      "insert": "isalpha",
+      "detail": "builtin"
+    },
+    {
+      "label": "isdigit",
+      "insert": "isdigit",
+      "detail": "builtin"
+    },
+    {
+      "label": "isalnum",
+      "insert": "isalnum",
+      "detail": "builtin"
+    },
+    {
+      "label": "isspace",
+      "insert": "isspace",
+      "detail": "builtin"
+    },
+    {
+      "label": "isupper",
+      "insert": "isupper",
+      "detail": "builtin"
+    },
+    {
+      "label": "islower",
+      "insert": "islower",
+      "detail": "builtin"
+    },
+    {
+      "label": "toupper",
+      "insert": "toupper",
+      "detail": "builtin"
+    },
+    {
+      "label": "tolower",
+      "insert": "tolower",
+      "detail": "builtin"
+    },
+    {
+      "label": "assert",
+      "insert": "assert",
+      "detail": "builtin"
+    },
+    {
+      "label": "setjmp",
+      "insert": "setjmp",
+      "detail": "builtin"
+    },
+    {
+      "label": "longjmp",
+      "insert": "longjmp",
+      "detail": "builtin"
+    },
+    {
+      "label": "signal",
+      "insert": "signal",
+      "detail": "builtin"
+    },
+    {
+      "label": "raise",
+      "insert": "raise",
+      "detail": "builtin"
+    }
+  ]
+}

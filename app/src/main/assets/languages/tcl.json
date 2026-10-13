@@ -1,0 +1,518 @@
+{
+  "name": "Tcl",
+  "extensions": [
+    "tcl",
+    "tk"
+  ],
+  "indent": 4,
+  "operators": [
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "<",
+    ">",
+    "!",
+    "="
+  ],
+  "punctuation": "(){}[];,",
+  "brackets": [
+    [
+      "{",
+      "}"
+    ],
+    [
+      "(",
+      ")"
+    ],
+    [
+      "[",
+      "]"
+    ]
+  ],
+  "lineComment": "#",
+  "blockComment": [],
+  "quotes": [
+    "\""
+  ],
+  "blockQuotes": [],
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "#"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\""
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "if",
+        "then",
+        "else",
+        "elseif",
+        "switch",
+        "case",
+        "default",
+        "while",
+        "for",
+        "foreach",
+        "break",
+        "continue",
+        "return",
+        "proc",
+        "set",
+        "unset",
+        "global",
+        "variable",
+        "upvar",
+        "namespace",
+        "eval",
+        "expr",
+        "list",
+        "lindex",
+        "llength",
+        "lappend",
+        "linsert",
+        "lreplace",
+        "lrange",
+        "lsearch",
+        "lsort",
+        "lset",
+        "dict",
+        "array",
+        "string",
+        "format",
+        "scan",
+        "regexp",
+        "regsub",
+        "catch",
+        "error",
+        "exec",
+        "open",
+        "close",
+        "read",
+        "puts",
+        "gets",
+        "file",
+        "source",
+        "incr",
+        "append",
+        "join",
+        "split",
+        "subst",
+        "uplevel",
+        "info",
+        "exit"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": []
+    },
+    {
+      "kind": "library",
+      "words": [
+        "tk",
+        "Tk",
+        "button",
+        "label",
+        "entry",
+        "text",
+        "frame",
+        "pack",
+        "grid",
+        "place",
+        "bind",
+        "canvas",
+        "menu",
+        "message",
+        "scrollbar",
+        "toplevel"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "proc",
+      "insert": "proc name {args} {\n    \n}",
+      "detail": "proc"
+    },
+    {
+      "label": "set",
+      "insert": "set var value",
+      "detail": "set"
+    },
+    {
+      "label": "if",
+      "insert": "if {condition} {\n    \n}",
+      "detail": "if"
+    },
+    {
+      "label": "foreach",
+      "insert": "foreach item $list {\n    \n}",
+      "detail": "foreach"
+    },
+    {
+      "label": "then",
+      "insert": "then",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "elseif",
+      "insert": "elseif",
+      "detail": "keyword"
+    },
+    {
+      "label": "switch",
+      "insert": "switch",
+      "detail": "keyword"
+    },
+    {
+      "label": "case",
+      "insert": "case",
+      "detail": "keyword"
+    },
+    {
+      "label": "default",
+      "insert": "default",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "for",
+      "insert": "for",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "unset",
+      "insert": "unset",
+      "detail": "keyword"
+    },
+    {
+      "label": "global",
+      "insert": "global",
+      "detail": "keyword"
+    },
+    {
+      "label": "variable",
+      "insert": "variable",
+      "detail": "keyword"
+    },
+    {
+      "label": "upvar",
+      "insert": "upvar",
+      "detail": "keyword"
+    },
+    {
+      "label": "namespace",
+      "insert": "namespace",
+      "detail": "keyword"
+    },
+    {
+      "label": "eval",
+      "insert": "eval",
+      "detail": "keyword"
+    },
+    {
+      "label": "expr",
+      "insert": "expr",
+      "detail": "keyword"
+    },
+    {
+      "label": "list",
+      "insert": "list",
+      "detail": "keyword"
+    },
+    {
+      "label": "lindex",
+      "insert": "lindex",
+      "detail": "keyword"
+    },
+    {
+      "label": "llength",
+      "insert": "llength",
+      "detail": "keyword"
+    },
+    {
+      "label": "lappend",
+      "insert": "lappend",
+      "detail": "keyword"
+    },
+    {
+      "label": "linsert",
+      "insert": "linsert",
+      "detail": "keyword"
+    },
+    {
+      "label": "lreplace",
+      "insert": "lreplace",
+      "detail": "keyword"
+    },
+    {
+      "label": "lrange",
+      "insert": "lrange",
+      "detail": "keyword"
+    },
+    {
+      "label": "lsearch",
+      "insert": "lsearch",
+      "detail": "keyword"
+    },
+    {
+      "label": "lsort",
+      "insert": "lsort",
+      "detail": "keyword"
+    },
+    {
+      "label": "lset",
+      "insert": "lset",
+      "detail": "keyword"
+    },
+    {
+      "label": "dict",
+      "insert": "dict",
+      "detail": "keyword"
+    },
+    {
+      "label": "array",
+      "insert": "array",
+      "detail": "keyword"
+    },
+    {
+      "label": "string",
+      "insert": "string",
+      "detail": "keyword"
+    },
+    {
+      "label": "format",
+      "insert": "format",
+      "detail": "keyword"
+    },
+    {
+      "label": "scan",
+      "insert": "scan",
+      "detail": "keyword"
+    },
+    {
+      "label": "regexp",
+      "insert": "regexp",
+      "detail": "keyword"
+    },
+    {
+      "label": "regsub",
+      "insert": "regsub",
+      "detail": "keyword"
+    },
+    {
+      "label": "catch",
+      "insert": "catch",
+      "detail": "keyword"
+    },
+    {
+      "label": "error",
+      "insert": "error",
+      "detail": "keyword"
+    },
+    {
+      "label": "exec",
+      "insert": "exec",
+      "detail": "keyword"
+    },
+    {
+      "label": "open",
+      "insert": "open",
+      "detail": "keyword"
+    },
+    {
+      "label": "close",
+      "insert": "close",
+      "detail": "keyword"
+    },
+    {
+      "label": "read",
+      "insert": "read",
+      "detail": "keyword"
+    },
+    {
+      "label": "puts",
+      "insert": "puts",
+      "detail": "keyword"
+    },
+    {
+      "label": "gets",
+      "insert": "gets",
+      "detail": "keyword"
+    },
+    {
+      "label": "file",
+      "insert": "file",
+      "detail": "keyword"
+    },
+    {
+      "label": "source",
+      "insert": "source",
+      "detail": "keyword"
+    },
+    {
+      "label": "incr",
+      "insert": "incr",
+      "detail": "keyword"
+    },
+    {
+      "label": "append",
+      "insert": "append",
+      "detail": "keyword"
+    },
+    {
+      "label": "join",
+      "insert": "join",
+      "detail": "keyword"
+    },
+    {
+      "label": "split",
+      "insert": "split",
+      "detail": "keyword"
+    },
+    {
+      "label": "subst",
+      "insert": "subst",
+      "detail": "keyword"
+    },
+    {
+      "label": "uplevel",
+      "insert": "uplevel",
+      "detail": "keyword"
+    },
+    {
+      "label": "info",
+      "insert": "info",
+      "detail": "keyword"
+    },
+    {
+      "label": "exit",
+      "insert": "exit",
+      "detail": "keyword"
+    },
+    {
+      "label": "tk",
+      "insert": "tk",
+      "detail": "builtin"
+    },
+    {
+      "label": "Tk",
+      "insert": "Tk",
+      "detail": "builtin"
+    },
+    {
+      "label": "button",
+      "insert": "button",
+      "detail": "builtin"
+    },
+    {
+      "label": "label",
+      "insert": "label",
+      "detail": "builtin"
+    },
+    {
+      "label": "entry",
+      "insert": "entry",
+      "detail": "builtin"
+    },
+    {
+      "label": "text",
+      "insert": "text",
+      "detail": "builtin"
+    },
+    {
+      "label": "frame",
+      "insert": "frame",
+      "detail": "builtin"
+    },
+    {
+      "label": "pack",
+      "insert": "pack",
+      "detail": "builtin"
+    },
+    {
+      "label": "grid",
+      "insert": "grid",
+      "detail": "builtin"
+    },
+    {
+      "label": "place",
+      "insert": "place",
+      "detail": "builtin"
+    },
+    {
+      "label": "bind",
+      "insert": "bind",
+      "detail": "builtin"
+    },
+    {
+      "label": "canvas",
+      "insert": "canvas",
+      "detail": "builtin"
+    },
+    {
+      "label": "menu",
+      "insert": "menu",
+      "detail": "builtin"
+    },
+    {
+      "label": "message",
+      "insert": "message",
+      "detail": "builtin"
+    },
+    {
+      "label": "scrollbar",
+      "insert": "scrollbar",
+      "detail": "builtin"
+    },
+    {
+      "label": "toplevel",
+      "insert": "toplevel",
+      "detail": "builtin"
+    }
+  ]
+}

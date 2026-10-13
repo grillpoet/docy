@@ -1,0 +1,1026 @@
+{
+  "name": "Kotlin",
+  "extensions": [
+    "kt",
+    "kts"
+  ],
+  "indent": 4,
+  "rules": [
+    {
+      "kind": "comment",
+      "type": "block",
+      "start": "/*",
+      "end": "*/"
+    },
+    {
+      "kind": "comment",
+      "type": "line",
+      "start": "//"
+    },
+    {
+      "kind": "string",
+      "type": "quote",
+      "quotes": [
+        "\""
+      ]
+    },
+    {
+      "kind": "number",
+      "regex": "\\b\\d+(\\.\\d+)?[fFlLdD]?\\b"
+    },
+    {
+      "kind": "keyword",
+      "words": [
+        "as",
+        "as?",
+        "break",
+        "class",
+        "continue",
+        "do",
+        "else",
+        "false",
+        "for",
+        "fun",
+        "if",
+        "in",
+        "!in",
+        "interface",
+        "is",
+        "!is",
+        "null",
+        "object",
+        "package",
+        "return",
+        "super",
+        "this",
+        "throw",
+        "true",
+        "try",
+        "typealias",
+        "typeof",
+        "val",
+        "var",
+        "when",
+        "while",
+        "by",
+        "catch",
+        "constructor",
+        "delegate",
+        "dynamic",
+        "field",
+        "file",
+        "finally",
+        "get",
+        "import",
+        "init",
+        "param",
+        "property",
+        "receiver",
+        "set",
+        "setparam",
+        "where",
+        "actual",
+        "abstract",
+        "annotation",
+        "companion",
+        "const",
+        "crossinline",
+        "data",
+        "enum",
+        "expect",
+        "external",
+        "final",
+        "infix",
+        "inline",
+        "inner",
+        "internal",
+        "lateinit",
+        "noinline",
+        "open",
+        "operator",
+        "out",
+        "override",
+        "private",
+        "protected",
+        "public",
+        "reified",
+        "sealed",
+        "suspend",
+        "tailrec",
+        "vararg",
+        "field",
+        "it"
+      ]
+    },
+    {
+      "kind": "type",
+      "words": [
+        "Int",
+        "Long",
+        "Short",
+        "Byte",
+        "Float",
+        "Double",
+        "Boolean",
+        "Char",
+        "String",
+        "Unit",
+        "Any",
+        "Nothing",
+        "List",
+        "MutableList",
+        "Map",
+        "MutableMap",
+        "Set",
+        "MutableSet",
+        "Array",
+        "Pair",
+        "Triple",
+        "Result",
+        "Sequence",
+        "Flow",
+        "StateFlow",
+        "SharedFlow",
+        "Channel",
+        "Deferred",
+        "Job",
+        "CoroutineScope",
+        "CoroutineContext",
+        "Collection",
+        "Iterable",
+        "Iterator",
+        "Range",
+        "IntRange",
+        "CharRange"
+      ]
+    },
+    {
+      "kind": "library",
+      "words": [
+        "println",
+        "print",
+        "readLine",
+        "readln",
+        "listOf",
+        "mapOf",
+        "setOf",
+        "mutableListOf",
+        "mutableMapOf",
+        "mutableSetOf",
+        "arrayOf",
+        "intArrayOf",
+        "emptyList",
+        "emptyMap",
+        "emptySet",
+        "require",
+        "check",
+        "error",
+        "TODO",
+        "runCatching",
+        "repeat",
+        "lazy",
+        "remember",
+        "LaunchedEffect",
+        "DisposableEffect",
+        "derivedStateOf",
+        "mutableStateOf",
+        "produceState",
+        "snapshotFlow",
+        "collectAsState",
+        "collectAsStateWithLifecycle",
+        "Modifier",
+        "Text",
+        "Column",
+        "Row",
+        "Box",
+        "Spacer",
+        "Surface",
+        "Button",
+        "Icon",
+        "IconButton",
+        "TextField",
+        "BasicTextField",
+        "LazyColumn",
+        "LazyRow",
+        "LazyVerticalGrid"
+      ]
+    }
+  ],
+  "completions": [
+    {
+      "label": "fun",
+      "insert": "fun () {\n    \n}",
+      "detail": "function"
+    },
+    {
+      "label": "val",
+      "insert": "val  = ",
+      "detail": "read-only"
+    },
+    {
+      "label": "var",
+      "insert": "var  = ",
+      "detail": "mutable"
+    },
+    {
+      "label": "when",
+      "insert": "when (x) {\n    \n}",
+      "detail": "when expression"
+    },
+    {
+      "label": "if",
+      "insert": "if () {\n    \n}",
+      "detail": "if"
+    },
+    {
+      "label": "for",
+      "insert": "for (item in collection) {\n    \n}",
+      "detail": "for loop"
+    },
+    {
+      "label": "data class",
+      "insert": "data class  (\n    val : ,\n)",
+      "detail": "data class"
+    },
+    {
+      "label": "@Composable",
+      "insert": "@Composable\nfun () {\n    \n}",
+      "detail": "Composable"
+    },
+    {
+      "label": "as",
+      "insert": "as",
+      "detail": "keyword"
+    },
+    {
+      "label": "as?",
+      "insert": "as?",
+      "detail": "keyword"
+    },
+    {
+      "label": "break",
+      "insert": "break",
+      "detail": "keyword"
+    },
+    {
+      "label": "class",
+      "insert": "class",
+      "detail": "keyword"
+    },
+    {
+      "label": "continue",
+      "insert": "continue",
+      "detail": "keyword"
+    },
+    {
+      "label": "do",
+      "insert": "do",
+      "detail": "keyword"
+    },
+    {
+      "label": "else",
+      "insert": "else",
+      "detail": "keyword"
+    },
+    {
+      "label": "false",
+      "insert": "false",
+      "detail": "keyword"
+    },
+    {
+      "label": "in",
+      "insert": "in",
+      "detail": "keyword"
+    },
+    {
+      "label": "!in",
+      "insert": "!in",
+      "detail": "keyword"
+    },
+    {
+      "label": "interface",
+      "insert": "interface",
+      "detail": "keyword"
+    },
+    {
+      "label": "is",
+      "insert": "is",
+      "detail": "keyword"
+    },
+    {
+      "label": "!is",
+      "insert": "!is",
+      "detail": "keyword"
+    },
+    {
+      "label": "null",
+      "insert": "null",
+      "detail": "keyword"
+    },
+    {
+      "label": "object",
+      "insert": "object",
+      "detail": "keyword"
+    },
+    {
+      "label": "package",
+      "insert": "package",
+      "detail": "keyword"
+    },
+    {
+      "label": "return",
+      "insert": "return",
+      "detail": "keyword"
+    },
+    {
+      "label": "super",
+      "insert": "super",
+      "detail": "keyword"
+    },
+    {
+      "label": "this",
+      "insert": "this",
+      "detail": "keyword"
+    },
+    {
+      "label": "throw",
+      "insert": "throw",
+      "detail": "keyword"
+    },
+    {
+      "label": "true",
+      "insert": "true",
+      "detail": "keyword"
+    },
+    {
+      "label": "try",
+      "insert": "try",
+      "detail": "keyword"
+    },
+    {
+      "label": "typealias",
+      "insert": "typealias",
+      "detail": "keyword"
+    },
+    {
+      "label": "typeof",
+      "insert": "typeof",
+      "detail": "keyword"
+    },
+    {
+      "label": "while",
+      "insert": "while",
+      "detail": "keyword"
+    },
+    {
+      "label": "by",
+      "insert": "by",
+      "detail": "keyword"
+    },
+    {
+      "label": "catch",
+      "insert": "catch",
+      "detail": "keyword"
+    },
+    {
+      "label": "constructor",
+      "insert": "constructor",
+      "detail": "keyword"
+    },
+    {
+      "label": "delegate",
+      "insert": "delegate",
+      "detail": "keyword"
+    },
+    {
+      "label": "dynamic",
+      "insert": "dynamic",
+      "detail": "keyword"
+    },
+    {
+      "label": "field",
+      "insert": "field",
+      "detail": "keyword"
+    },
+    {
+      "label": "file",
+      "insert": "file",
+      "detail": "keyword"
+    },
+    {
+      "label": "finally",
+      "insert": "finally",
+      "detail": "keyword"
+    },
+    {
+      "label": "get",
+      "insert": "get",
+      "detail": "keyword"
+    },
+    {
+      "label": "import",
+      "insert": "import",
+      "detail": "keyword"
+    },
+    {
+      "label": "init",
+      "insert": "init",
+      "detail": "keyword"
+    },
+    {
+      "label": "param",
+      "insert": "param",
+      "detail": "keyword"
+    },
+    {
+      "label": "property",
+      "insert": "property",
+      "detail": "keyword"
+    },
+    {
+      "label": "receiver",
+      "insert": "receiver",
+      "detail": "keyword"
+    },
+    {
+      "label": "set",
+      "insert": "set",
+      "detail": "keyword"
+    },
+    {
+      "label": "setparam",
+      "insert": "setparam",
+      "detail": "keyword"
+    },
+    {
+      "label": "where",
+      "insert": "where",
+      "detail": "keyword"
+    },
+    {
+      "label": "actual",
+      "insert": "actual",
+      "detail": "keyword"
+    },
+    {
+      "label": "abstract",
+      "insert": "abstract",
+      "detail": "keyword"
+    },
+    {
+      "label": "annotation",
+      "insert": "annotation",
+      "detail": "keyword"
+    },
+    {
+      "label": "companion",
+      "insert": "companion",
+      "detail": "keyword"
+    },
+    {
+      "label": "const",
+      "insert": "const",
+      "detail": "keyword"
+    },
+    {
+      "label": "crossinline",
+      "insert": "crossinline",
+      "detail": "keyword"
+    },
+    {
+      "label": "data",
+      "insert": "data",
+      "detail": "keyword"
+    },
+    {
+      "label": "enum",
+      "insert": "enum",
+      "detail": "keyword"
+    },
+    {
+      "label": "expect",
+      "insert": "expect",
+      "detail": "keyword"
+    },
+    {
+      "label": "external",
+      "insert": "external",
+      "detail": "keyword"
+    },
+    {
+      "label": "final",
+      "insert": "final",
+      "detail": "keyword"
+    },
+    {
+      "label": "infix",
+      "insert": "infix",
+      "detail": "keyword"
+    },
+    {
+      "label": "inline",
+      "insert": "inline",
+      "detail": "keyword"
+    },
+    {
+      "label": "inner",
+      "insert": "inner",
+      "detail": "keyword"
+    },
+    {
+      "label": "internal",
+      "insert": "internal",
+      "detail": "keyword"
+    },
+    {
+      "label": "lateinit",
+      "insert": "lateinit",
+      "detail": "keyword"
+    },
+    {
+      "label": "noinline",
+      "insert": "noinline",
+      "detail": "keyword"
+    },
+    {
+      "label": "open",
+      "insert": "open",
+      "detail": "keyword"
+    },
+    {
+      "label": "operator",
+      "insert": "operator",
+      "detail": "keyword"
+    },
+    {
+      "label": "out",
+      "insert": "out",
+      "detail": "keyword"
+    },
+    {
+      "label": "override",
+      "insert": "override",
+      "detail": "keyword"
+    },
+    {
+      "label": "private",
+      "insert": "private",
+      "detail": "keyword"
+    },
+    {
+      "label": "protected",
+      "insert": "protected",
+      "detail": "keyword"
+    },
+    {
+      "label": "public",
+      "insert": "public",
+      "detail": "keyword"
+    },
+    {
+      "label": "reified",
+      "insert": "reified",
+      "detail": "keyword"
+    },
+    {
+      "label": "sealed",
+      "insert": "sealed",
+      "detail": "keyword"
+    },
+    {
+      "label": "suspend",
+      "insert": "suspend",
+      "detail": "keyword"
+    },
+    {
+      "label": "tailrec",
+      "insert": "tailrec",
+      "detail": "keyword"
+    },
+    {
+      "label": "vararg",
+      "insert": "vararg",
+      "detail": "keyword"
+    },
+    {
+      "label": "it",
+      "insert": "it",
+      "detail": "keyword"
+    },
+    {
+      "label": "Int",
+      "insert": "Int",
+      "detail": "type"
+    },
+    {
+      "label": "Long",
+      "insert": "Long",
+      "detail": "type"
+    },
+    {
+      "label": "Short",
+      "insert": "Short",
+      "detail": "type"
+    },
+    {
+      "label": "Byte",
+      "insert": "Byte",
+      "detail": "type"
+    },
+    {
+      "label": "Float",
+      "insert": "Float",
+      "detail": "type"
+    },
+    {
+      "label": "Double",
+      "insert": "Double",
+      "detail": "type"
+    },
+    {
+      "label": "Boolean",
+      "insert": "Boolean",
+      "detail": "type"
+    },
+    {
+      "label": "Char",
+      "insert": "Char",
+      "detail": "type"
+    },
+    {
+      "label": "String",
+      "insert": "String",
+      "detail": "type"
+    },
+    {
+      "label": "Unit",
+      "insert": "Unit",
+      "detail": "type"
+    },
+    {
+      "label": "Any",
+      "insert": "Any",
+      "detail": "type"
+    },
+    {
+      "label": "Nothing",
+      "insert": "Nothing",
+      "detail": "type"
+    },
+    {
+      "label": "List",
+      "insert": "List",
+      "detail": "type"
+    },
+    {
+      "label": "MutableList",
+      "insert": "MutableList",
+      "detail": "type"
+    },
+    {
+      "label": "Map",
+      "insert": "Map",
+      "detail": "type"
+    },
+    {
+      "label": "MutableMap",
+      "insert": "MutableMap",
+      "detail": "type"
+    },
+    {
+      "label": "Set",
+      "insert": "Set",
+      "detail": "type"
+    },
+    {
+      "label": "MutableSet",
+      "insert": "MutableSet",
+      "detail": "type"
+    },
+    {
+      "label": "Array",
+      "insert": "Array",
+      "detail": "type"
+    },
+    {
+      "label": "Pair",
+      "insert": "Pair",
+      "detail": "type"
+    },
+    {
+      "label": "Triple",
+      "insert": "Triple",
+      "detail": "type"
+    },
+    {
+      "label": "Result",
+      "insert": "Result",
+      "detail": "type"
+    },
+    {
+      "label": "Sequence",
+      "insert": "Sequence",
+      "detail": "type"
+    },
+    {
+      "label": "Flow",
+      "insert": "Flow",
+      "detail": "type"
+    },
+    {
+      "label": "StateFlow",
+      "insert": "StateFlow",
+      "detail": "type"
+    },
+    {
+      "label": "SharedFlow",
+      "insert": "SharedFlow",
+      "detail": "type"
+    },
+    {
+      "label": "Channel",
+      "insert": "Channel",
+      "detail": "type"
+    },
+    {
+      "label": "Deferred",
+      "insert": "Deferred",
+      "detail": "type"
+    },
+    {
+      "label": "Job",
+      "insert": "Job",
+      "detail": "type"
+    },
+    {
+      "label": "CoroutineScope",
+      "insert": "CoroutineScope",
+      "detail": "type"
+    },
+    {
+      "label": "CoroutineContext",
+      "insert": "CoroutineContext",
+      "detail": "type"
+    },
+    {
+      "label": "Collection",
+      "insert": "Collection",
+      "detail": "type"
+    },
+    {
+      "label": "Iterable",
+      "insert": "Iterable",
+      "detail": "type"
+    },
+    {
+      "label": "Iterator",
+      "insert": "Iterator",
+      "detail": "type"
+    },
+    {
+      "label": "Range",
+      "insert": "Range",
+      "detail": "type"
+    },
+    {
+      "label": "IntRange",
+      "insert": "IntRange",
+      "detail": "type"
+    },
+    {
+      "label": "CharRange",
+      "insert": "CharRange",
+      "detail": "type"
+    },
+    {
+      "label": "println",
+      "insert": "println",
+      "detail": "builtin"
+    },
+    {
+      "label": "print",
+      "insert": "print",
+      "detail": "builtin"
+    },
+    {
+      "label": "readLine",
+      "insert": "readLine",
+      "detail": "builtin"
+    },
+    {
+      "label": "readln",
+      "insert": "readln",
+      "detail": "builtin"
+    },
+    {
+      "label": "listOf",
+      "insert": "listOf",
+      "detail": "builtin"
+    },
+    {
+      "label": "mapOf",
+      "insert": "mapOf",
+      "detail": "builtin"
+    },
+    {
+      "label": "setOf",
+      "insert": "setOf",
+      "detail": "builtin"
+    },
+    {
+      "label": "mutableListOf",
+      "insert": "mutableListOf",
+      "detail": "builtin"
+    },
+    {
+      "label": "mutableMapOf",
+      "insert": "mutableMapOf",
+      "detail": "builtin"
+    },
+    {
+      "label": "mutableSetOf",
+      "insert": "mutableSetOf",
+      "detail": "builtin"
+    },
+    {
+      "label": "arrayOf",
+      "insert": "arrayOf",
+      "detail": "builtin"
+    },
+    {
+      "label": "intArrayOf",
+      "insert": "intArrayOf",
+      "detail": "builtin"
+    },
+    {
+      "label": "emptyList",
+      "insert": "emptyList",
+      "detail": "builtin"
+    },
+    {
+      "label": "emptyMap",
+      "insert": "emptyMap",
+      "detail": "builtin"
+    },
+    {
+      "label": "emptySet",
+      "insert": "emptySet",
+      "detail": "builtin"
+    },
+    {
+      "label": "require",
+      "insert": "require",
+      "detail": "builtin"
+    },
+    {
+      "label": "check",
+      "insert": "check",
+      "detail": "builtin"
+    },
+    {
+      "label": "error",
+      "insert": "error",
+      "detail": "builtin"
+    },
+    {
+      "label": "TODO",
+      "insert": "TODO",
+      "detail": "builtin"
+    },
+    {
+      "label": "runCatching",
+      "insert": "runCatching",
+      "detail": "builtin"
+    },
+    {
+      "label": "repeat",
+      "insert": "repeat",
+      "detail": "builtin"
+    },
+    {
+      "label": "lazy",
+      "insert": "lazy",
+      "detail": "builtin"
+    },
+    {
+      "label": "remember",
+      "insert": "remember",
+      "detail": "builtin"
+    },
+    {
+      "label": "LaunchedEffect",
+      "insert": "LaunchedEffect",
+      "detail": "builtin"
+    },
+    {
+      "label": "DisposableEffect",
+      "insert": "DisposableEffect",
+      "detail": "builtin"
+    },
+    {
+      "label": "derivedStateOf",
+      "insert": "derivedStateOf",
+      "detail": "builtin"
+    },
+    {
+      "label": "mutableStateOf",
+      "insert": "mutableStateOf",
+      "detail": "builtin"
+    },
+    {
+      "label": "produceState",
+      "insert": "produceState",
+      "detail": "builtin"
+    },
+    {
+      "label": "snapshotFlow",
+      "insert": "snapshotFlow",
+      "detail": "builtin"
+    },
+    {
+      "label": "collectAsState",
+      "insert": "collectAsState",
+      "detail": "builtin"
+    },
+    {
+      "label": "collectAsStateWithLifecycle",
+      "insert": "collectAsStateWithLifecycle",
+      "detail": "builtin"
+    },
+    {
+      "label": "Modifier",
+      "insert": "Modifier",
+      "detail": "builtin"
+    },
+    {
+      "label": "Text",
+      "insert": "Text",
+      "detail": "builtin"
+    },
+    {
+      "label": "Column",
+      "insert": "Column",
+      "detail": "builtin"
+    },
+    {
+      "label": "Row",
+      "insert": "Row",
+      "detail": "builtin"
+    },
+    {
+      "label": "Box",
+      "insert": "Box",
+      "detail": "builtin"
+    },
+    {
+      "label": "Spacer",
+      "insert": "Spacer",
+      "detail": "builtin"
+    },
+    {
+      "label": "Surface",
+      "insert": "Surface",
+      "detail": "builtin"
+    },
+    {
+      "label": "Button",
+      "insert": "Button",
+      "detail": "builtin"
+    },
+    {
+      "label": "Icon",
+      "insert": "Icon",
+      "detail": "builtin"
+    },
+    {
+      "label": "IconButton",
+      "insert": "IconButton",
+      "detail": "builtin"
+    },
+    {
+      "label": "TextField",
+      "insert": "TextField",
+      "detail": "builtin"
+    },
+    {
+      "label": "BasicTextField",
+      "insert": "BasicTextField",
+      "detail": "builtin"
+    },
+    {
+      "label": "LazyColumn",
+      "insert": "LazyColumn",
+      "detail": "builtin"
+    },
+    {
+      "label": "LazyRow",
+      "insert": "LazyRow",
+      "detail": "builtin"
+    },
+    {
+      "label": "LazyVerticalGrid",
+      "insert": "LazyVerticalGrid",
+      "detail": "builtin"
+    }
+  ]
+}
